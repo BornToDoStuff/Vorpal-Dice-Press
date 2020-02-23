@@ -1,0 +1,284 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: 'Helvetica',sans-serif;
+}
+body {
+  background: url("../img/topography-sharp-light2.png");
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow:hidden;
+}
+.width-wrapper {
+  margin: 0px auto;
+  max-width: 1200px;
+  position: relative;
+  padding: 0px 25px;
+}
+
+nav {
+  height: 58px;
+  box-shadow: 0px -5px 20px 10px rgba(35, 4, 43, 0.4);
+  font-size: 25px;
+  font-family: 'AmericanCaptain',sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background: white;
+}
+nav a {
+  display: inline-block;
+  /*color: #23042b;*/
+  color: #4f115f;
+  text-decoration: none;
+}
+nav > .width-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+nav > .width-wrapper > div:first-child {
+  flex: 3 0;
+}
+nav > .width-wrapper > div {
+  flex: 1;
+  text-align: center;
+  margin: 4px 0px;
+  /*padding: 0px 15px;*/
+  line-height: 50px;
+  height: 50px;
+  border-right: 1px solid rgba(35, 4, 43, 0.13);
+}
+#logo > a {
+  display: flex;
+  height: 100%;
+  font-size: 35px;
+  color: #743286;
+}
+#logo img { padding-right: 10px; }
+
+.vdp-logo {
+  height: 100%;
+  max-width: 100px;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+  min-height: calc(100vh - 100px);
+}
+
+/* .slider {
+  display: flex;
+  align-items: center;
+}
+.slider > div { flex: 1 1; }
+
+.slider > div:first-child, .slider > div:last-child {
+  flex: 0 0 75px;
+}
+.slider > div:first-child { transform: rotate(180deg); } */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#footer-content {
+  min-height:200px;
+  width:100%;
+  background: #23042b;
+  position: relative;
+}
+#footer-content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -250px;
+  left: -250px;
+  right: -250px;
+  min-width: 100%;
+  min-height: 100%;
+  box-shadow: 0px 100px 90px -50px #743286 inset, 0px 55px 25px -45px #743286 inset;
+}
+#footer-content:after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 100%;
+    /*background: linear-gradient(180deg, rgba(116,50,134,1) 10%, rgba(119,57,128,0) 100%);*/
+    background: linear-gradient(180deg, rgba(119,57,128,0) 0%, rgba(116,50,134,1) 90%);
+    position: absolute;
+    bottom: 100%;
+    z-index: 10;
+}
+.wave-container {
+  height:50px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+.wave-container > svg {
+  display: block;
+  position: absolute;
+  height:100%;
+  width: 150%;
+  min-width: 1620px; /* 1080*1.5 */
+  top: 0;
+  mix-blend-mode: soft-light;
+  opacity: 0.9;
+
+  transform-origin: top;
+  animation: wave 40s linear 0s infinite normal;
+}
+
+.wave-container > svg:nth-child(1) {
+  animation: wave 45s ease-in-out 0s infinite normal;
+}
+.wave-container > svg:nth-child(2) {
+  animation: wave 33s ease-in-out 0s infinite reverse;
+}
+.wave-container > svg:nth-child(3) {
+  animation: wave 37s ease-in-out 0s infinite normal;
+}
+.wave-container > svg:nth-child(4) {
+  animation: wave 41s ease-in-out 0s infinite reverse;
+}
+.wave-container > svg:last-child {
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+footer .vdp-logo {
+  height: 250px;
+  width: 250px;
+  max-width: 25vw;
+  opacity: 0.1;
+  filter: grayscale();
+  position: absolute;
+  top: -125px;
+  right: 0;
+  transform: rotate(-20deg);
+  transition: opacity 1s ease-in-out, filter 0.5s ease-in-out;
+}
+
+footer:hover > .vdp-logo {
+  opacity: 0.6;
+  filter: none;
+}
+
+
+.rule {
+  z-index: 1;
+  height: 2px;
+  position: relative;
+  /*margin: 0px 10px;*/
+  overflow: hidden;
+}
+.rule:after {
+  content:'';
+  display: block;
+  top:0px;
+  bottom: 0px;
+	width:300%;
+  position: absolute;
+	z-index:-1;
+}
+.rule.infinite.hover:after {
+    animation-play-state: running;
+}
+.rule.infinite:after {
+  /*animation: vorpalShinePercent 6s ease-in-out 0s normal infinite both;
+  animation-play-state: paused;  */
+  animation: vorpalShinePercent 20s cubic-bezier(.33,.15,.66,.85) 0s normal infinite both;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6ebb42+2,debb26+30,733088+70,6ebb42+99;Vorpal+2I */
+  background: repeating-linear-gradient(90deg,rgba(110,187,66,1),rgba(222,187,38,1) 16.5%,rgba(115,48,136,1) 33%,rgba(110,187,66,1) 49.5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@keyframes vorpalShinePercent {
+  0% {transform:translateX(0%);}
+	100% {transform:translateX(-50%);}
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1,1) translateX(-16%);
+  }
+  12.5% {
+    transform: scale(1,0.7) translateX(-24%);
+  }
+  25% {
+    transform: scale(1,0.9) translateX(-32%);
+  }
+  37.5% {
+    transform: scale(1,1.2) translateX(-24%);
+  }
+  50% {
+    transform: scale(1,1.1) translateX(-16%);
+  }
+  62.5% {
+    transform: scale(1,0.9) translateX(-8%);
+  }
+  75% {
+    transform: scale(1,0.8) translateX(-0vw);
+  }
+  87.5% {
+    transform: scale(1,1.1) translateX(-8%);
+  }
+  100% {
+    transform: scale(1,1) translateX(-16%);
+  }
+}
+
+@font-face {
+   font-family: 'AmericanCaptain';
+   src: url('fonts/american_captain-webfont.woff2') format('woff2'),
+        url('fonts/american_captain-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+/*
+@keyframes wave {
+  0% {
+    transform: scale(1,1) translateX(-25vw);
+  }
+  12.5% {
+    transform: scale(1,0.7) translateX(-37.5vw);
+  }
+  25% {
+    transform: scale(1,0.9) translateX(-50vw);
+  }
+  37.5% {
+    transform: scale(1,1.2) translateX(-37.5vw);
+  }
+  50% {
+    transform: scale(1,1.1) translateX(-25vw);
+  }
+  62.5% {
+    transform: scale(1,0.9) translateX(-12.5vw);
+  }
+  75% {
+    transform: scale(1,0.8) translateX(-0vw);
+  }
+  87.5% {
+    transform: scale(1,1.1) translateX(-12.5vw);
+  }
+  100% {
+    transform: scale(1,1) translateX(-25vw);
+  }
+} */
