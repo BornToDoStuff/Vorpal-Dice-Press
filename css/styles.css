@@ -1,3 +1,4 @@
+* { box-sizing:border-box; }
 html, body {
   margin: 0px;
   padding: 0px;
@@ -53,10 +54,10 @@ section {
 }
 .width-wrapper {
   margin: 0px auto;
-  max-width: 1200px;
+  max-width: 1400px;
   position: relative;
   box-sizing: border-box;
-  padding: 0px 35px;
+  padding: 0px 70px;
 }
 
 nav {
@@ -111,11 +112,11 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 20px; /* hack-y fix for the margins between the flexboxes */
+  padding: 0px 55px; /* hack-y fix for the margins between the review flexboxes */
 }
 #reviews .review {
   flex: 1 1 350px;
-  padding: 0px 15px 15px 15px;
+  box-sizing: border-box;
   background: white;
   border: 1px solid rgba(35, 4, 43, 0.3);
   border-left: none;
@@ -123,18 +124,29 @@ main {
   margin: 15px;
 }
 .review-wrapper {
-  max-height: 350px;
+  max-height: 500px;
   overflow: hidden;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .review-image {
-    width: 100px;
-    height: 150px;
-    display: inline-block;
-    float: left;
-    background: lightgray;
-    font-size: 1.5em;
-    margin: 1em 10px 10px 0px;
+  min-height: 150px;
+  flex: 1 0 375px;
+  width: 100%;
+  float: left;
+  background: lightgray;
+  font-size: 1.5em;
+  margin-bottom: -15px;
 }
+.review-content {
+  flex: 1 1 350px;
+  padding: 15px;
+  overflow: hidden;
+  max-height: 300px;
+}
+
 #blogs {
   background: rgba(128, 128, 128, 0.1);
   margin-top: 25px;
@@ -197,6 +209,7 @@ footer .vdp-logo {
   right: 0;
   transform: rotate(-20deg);
   transition: opacity 1s ease-in-out, filter 0.5s ease-in-out;
+  z-index: -1;
 }
 
 footer:hover > .vdp-logo {

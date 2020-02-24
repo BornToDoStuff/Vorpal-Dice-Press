@@ -204,7 +204,7 @@
 }
 
 
-/* USER DEFINED STYLE */
+/* USER DEFINED STYLES */
 .slick-slider > *:first-child > .slick-track{
   width: 100% !important;
   transform: none !important;
@@ -215,11 +215,12 @@
 }
 .slick-slide {
   background: lightgray;
-  padding: 10px;
   margin: 10px;
-  min-height: 200px;
-  min-width: 150px;
+  min-height: 233px;
+  min-width: 180px;
   float: none;
+  text-align: center;
+  line-height: 233px;
 }
 .slick-slider {
   display: flex;
