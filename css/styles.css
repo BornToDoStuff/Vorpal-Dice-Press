@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3 {
     color: #4f115f;
-    font-family: 'AmericanCaptain',sans-serif;
+    font-family: modesto-condensed, serif;
 }
 #reviews h2, #blogs h2 {
     margin-block-start: 0.44em;
@@ -61,15 +61,19 @@ section {
   padding: 0px 80px;
 }
 
+/*****     *****/
+/***** NAV *****/
+/*****     *****/
+
 nav {
   height: 58px;
   box-shadow: 0px -5px 20px 10px rgba(35, 4, 43, 0.4);
   font-size: 25px;
-  font-family: 'AmericanCaptain',sans-serif;
+  font-family: modesto-condensed, serif;
   background: white;
 }
 nav a {
-  display: inline-block;
+  display: block;
   /*color: #23042b;*/
   color: #4f115f;
   text-decoration: none;
@@ -90,6 +94,8 @@ nav > .width-wrapper > div {
   height: 50px;
   border-right: 1px solid rgba(35, 4, 43, 0.3);
 }
+
+
 #logo > a {
   display: flex;
   height: 100%;
@@ -109,6 +115,10 @@ main {
   min-height: calc(100vh - 100px);
 }
 
+/*****         *****/
+/***** REVIEWS *****/
+/*****         *****/
+
 #reviews > .width-wrapper {
   display: flex;
   flex-direction: row;
@@ -125,7 +135,6 @@ main {
   margin: 15px;
 }
 .review-wrapper {
-  max-height: 500px;
   overflow: hidden;
   padding-bottom: 15px;
   display: flex;
@@ -133,20 +142,30 @@ main {
   flex-direction: row;
 }
 .review-image {
-  min-height: 150px;
-  flex: 1 0 375px;
-  width: 100%;
-  float: left;
-  background: lightgray;
-  font-size: 1.5em;
+  flex: 1 0 350px;
+  display: flex;
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
+  font-size: 0px;
   margin-bottom: -15px;
 }
+.review-image img {
+  position: absolute;
+  width: 100%;
+}
+
 .review-content {
   flex: 1 1 350px;
   padding: 15px;
+  padding-top: 15px;
   overflow: hidden;
   max-height: 300px;
 }
+
+/*****       *****/
+/***** BLOGS *****/
+/*****       *****/
 
 #blogs {
   background: rgba(128, 128, 128, 0.1);
@@ -181,16 +200,9 @@ main {
     overflow: hidden;
 }
 
-/* .slider {
-  display: flex;
-  align-items: center;
-}
-.slider > div { flex: 1 1; }
-
-.slider > div:first-child, .slider > div:last-child {
-  flex: 0 0 75px;
-}
-.slider > div:first-child { transform: rotate(180deg); } */
+/*****        *****/
+/***** FOOTER *****/
+/*****        *****/
 
 footer {
   display: flex;
@@ -314,6 +326,10 @@ footer:hover > .vdp-logo {
   background: repeating-linear-gradient(90deg,rgba(110,187,66,1),rgba(222,187,38,1) 16.5%,rgba(115,48,136,1) 33%,rgba(110,187,66,1) 49.5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+/*****            *****/
+/***** ANIMATIONS *****/
+/*****            *****/
+
 @keyframes vorpalShinePercent {
   0% {transform:translateX(0%);}
 	100% {transform:translateX(-50%);}
@@ -349,40 +365,62 @@ footer:hover > .vdp-logo {
   }
 }
 
-@font-face {
-   font-family: 'AmericanCaptain';
-   src: url('fonts/american_captain-webfont.woff2') format('woff2'),
-        url('fonts/american_captain-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
+/*****         *****/
+/***** QUERIES *****/
+/*****         *****/
+
+/*@media (max-width: 600px and max-width: 600px) { */
+
+@media (max-width: 1024px) {
+  #reviews .review {
+    flex: 1 1 500px;
+  }
+  .review-image {
+    flex: 1 0 275px;
+    min-height: 150px;
+  }
+  .review-content {
+    flex: 1 1 275px;
+  }
 }
-/*
-@keyframes wave {
-  0% {
-    transform: scale(1,1) translateX(-25vw);
+
+@media (max-width: 768px) {
+  .width-wrapper {
+    padding: 0px 40px;
   }
-  12.5% {
-    transform: scale(1,0.7) translateX(-37.5vw);
+  #reviews > .width-wrapper {
+    padding: 0px 25px;
   }
-  25% {
-    transform: scale(1,0.9) translateX(-50vw);
+
+  .slick-slide {
+    max-width: 157px;
   }
-  37.5% {
-    transform: scale(1,1.2) translateX(-37.5vw);
+}
+
+@media (max-width: 425px) {
+  .width-wrapper {
+    padding: 0px 20px;
   }
-  50% {
-    transform: scale(1,1.1) translateX(-25vw);
+  #reviews > .width-wrapper {
+    padding: 0px 5px;
   }
-  62.5% {
-    transform: scale(1,0.9) translateX(-12.5vw);
+
+  .slick-slide {
+    max-width: 130px;
   }
-  75% {
-    transform: scale(1,0.8) translateX(-0vw);
+  .slick-prev {
+      left: -15px;
   }
-  87.5% {
-    transform: scale(1,1.1) translateX(-12.5vw);
+  .slick-next {
+      right: -15px;
   }
-  100% {
-    transform: scale(1,1) translateX(-25vw);
+  .slick-prev, .slick-next {
+    flex: 0 0 40px;
+    width: 40px;
   }
-} */
+  .slick-arrow ~ .slick-list {
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
+}
+}

@@ -14,26 +14,25 @@ $(document).ready(function(){
     draggable: true,
     initialSlide: -1,
     mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 6,
           slidesToScroll: 3,
+          centerMode: false
         }
       },
       {
-        breakpoint: 600,
+
+        breakpoint: 425,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          centerMode: false
         }
       }
     ]

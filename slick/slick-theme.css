@@ -216,11 +216,8 @@
 .slick-slide {
   background: lightgray;
   margin: 10px;
-  min-height: 245px;
-  min-width: 190px;
+  max-width: 190px;
   float: none;
-  text-align: center;
-  line-height: 245px;
 }
 .slick-slider {
   display: flex;
