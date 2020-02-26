@@ -118,6 +118,51 @@ main {
   min-height: calc(100vh - 100px);
 }
 
+/*****           *****/
+/***** READ MORE *****/
+/*****           *****/
+
+.read-more {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  text-align: right;
+  color: #743286;
+}
+  .read-more div {
+    flex: 1 1 350px;
+    padding-top:2.5em;
+  }
+    .read-more div:last-child {
+      background: linear-gradient(0deg, white 0%, white 1.75em, rgba(255, 255, 255, 0) 100%);
+    }
+    /* .read-more div:last-child:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 75px solid rgb(116, 50, 134);
+      border-left: 75px solid transparent;
+    }
+    .read-more div:last-child:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      right: 12px;
+      bottom: 16px;
+      width: 70%;
+      max-width: 300px;
+      max-height: 100px;
+      height: 55%;
+      box-shadow: -3px 10px 8px 2px rgba(0, 0, 0, 0.3);
+      transform: skew(15deg) rotate(6deg);
+    } */
+
 /*****         *****/
 /***** REVIEWS *****/
 /*****         *****/
@@ -129,6 +174,7 @@ main {
   padding: 0px 65px; /* hack-y fix for the margins between the review flexboxes */
 }
 #reviews .review {
+  position: relative;
   flex: 1 1 350px;
   box-sizing: border-box;
   background: white;
@@ -138,13 +184,16 @@ main {
   margin: 15px;
   box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3)
 }
+
 .review-wrapper {
-  overflow: hidden;
-  padding-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  overflow: hidden;
+  padding-bottom: 15px;
+  margin-top: -15px;
 }
+
 .review-image {
   flex: 1 0 350px;
   display: flex;
@@ -153,6 +202,7 @@ main {
   overflow: hidden;
   font-size: 0px;
   margin-bottom: -15px;
+  margin-top: 15px;
 }
   .review-image:after {
       content: '';
@@ -201,12 +251,16 @@ main {
   border: 2px solid rgba(35, 4, 43, 0.05);
   border-width: 2px 0px;
 }
+  #blogs .read-more div {
+    flex: 1 1 500px;
+  }
 
 #blogs > .width-wrapper {
   display: flex;
   flex-direction: column;
 }
 #blogs .blog {
+  position: relative;
   flex: 0 0 400px;
   padding: 0px 15px 15px 15px;
   background: white;
@@ -406,7 +460,7 @@ footer:hover > .vdp-logo {
     flex: 1 0 275px;
     min-height: 150px;
   }
-  .review-content {
+  .review-content, .read-more div{
     flex: 1 1 275px;
   }
 }
