@@ -136,6 +136,7 @@ main {
   border-left: none;
   border-right: none;
   margin: 15px;
+  box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3)
 }
 .review-wrapper {
   overflow: hidden;
@@ -158,7 +159,7 @@ main {
       display: block;
       height: 100%;
       width: 100%;
-      opacity: 0.5;
+      opacity: 0.3;
       background: rgba(116, 50, 134, 1);
       z-index: 10;
       /* background: repeating-linear-gradient(90deg,rgba(110,187,66,1),rgba(222,187,38,1) 16.5%,rgba(115,48,136,1) 33%,rgba(110,187,66,1) 49.5%); */
@@ -174,7 +175,7 @@ main {
 .review-image img {
   position: absolute;
   width: 100%;
-  filter: grayscale(0.75);
+  filter: grayscale(0.5);
   transition: filter 0.3s linear;
 }
   .review:hover .review-image img {
@@ -214,6 +215,7 @@ main {
   border-right: none;
   margin: 15px;
   font-size: 1.2em;
+  box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3)
 }
 #blogs .blog:first-child { margin-left: 0px; }
 #blogs .blog:last-child { margin-right: 0px; }
@@ -241,7 +243,7 @@ footer .vdp-logo {
   width: 250px;
   max-width: 25vw;
   opacity: 0.15;
-  filter: grayscale();
+  filter: grayscale(1);
   position: absolute;
   top: -125px;
   right: 0;
