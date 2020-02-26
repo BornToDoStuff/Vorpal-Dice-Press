@@ -19,6 +19,9 @@ h1, h2, h3 {
     font-size: 2.3em;
     column-span: all;
 }
+#reviews a, #blogs a {
+  text-decoration: none;
+}
 
 section {
     margin: 25px 0px;
@@ -150,10 +153,33 @@ main {
   font-size: 0px;
   margin-bottom: -15px;
 }
+  .review-image:after {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      background: rgba(116, 50, 134, 1);
+      z-index: 10;
+      /* background: repeating-linear-gradient(90deg,rgba(110,187,66,1),rgba(222,187,38,1) 16.5%,rgba(115,48,136,1) 33%,rgba(110,187,66,1) 49.5%); */
+      background-size: 275%;
+      mix-blend-mode: screen;
+      transition: opacity 0.3s linear;
+      pointer-events: none;
+  }
+    .review:hover .review-image:after {
+      opacity: 0;
+    }
+
 .review-image img {
   position: absolute;
   width: 100%;
+  filter: grayscale(0.75);
+  transition: filter 0.3s linear;
 }
+  .review:hover .review-image img {
+    filter: none;
+  }
 
 .review-content {
   flex: 1 1 350px;
@@ -170,10 +196,9 @@ main {
 #blogs {
   background: rgba(128, 128, 128, 0.1);
   margin-top: 25px;
-  padding-bottom: 100px;
-  margin-bottom: -100px;
-  padding-top: 25px;
-  border-top: 2px solid rgba(35, 4, 43, 0.05);
+  padding: 25px 0px;
+  border: 2px solid rgba(35, 4, 43, 0.05);
+  border-width: 2px 0px;
 }
 
 #blogs > .width-wrapper {

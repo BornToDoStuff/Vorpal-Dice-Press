@@ -214,11 +214,42 @@
   justify-content: center;
 }
 .slick-slide {
+  position: relative;
   background: lightgray;
   margin: 10px;
   max-width: 190px;
   float: none;
 }
+  .slick-slide:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+      background: rgba(116, 50, 134, 1);
+      z-index: 10;
+      mix-blend-mode: screen;
+      transition: opacity 0.3s linear;
+      pointer-events: none;
+  }
+    .slick-slide:hover:after {
+        opacity: 0;
+    }
+  .slick-slide img {
+    display: block;
+    position: relative;
+    width: 100%;
+    filter: grayscale(0.75);
+    transition: transform 0.1s linear, filter 0.3s;
+  }
+  .slick-slide:hover img {
+    filter: none;
+    transform: scale(1.025);
+  }
+
 .slick-slider {
   display: flex;
   align-items: center;
