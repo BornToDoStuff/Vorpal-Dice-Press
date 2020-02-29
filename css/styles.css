@@ -8,7 +8,10 @@ html, body {
 body {
   background: url("../img/topography-sharp-light2.png");
 }
-
+p {
+  margin: 0px;
+  line-height: 1.2em;
+}
 h1, h2 {
     color: #4f115f;
     font-family: modesto-condensed, serif;
@@ -370,10 +373,14 @@ footer:hover > .vdp-logo {
     #footer-content a {
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
-      line-height: 1.3em;
+      display: flex;
+      align-items: center;
     }
     #footer-content a img {
       max-width: 25px;
+    }
+    #footer-content a * {
+      margin: 3px;
     }
 
 
@@ -508,7 +515,20 @@ footer:hover > .vdp-logo {
   .review-content, .read-more div{
     flex: 1 1 275px;
   }
+  #footer-content > .width-wrapper {
+    flex-direction: column-reverse;
+  }
+  #footer-content > .width-wrapper > div {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+  }
+  #footer-content > .width-wrapper > div:first-child { border: none; }
+  /* #footer-content > .width-wrapper > div:last-child {
+    flex-direction: row;
+  } */
 }
+
 
 @media (max-width: 768px) {
   .width-wrapper {
