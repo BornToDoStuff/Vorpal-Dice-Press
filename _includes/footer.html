@@ -1,5 +1,5 @@
 <footer>
-  <img class="vdp-logo" src="img/svg/VDP-solo.svg" />
+  <img class="vdp-logo" src="/img/svg/VDP-solo.svg" />
   <div class="wave-container">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
       <path fill="#743286" fill-opacity="1"
@@ -39,14 +39,14 @@
       </div>
       <div>
         <h3>Socials</h3>
-        <a href="#"><img src="img/svg/facebook.svg" /> <span>Facebook</span></a>
-        <a href="#"><img src="img/svg/twitter.svg" /> <span>Twitter</span></a>
+        <a href="#"><img src="/img/svg/facebook.svg" /> <span>Facebook</span></a>
+        <a href="#"><img src="/img/svg/twitter.svg" /> <span>Twitter</span></a>
         {% if site.contact_email contains "@" %}
           <script>
             {% assign contact_email = site.contact_email | split: "@" %}
             user = "{{ contact_email[0] }}";
             domain = "{{ contact_email[1] }}";
-            document.write('<a href=\"mailto:' + user + '@' + domain + '\"><img src="img/svg/email.svg" /> <span>Email</span></a>');
+            document.write('<a href=\"mailto:' + user + '@' + domain + '\"><img src="/img/svg/email.svg" /> <span>Email</span></a>');
           </script>
         {% endif %}
       </div>
