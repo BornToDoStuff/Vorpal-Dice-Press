@@ -20,8 +20,8 @@ product_medal: Electrum
 product_audience: Player, Dungeon Master
 last_modified_at:
 product_license: Community Content Agreement
-product_feature_start: 2019-03-01
-product_feature_end: 2019-05-01
+product_feature_start: 2020-03-01
+product_feature_end: 2020-05-01
 
 product_image: https://www.dmsguild.com/images/8957/284319.jpg
 publisher_type: Self
