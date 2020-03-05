@@ -1,5 +1,5 @@
 ---
-title: Prism: Light & Magic
+title: "Prism: Light & Magic"
 product_id: 284319
 release_date: 2019-07-30
 bundle: false
