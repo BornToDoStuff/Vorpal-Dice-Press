@@ -1,6 +1,5 @@
 {% assign build_date = "now" | date: "%Y-%m-%d" %}
 
-<h1>{{ build_date }}</h1>
 <section id="features">
   <div class="width-wrapper">
     <div class="slider">
@@ -19,13 +18,9 @@
         {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
 
         {% if build_date >= feature_start_minus_30 and build_date <= feature_end %}
-          <div data-start="{{ post.product_feature_start }}" data-feature-start="{{ feature_start }}" data-feature-start-30="{{ feature_start_minus_30 }}" data-end="{{ post.product_feature_end }}" data-feature-end="{{ feature_end }}" data-featured="true">
+          <div data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
             <a><img src="{{ post.product_image }}" /></a>
           </div>
-        {% else %}
-        <div data-start="{{ post.product_feature_start }}" data-feature-start="{{ feature_start }}" data-feature-start-30="{{ feature_start_minus_30 }}" data-end="{{ post.product_feature_end }}" data-feature-end="{{ feature_end }}" data-featured="false">
-          <a href="{{ post.url }}"><img src="{{ post.product_image }}" /></a>
-        </div>
         {% endif %}
       {% endfor %}
     </div>
