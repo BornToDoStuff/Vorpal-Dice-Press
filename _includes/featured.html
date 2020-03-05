@@ -1,4 +1,4 @@
-{% assign build_date = "now" | date: "%Y-%m-%d" %}
+{% assign build_date = "now" | date: "%s" %}
 
 <h1>{{ build_date }}</h1>
 <section id="features">
@@ -14,9 +14,9 @@
       <div><a href="#"><img src="img/products/296935.png" /></a></div>
 
       {% for post in site.products %}
-        {% assign feature_start = post.product_feature_start | convert: "date" %}
-        {% assign feature_start_minus_30 = feature_start | date: "%s" | minus: 2592000 | date: "%Y-%m-%d" %}
-        {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
+        {% assign feature_start = post.product_feature_start | convert: "date" | date: "%s"  %}
+        {% assign feature_start_minus_30 = feature_start | minus: 2592000 %}
+        {% assign feature_end = post.product_feature_end | convert: "date" | date: "%s" %}
 
         {% if build_date >= feature_start_minus_30 and build_date <= feature_end %}
           <div data-start="{{ post.product_feature_start }}" data-feature-start="{{ feature_start }}" data-feature-start-30="{{ feature_start_minus_30 }}" data-end="{{ post.product_feature_end }}" data-feature-end="{{ feature_end }}" data-featured="true">
