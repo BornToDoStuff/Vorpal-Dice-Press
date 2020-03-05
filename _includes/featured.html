@@ -16,7 +16,7 @@
       {% for post in site.products %}
         {% assign featureYear = post.product_feature_start | date: "%Y" %}
         {% assign featureDay = post.product_feature_start | date: "%j" | plus: 0 %}
-        {% assign featureDay_minus_month = site.time | date: "%j" | minus: 30  %}
+        {% assign featureDay_minus_month = post.product_feature_start | date: "%j" | minus: 30  %}
         {% assign featureYear_end = post.product_feature_end | date: "%Y" %}
         {% assign featureDay_end = post.product_feature_end | date: "%j" | plus: 0 %}
 

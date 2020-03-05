@@ -41,15 +41,18 @@
         <h3>Socials</h3>
         <a href="#"><img src="img/svg/facebook.svg" /> <span>Facebook</span></a>
         <a href="#"><img src="img/svg/twitter.svg" /> <span>Twitter</span></a>
-        <script>
-          user = "vorpaldicepress";
-          domain = "gmail.com";
-          document.write('<a href=\"mailto:' + user + '@' + domain + '\"><img src="img/svg/email.svg" /> <span>Email</span></a>');
-        </script>
+        {% if site.contact_email contains "@" %}
+          <script>
+            {% assign contact_email = site.contact_email | split: "@" %}
+            user = "{{ contact_email[0] }}";
+            domain = "{{ contact_email[1] }}";
+            document.write('<a href=\"mailto:' + user + '@' + domain + '\"><img src="img/svg/email.svg" /> <span>Email</span></a>');
+          </script>
+        {% endif %}
       </div>
     </div>
   </div>
   <div id="footer-footer">
-    <small>Copyright &copy; 2020, Vorpal Dice Press &emsp;|&emsp; Website designed and coded by BornToDoStuff</small>
+    <small>Copyright &copy; {{ site.time | date: "%Y" }}, {{ site.name }} &emsp;|&emsp; Website designed and coded by BornToDoStuff</small>
   </div>
 </footer>
