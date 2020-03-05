@@ -21,11 +21,11 @@
         {% assign featureDay_end = post.product_feature_end | date: "%j" | plus: 0 %}
 
         {% if currentYear == featureYear and currentDay > featureDay_minus_month and currentYear <= featureYear_end and currentDay <= featureDay_end %}
-          <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="true">
+          <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="true" data-title="{{ post.title }}">
             <a href="{{ post.url }}"><img src="{{ post.product_image }}" /></a>
           </div>
         {% else %}
-        <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="false">
+        <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="false" data-title="{{ post.title }}">
           <a href="{{ post.url }}" data-img="{{ post.product_image }}"><img src="{{ post.product_image }}" /></a>
         </div>
         {% endif %}

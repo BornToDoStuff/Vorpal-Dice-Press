@@ -33,6 +33,7 @@ collections:
   products:
     output: true
     permalink: /product/:title/
+    sort_by: release_date
     title: New Product
     layout: product
   reviews:
