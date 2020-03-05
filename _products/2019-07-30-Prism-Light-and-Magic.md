@@ -3,7 +3,7 @@ title: Prism: Light & Magic
 product_id: 284319
 bundle: false
 bundle_products:
-category: product
+category: Class
 tags:
     - Light
     - Charisma
@@ -17,7 +17,6 @@ tags:
     - Planar
 product_medal: Electrum
 product_audience: Player, Dungeon Master
-product_type: Class
 last_modified_at:
 product_license: Community Content Agreement
 product_feature_start:

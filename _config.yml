@@ -24,9 +24,21 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: product
     values:
-      layout: product
-      permalink: /product/:title/
-      title: New Product
+      layout: blog
+      permalink: /blog/:title/
+      title: Blog Post
+
+collections:
+  products:
+    output: true
+    permalink: /product/:title/
+    title: New Product
+    layout: product
+  reviews:
+    output: true
+    permalink: /review/:title/
+    title: New Review
+    layout: review
 
 
 excerpt_separator: "<!--excerpt-->"
