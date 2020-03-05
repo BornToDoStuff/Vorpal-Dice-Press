@@ -15,32 +15,41 @@ google_analytics:
 # and NOT your User repository (http://yourusername.github.io) then add in the baseurl here, like this: "/repository-name"
 #baseurl: ""
 
-#collections:
-#  type:
-#    output: true
+collections:
+  products:
+    output: true
+    sort_by: release_date
+  reviews:
+    output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
-      type: post
+    values:
+      layout: default
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
     values:
       layout: blog
       permalink: /blog/:title/
       title: Blog Post
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "products"
+    values:
+      layout: product
+      permalink: /product/:title/
+      title: New Product
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "reviews"
+    values:
+      layout: review
+      permalink: /review/:title/
+      title: New Review
 
-collections:
-  products:
-    output: true
-    permalink: /product/:title/
-    sort_by: release_date
-    title: New Product
-    layout: product
-  reviews:
-    output: true
-    permalink: /review/:title/
-    title: New Review
-    layout: review
+
 
 
 excerpt_separator: "<!--excerpt-->"
