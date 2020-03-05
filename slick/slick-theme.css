@@ -203,8 +203,13 @@
     color: black;
 }
 
-
+/**********************/
 /* USER DEFINED STYLES */
+/**********************/
+
+.slider { visibility: hidden; }
+.slider.slick-initialized { visibility: visible; }
+
 .slick-slider > *:first-child > .slick-track{
   width: 100% !important;
   transform: none !important;
