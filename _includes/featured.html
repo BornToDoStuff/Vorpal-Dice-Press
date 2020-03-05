@@ -10,17 +10,14 @@
       <div><a href="#"><img src="img/products/296621.png" /></a></div>
       <div><a href="#"><img src="img/products/296935.png" /></a></div>
 
-      {% assign currentYear = site.time | date: "%Y" %}
-      {% assign currentDay = site.time | date: "%j" | plus: 0 %}
+      {% assign build_date = "now" | date: "%Y-%m-%d" %}
 
       {% for post in site.products %}
-        {% assign featureYear = post.product_feature_start | convert: "date" | date: "%Y" %}
-        {% assign featureDay = post.product_feature_start | convert: "date" | date: "%j" | plus: 0 %}
-        {% assign featureDay_minus_month = post.product_feature_start | convert: "date" | date: "%j" | minus: 30  %}
-        {% assign featureYear_end = post.product_feature_end | convert: "date" | date: "%Y" %}
-        {% assign featureDay_end = post.product_feature_end | convert: "date" | date: "%j" | plus: 0 %}
+        {% assign feature_start = post.product_feature_start | convert: "date" %}
+        {% assign feature_start_minus_30 = feature_start | date: "%s" | minus: 2592000 | date: "%Y-%m-%d" %}
+        {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
 
-        {% if currentYear == featureYear and currentDay > featureDay_minus_month and currentYear <= featureYear_end and currentDay <= featureDay_end %}
+        {% if build_date >= feature_start_minus_30 and build_date <= feature_end %}
           <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="true">
             <a><img src="{{ post.product_image }}" /></a>
           </div>
