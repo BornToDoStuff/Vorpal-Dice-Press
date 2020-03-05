@@ -1,14 +1,14 @@
 ---
-title: "Prism: Light & Magic"
+title: Prism: Light & Magic
 product_id: 284319
 bundle: false
 bundle_products:
-category: Class
+category: product
 tags:
-    - light
-    - charisma
-    - halfcaster
-    - spirit
+    - Light
+    - Charisma
+    - Halfcaster
+    - Spirit
     - Prism
     - Forgotten Realms
     - Eberron
@@ -17,11 +17,11 @@ tags:
     - Planar
 product_medal: Electrum
 product_audience: Player, Dungeon Master
-
+product_type: Class
 last_modified_at:
 product_license: Community Content Agreement
 product_feature_start:
-product_last_featured:
+product_feature_end:
 
 product_image: https://www.dmsguild.com/images/8957/284319.jpg
 publisher_type: Self

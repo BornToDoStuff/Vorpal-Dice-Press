@@ -9,6 +9,27 @@
       <div><a href="#"><img src="img/products/293658.png" /></a></div>
       <div><a href="#"><img src="img/products/296621.png" /></a></div>
       <div><a href="#"><img src="img/products/296935.png" /></a></div>
+
+      {% assign currentYear = site.time | date: "%Y" %}
+      {% assign currentDay = site.time | date: "%j" | plus: 0 %}
+
+      {% for post in site.categories.product %}
+        {% assign featureYear = post.product_feature_start | date: "%Y" %}
+        {% assign featureDay = post.product_feature_start | date: "%j" | plus: 0 %}
+        {% assign featureDay_minus_month = site.time | date: "%j" | minus: 30  %}
+        {% assign featureYear_end = post.product_feature_end | date: "%Y" %}
+        {% assign featureDay_end = post.product_feature_end | date: "%j" | plus: 0 %}
+
+        {% if currentYear == featureYear and currentDay > featureDay_minus_month and currentYear <= featureYear_end and currentDay <= featureDay_end %}
+          <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="true">
+            <a href="{{ post.url }}"><img src="{{ post.product_image }}" /></a>
+          </div>
+        {% else %}
+        <div data-start="{{ post.product_feature_start }}" data-end="{{ post.product_feature_end }}" data-featured="false">
+          <a href="{{ post.url }}"><img src="{{ post.product_image }}" /></a>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

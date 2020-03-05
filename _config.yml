@@ -25,7 +25,7 @@ defaults:
       type: product
     values:
       layout: product
-      #permalink: /item/:title/
+      permalink: /product/:title/
       title: New Product
 
 
