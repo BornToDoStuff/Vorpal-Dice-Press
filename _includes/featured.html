@@ -13,7 +13,7 @@
       {% assign currentYear = site.time | date: "%Y" %}
       {% assign currentDay = site.time | date: "%j" | plus: 0 %}
 
-      {% for product in site.products %}
+      {% for post in site.products %}
         {% assign featureYear = post.product_feature_start | date: "%Y" %}
         {% assign featureDay = post.product_feature_start | date: "%j" | plus: 0 %}
         {% assign featureDay_minus_month = post.product_feature_start | date: "%j" | minus: 30  %}
