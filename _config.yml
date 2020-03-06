@@ -1,8 +1,9 @@
 # Name of your site
 name: Vorpal Dice Press
+logo: /img/svg/VDP.svg
 # Short bio or description
 description: Test site for Vorpal Dice Press
-# your name/username
+# Your name/username
 author: Steve Fidler
 contact_email: vorpaldicepress@gmail.com
 
@@ -21,6 +22,7 @@ collections:
     sort_by: release_date
   reviews:
     output: true
+    sort_by: release_date
 
 defaults:
   - scope:
