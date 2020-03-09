@@ -8,16 +8,16 @@ bundle: false
 bundle_products:
 category: Class
 tags:
-    - Light
-    - Charisma
-    - Halfcaster
-    - Spirit
-    - Prism
-    - Forgotten Realms
-    - Eberron
-    - Setting Agnostic
-    - Fantasy
-    - Planar
+  - Light
+  - Charisma
+  - Halfcaster
+  - Spirit
+  - Prism
+  - Forgotten Realms
+  - Eberron
+  - Setting Agnostic
+  - Fantasy
+  - Planar
 product_medal: Electrum
 product_audience:
   - Player
