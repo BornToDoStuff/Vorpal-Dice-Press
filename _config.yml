@@ -24,7 +24,7 @@ collections:
     sort_by: release_date
   reviews:
     output: true
-    sort_by: release_date
+    sort_by: review_date
 
 defaults:
   - scope:

@@ -1,37 +1,5 @@
 <section id="reviews">
   <div class="width-wrapper">
-    <div class="review">
-      <div class="review-wrapper">
-        <div class="review-image"><a href="#"><img src="img/products/296621.png" /></a></div>
-        <div class="review-content">
-          <a href="#"><h2>Mordenkainen's Fiendish Folio Vol. 1</h2></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisi neque, luctus a malesuada sed, porttitor quis leo. Aliquam ante elit, maximus in eros quis, vestibulum hendrerit nisi. Proin non ante at massa fermentum ullamcorper
-          eu in turpis. Nunc porttitor mi in ligula volutpat congue. Mauris vestibulum elit vel tincidunt fermentum. Aliquam at elit quis arcu pretium pellentesque eu aliquet arcu. Curabitur pulvinar quis nisl id ultricies. Suspendisse pulvinar
-          porta dapibus. Phasellus posuere diam cursus aliquet gravida. Nulla est sapien, laoreet non metus et, molestie dignissim felis. Curabitur laoreet nisi sapien, eu malesuada augue volutpat sed. In mi dui, elementum et quam egestas,
-          vestibulum ornare nulla. Sed turpis sapien, mollis eu massa aliquet, tempor gravida sapien. Aliquam sed tincidunt metus, porttitor dignissim risus. Duis metus arcu, interdum a lacus a, semper ultricies enim. Pellentesque condimentum
-          pellentesque nunc, nec varius dolor placerat ac.</p>
-        </div>
-      </div>
-      <div class="read-more">
-        <div></div>
-        <div><a href="#">Read More...</a></div>
-      </div>
-    </div>
-    <div class="review">
-      <div class="review-wrapper">
-        <div class="review-image"><a href="#"><img src="img/products/296935.png" /></a></div>
-        <div class="review-content">
-          <a href="#"><h2>Living Spellbook</h2></a>
-          <p>Ut id maximus libero, non ornare dui. Aenean eget libero id mi gravida fermentum ac vel nisl. Integer dictum augue ipsum, ut mollis nibh sollicitudin vel. Vestibulum purus ipsum, eleifend eu mi in, aliquam tempus eros. Cras quis nisl
-          ligula. In hac habitasse platea dictumst. Maecenas volutpat sapien euismod fermentum pellentesque. Vivamus nec ex in risus aliquet luctus eget et dui. Suspendisse ac neque quis leo tristique vehicula vitae sit amet erat. Aenean
-          posuere dignissim arcu et vehicula. Integer augue neque, ornare id vulputate tristique, mollis eu urna.</p>
-        </div>
-      </div>
-      <div class="read-more">
-        <div></div>
-        <div><a href="#">Read More...</a></div>
-      </div>
-    </div>
     {% for post in site.reviews limit: site.review_limit %}
       {% if post.product_image_anchor == "center" %}
         {% assign align = "center" %}
@@ -43,8 +11,10 @@
       <div class="review">
         <div class="review-wrapper">
           <div class="review-image"><a style="align-items:{{ align }}" href="{{ post.url }}"><img src="{{ post.review_image }}" /></a></div>
-          <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-          <p> {{ post.content }} </p>
+          <div class="review-content">
+            <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+            <p> {{ post.content }} </p>
+          </div>
         </div>
         <div class="read-more">
           <div></div>
