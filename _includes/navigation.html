@@ -6,10 +6,9 @@
         <span>{{ site.name }}</span>
       </a>
     </div>
-    <!--<div><a href="#">Home</a></div>-->
-    <div><a href="#">Products</a></div>
-    <div><a href="#">Reviews</a></div>
-    <div><a href="#">Blog</a></div>
+    {% for page in site.categories.pages %}
+      <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+    {% endfor %}
   </div>
   <div class="rule infinite"></div>
 </nav>

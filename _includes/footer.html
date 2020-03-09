@@ -32,20 +32,20 @@
       </div>
       <div>
         <h3>Pages</h3>
-          <a href="#">Home</a>
-          <a href="#">Products</a>
-          <a href="#">Reviews</a>
-          <a href="#">Blog</a>
+          <a href="/">Home</a>
+          {% for page in site.categories.pages %}
+            <a href="{{ page.url }}">{{ page.title }}</a>
+          {% endfor %}
       </div>
       <div>
         <h3>Socials</h3>
-        <a href="#"><img src="/img/svg/facebook.svg" /> <span>Facebook</span></a>
-        <a href="#"><img src="/img/svg/twitter.svg" /> <span>Twitter</span></a>
-        {% if site.contact_email contains "@" %}
+        {% if site.facebook %}<a href="https://www.facebook.com/{{ site.facebook }}"><img src="/img/svg/facebook.svg" /> <span>Facebook</span></a>{% endif %}
+        {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}"><img src="/img/svg/twitter.svg" /> <span>Twitter</span></a>{% endif %}
+        {% if site.email and site.email contains "@" %}
+          {% assign email = site.email | split: "@" %}
           <script>
-            {% assign contact_email = site.contact_email | split: "@" %}
-            user = "{{ contact_email[0] }}";
-            domain = "{{ contact_email[1] }}";
+            user = "{{ email[0] }}";
+            domain = "{{ email[1] }}";
             document.write('<a href=\"mailto:' + user + '@' + domain + '\"><img src="/img/svg/email.svg" /> <span>Email</span></a>');
           </script>
         {% endif %}

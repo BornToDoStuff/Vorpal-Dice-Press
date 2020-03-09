@@ -25,8 +25,8 @@
 <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}" />
 <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 150 }}" />
 {% else %}
-<meta name="description" content="{{ site.description }}">
-<meta property="og:description" content="{{ site.description }}" />
+<meta name="description" content="{{ site.description_meta }}">
+<meta property="og:description" content="{{ site.description_meta }}" />
 {% endif %}
 
 {% if page.title %}
@@ -49,5 +49,5 @@
 {% endif %}
 
 <!-- location info -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description_meta }}" href="{{ site.url }}/feed.xml" />
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
