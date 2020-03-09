@@ -6,8 +6,9 @@
         <span>{{ site.name }}</span>
       </a>
     </div>
-    {% for page in site.pages | sort: "order" %}
-      {% if page.public %}<div><a href="{{ page.url }}">{{ page.title }}</a></div>{% endif %}
+    {% assign ordered_pages = site.pages | sort: "order" | where_exp:"item","item.public == true" %}
+    {% for page in ordered_pages %}
+      <div data-order="{{ page.order }}"><a href="{{ page.url }}">{{ page.title }}</a></div>
     {% endfor %}
   </div>
   <div class="rule infinite"></div>

@@ -33,8 +33,9 @@
       <div>
         <h3>Pages</h3>
           <a href="/">Home</a>
-          {% for page in site.pages | sort: "order" %}
-            {% if page.public %}<a href="{{ page.url }}">{{ page.title }}</a>{% endif %}
+          {% assign ordered_pages = site.pages | sort: "order" | where_exp:"item","item.public == true" %}
+          {% for page in ordered_pages %}
+            <a data-order="{{ page.order }}" href="{{ page.url }}">{{ page.title }}</a>
           {% endfor %}
       </div>
       <div>
