@@ -18,36 +18,25 @@ guild_affiliate: 1713687
 # and NOT your User repository (http://yourusername.github.io) then add in the baseurl here, like this: "/repository-name"
 #baseurl: ""
 
-collections:
-  products:
-    output: true
-    sort_by: date
-  reviews:
-    output: true
-    sort_by: date
-
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: default
   - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
+      path: "_posts/blogs/" # an empty string here means all files in the project
     values:
       layout: blog
       permalink: /blog/:title/
       title: Blog Post
   - scope:
-      path: "" # an empty string here means all files in the project
-      type: "products"
+      path: "_posts/products/" # an empty string here means all files in the project
     values:
       layout: product
       permalink: /product/:title/
       title: New Product
   - scope:
-      path: "" # an empty string here means all files in the project
-      type: "reviews"
+      path: "_posts/reviews/" # an empty string here means all files in the project
     values:
       layout: review
       permalink: /review/:title/
