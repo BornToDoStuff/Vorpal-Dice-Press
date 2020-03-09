@@ -3,6 +3,7 @@ title: "Prism: Light & Magic"
 tagline: The Prism is a brand new class for D&D 5th Editione focused on the manipulation of light, energy, and emotions.
 product_id: 284319
 release_date: 2019-07-30
+last_modified_at:
 bundle: false
 bundle_products:
 category: Class
@@ -21,7 +22,6 @@ product_medal: Electrum
 product_audience:
   - Player
   - Dungeon Master
-last_modified_at:
 product_license: Community Content Agreement
 
 # beginning and end of the product feature. This will only work if the site is updated within several weeks of when the feature is supposed to happen. Making a new post counts as updating.
@@ -32,6 +32,7 @@ product_image: https://www.dmsguild.com/images/8957/284319.jpg
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_authors: Steve Fidler
+product_artists:
 product_pagecount: 14
 product_print: false
 # price of the product at each location
