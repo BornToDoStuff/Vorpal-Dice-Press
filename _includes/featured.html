@@ -12,7 +12,7 @@
       <div><a href="#"><img src="img/products/296621.png" /></a></div>
       <div><a href="#"><img src="img/products/296935.png" /></a></div>
 
-      {% for post in site.products %}
+      {% for post in site.categories.products %}
         {% assign feature_start = post.product_feature_start | convert: "date" %}
         {% assign feature_start_minus_30 = feature_start | date: "%s" | minus: 2592000 | date: "%Y-%m-%d" %}
         {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}

@@ -6,7 +6,7 @@ date: 2019-07-30 #release date
 last_modified_at:
 bundle: false
 bundle_products:
-category: Class
+product_type: Class
 tags:
   - Light
   - Charisma
