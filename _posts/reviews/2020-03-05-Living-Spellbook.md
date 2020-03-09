@@ -1,7 +1,7 @@
 ---
 title: Living Spellbook
 last_modified_at:
-category: Spells
+product_type: Spells
 tags:
   - Setting Agnostic
   - Fantasy

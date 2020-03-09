@@ -1,7 +1,7 @@
 ---
 title: "Modenkainen's Fiendish Folio Vol. 1"
 last_modified_at:
-category: Monsters
+product_type: Monsters
 tags:
   - Setting Agnostic
   - Fantasy

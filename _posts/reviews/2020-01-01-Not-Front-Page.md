@@ -1,7 +1,7 @@
 ---
 title: Not Front Page
 last_modified_at:
-category: Class
+product_type: Class
 tags:
   - Setting Agnostic
   - Fantasy
