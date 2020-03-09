@@ -1,5 +1,9 @@
 <footer>
-  <img class="site-logo" src="/img/svg/VDP-solo.svg" />
+  {% if site.logo_simple %}
+    <img class="site-logo" src="{{ site.logo_simple }}" />
+  {% elsif site.logo %}
+    <img class="site-logo" src="{{ site.logo }}" />
+  {% endif %}
   <div class="wave-container">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
       <path fill="#743286" fill-opacity="1"
@@ -27,7 +31,7 @@
       <div>
         <h3>About</h3>
         <span>
-          Suspendisse pulvinar porta dapibus. Phasellus posuere diam cursus aliquet gravida. Nulla est sapien, laoreet non metus et, molestie dignissim felis. Curabitur laoreet nisi sapien, eu malesuada augue volutpat sed.
+          {{ site.description }}
         </span>
       </div>
       <div>

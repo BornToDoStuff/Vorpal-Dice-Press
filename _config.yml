@@ -1,16 +1,17 @@
 # Name of your site
 name: Vorpal Dice Press
 logo: /img/svg/VDP.svg
+logo_simple: /img/svg/VDP-solo.svg
 # description of the site for metadata. Visible in things like google searches and hotlinks. Should be very short.
 description_meta: Test site for Vorpal Dice Press
-# Site description for the footer
-description_footer: Suspendisse pulvinar porta dapibus. Phasellus posuere diam cursus aliquet gravida. Nulla est sapien, laoreet non metus et, molestie dignissim felis. Curabitur laoreet nisi sapien, eu malesuada augue volutpat sed.
+# Site description for the footer, and any other places its displayed
+description: Suspendisse pulvinar porta dapibus. Phasellus posuere diam cursus aliquet gravida. Nulla est sapien, laoreet non metus et, molestie dignissim felis. Curabitur laoreet nisi sapien, eu malesuada augue volutpat sed.
 # Your name/username
 author: Steve Fidler
 
 # socials
 email: vorpaldicepress@gmail.com
-facebook:
+facebook: vorpaldicepress
 twitter: vorpaldicepress
 
 # Your website URL. Used for Sitemap.xml and your RSS feed
