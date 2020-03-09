@@ -35,7 +35,7 @@
     {% for post in site.reviews limit: site.review_limit %}
       {% if post.product_image_anchor == "center" %}
         {% assign align = "center" %}
-      {% elseif post.product_image_anchor == "bottom" %}
+      {% elsif post.product_image_anchor == "bottom" %}
         {% assign align = "flex-end" %}
       {% else %}
         {% assign align = "flex-start" %}
