@@ -1,5 +1,5 @@
 ---
-  title: This blog is cool
+  title: This blog is almost as cool
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisi neque, luctus a malesuada sed, porttitor quis leo. Aliquam ante elit, maximus in eros quis, vestibulum hendrerit nisi. Proin non ante at massa fermentum ullamcorper eu in turpis. Nunc porttitor mi in ligula volutpat congue. Mauris vestibulum elit vel tincidunt fermentum. Aliquam at elit quis arcu pretium pellentesque eu aliquet arcu. Curabitur pulvinar quis nisl id ultricies. Suspendisse pulvinar porta dapibus. Phasellus posuere diam cursus aliquet gravida. Nulla est sapien, laoreet non metus et, molestie dignissim felis. Curabitur laoreet nisi sapien, eu malesuada augue volutpat sed. In mi dui, elementum et quam egestas, vestibulum ornare nulla. Sed turpis sapien, mollis eu massa aliquet, tempor gravida sapien. Aliquam sed tincidunt metus, porttitor dignissim risus. Duis metus arcu, interdum a lacus a, semper ultricies enim. Pellentesque condimentum pellentesque nunc, nec varius dolor placerat ac.
 
