@@ -21,10 +21,10 @@ guild_affiliate: 1713687
 collections:
   products:
     output: true
-    sort_by: release_date
+    sort_by: date
   reviews:
     output: true
-    sort_by: review_date
+    sort_by: date
 
 defaults:
   - scope:

@@ -1,6 +1,6 @@
 ---
 title: Not Front Page
-review_date: 2020-01-01
+date: 2020-01-01 #date of review
 last_modified_at:
 category: Class
 tags:

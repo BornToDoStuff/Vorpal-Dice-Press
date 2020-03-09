@@ -1,6 +1,6 @@
 ---
 title: Modenkainen's Fiendish Folio Vol. 1
-review_date: 2020-03-06
+date: 2020-03-06 #date of review
 last_modified_at:
 category: Monsters
 tags:

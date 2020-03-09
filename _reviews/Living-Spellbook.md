@@ -1,6 +1,6 @@
 ---
 title: Living Spellbook
-review_date: 2020-03-01
+date: 2020-03-01 #date  of review
 last_modified_at:
 category: Spells
 tags:
