@@ -24,21 +24,21 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "_posts/blogs/" # an empty string here means all files in the project
+      path: _posts/blogs
     values:
       layout: blog
       permalink: /blog/:title/
       title: Blog Post
       category: blogs
   - scope:
-      path: "_posts/products/" # an empty string here means all files in the project
+      path: _posts/products
     values:
       layout: product
       permalink: /product/:title/
       title: New Product
       category: products
   - scope:
-      path: "_posts/reviews/" # an empty string here means all files in the project
+      path: _posts/reviews
     values:
       layout: review
       permalink: /review/:title/
