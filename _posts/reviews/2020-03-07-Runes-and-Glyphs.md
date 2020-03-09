@@ -1,6 +1,5 @@
 ---
 title: Runes & Glyphs
-date: 2020-03-07 #date of review
 last_modified_at:
 category: Class
 tags:

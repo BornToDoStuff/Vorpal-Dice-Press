@@ -1,17 +1,15 @@
 ---
-title: Living Spellbook
-date: 2020-03-01 #date  of review
+title: Not Front Page
 last_modified_at:
-category: Spells
+category: Class
 tags:
   - Setting Agnostic
   - Fantasy
 product_audience:
-  - Player
   - Dungeon Master
 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-review_image: /img/products/296935.png
+review_image: /img/products/300725.png
 # possible values: top, middle, bottom
 product_image_anchor: top
 publisher_name: Some Dude
