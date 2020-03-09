@@ -29,18 +29,21 @@ defaults:
       layout: blog
       permalink: /blog/:title/
       title: Blog Post
+      category: blogs
   - scope:
       path: "_posts/products/" # an empty string here means all files in the project
     values:
       layout: product
       permalink: /product/:title/
       title: New Product
+      category: products
   - scope:
       path: "_posts/reviews/" # an empty string here means all files in the project
     values:
       layout: review
       permalink: /review/:title/
       title: New Review
+      category: reviews
       product_image_anchor: top
 
 
