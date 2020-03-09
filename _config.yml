@@ -52,14 +52,15 @@ defaults:
       title: New Review
 
 
-
-
 excerpt_separator: "<!--excerpt-->"
 excerpt_length: 150
 
 permalink: /:title/
 paginate: 10
 paginate_path: "/page/:num/"
+
+#sets the maximum number of blogs
+blog_limit: 1
 
 # The release of Jekyll Now that you're using
 version: v3.7.3
