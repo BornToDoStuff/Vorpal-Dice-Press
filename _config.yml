@@ -26,6 +26,7 @@ guild_affiliate: 1713687
 collections:
   pages:
     output: true
+    sort_by: order
 
 defaults:
   - scope:
