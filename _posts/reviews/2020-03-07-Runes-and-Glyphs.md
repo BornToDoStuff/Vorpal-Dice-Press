@@ -1,5 +1,5 @@
 ---
-title: Runes & Glyphs
+title: "Runes & Glyphs"
 last_modified_at:
 category: Class
 tags:

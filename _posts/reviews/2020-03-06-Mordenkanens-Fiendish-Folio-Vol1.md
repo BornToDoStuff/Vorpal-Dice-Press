@@ -1,5 +1,5 @@
 ---
-title: Modenkainen's Fiendish Folio Vol. 1
+title: "Modenkainen's Fiendish Folio Vol. 1"
 last_modified_at:
 category: Monsters
 tags:
