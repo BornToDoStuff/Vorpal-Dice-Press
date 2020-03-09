@@ -6,7 +6,7 @@
         <span>{{ site.name }}</span>
       </a>
     </div>
-    {% for page in site.categories.pages %}
+    {% for page in site.pages %}
       {% if page.public %}<div><a href="{{ page.url }}">{{ page.title }}</a></div>{% endif %}
     {% endfor %}
   </div>

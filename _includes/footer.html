@@ -33,7 +33,7 @@
       <div>
         <h3>Pages</h3>
           <a href="/">Home</a>
-          {% for page in site.categories.pages %}
+          {% for page in site.pages %}
             {% if page.public %}<a href="{{ page.url }}">{{ page.title }}</a>{% endif %}
           {% endfor %}
       </div>
