@@ -7,7 +7,7 @@
       </a>
     </div>
     {% for page in site.categories.pages %}
-      <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+      {% if page.public %}<div><a href="{{ page.url }}">{{ page.title }}</a></div>{% endif %}
     {% endfor %}
   </div>
   <div class="rule infinite"></div>
