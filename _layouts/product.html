@@ -14,7 +14,7 @@ layout: default
         {% assign links = page.product_links %}
 
         {% for price in prices %}
-          {% assign index = price[0] %}
+          {% assign index = forloop.index0 %}
           <button onclick="window.location.href = '{{ links[index][1] }}';" data-sale="{{prices_sale[index][1]}}">
             {{ price[0] }} {{ price[1] }}
             <div class="wave-button">
