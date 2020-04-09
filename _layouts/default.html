@@ -30,5 +30,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
+
+  <script type="text/javascript">
+      $('.currency-usd').each(function() {
+          var monetary_value = $(this).text();
+          var i = new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD'
+          }).format(monetary_value);
+          $(this).text(i);
+      });
+  </script>
 </body>
 </html>
