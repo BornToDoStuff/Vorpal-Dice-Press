@@ -38,7 +38,7 @@ product_print: false
 product_prices:
     DMsGuild: 4.95
     DTRPG: 4.95
-    Itch.io: 0.00
+    Itch.io: 10.00
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
     DMsGuild: 3.50

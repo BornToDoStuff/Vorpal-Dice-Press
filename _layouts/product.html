@@ -9,14 +9,10 @@ layout: default
       <br />
       <br />
       <div id="buy_buttons">
-        {% assign prices = page.product_prices %}
-        {% assign prices_sale = page.product_sales %}
-        {% assign links = page.product_links %}
-
-        {% for price in prices %}
-          {% assign index = forloop.index0 %}
-          <button onclick="window.location.href = '{{ links[index][1] }}';" data-sale="{{prices_sale[index][1]}}">
-            {{ price[0] }} {{ price[1] }}
+        {% for price in page.product_prices %}
+          {% assign index = price[0] %}
+          <button onclick="window.location.href = '{{ page.product_links[index] }}';" data-sale="{{ page.product_sales[index] }}">
+            {{ price[0] }} ${{ price[1] }}
             <div class="wave-button">
               {% include waves.html %}
             </div>
