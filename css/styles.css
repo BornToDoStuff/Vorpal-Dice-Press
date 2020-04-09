@@ -603,17 +603,17 @@ footer:hover > .site-logo {
   max-height: 350px;
   font-size: 2.6em;
 }
-#product_description {
+#product {
   display: flex;
   flex-direction: row;
 }
-#product_description section {
+#product section {
   flex: 1 1;
   margin: 15px;
  }
-#product_description section:first-child { flex: 0 0; }
+#product section:first-child { flex: 0 0; }
 
-#product_description h1 {
+#product h1 {
   margin-block-start: 0;
   line-height: 0.75em;
 }
@@ -621,7 +621,14 @@ footer:hover > .site-logo {
   display: block;
 }
 
-#product_description button {
+#product_description {
+  overflow: hidden;
+}
+#product_description img {
+  max-width:100% !important;
+}
+
+#product button {
   width: 100%;
   line-height: 3em;
   margin-bottom: 8px;
@@ -638,7 +645,7 @@ footer:hover > .site-logo {
   border-top: 0px;
   border-right: 0px;
 }
-  #product_description button:before {
+  #product button:before {
     display: block;
     content: "";
     background: #7f3f7c;
@@ -650,6 +657,14 @@ footer:hover > .site-logo {
     z-index: -10;
   }
 
+
+#product button:nth-child(2) .wave-button > svg{
+  animation-delay: -13s;
+}
+#product button:nth-child(3) .wave-button > svg{
+  animation-delay: -25s;
+}
+
 .wave-button {
   height: 100%;
   width: 100%;
@@ -658,12 +673,6 @@ footer:hover > .site-logo {
   left: 0px;
   z-index: -1;
   transform: rotate(180deg);
-}
-#product_description button:nth-child(2) .wave-button > svg{
-  animation-delay: -13s;
-}
-#product_description button:nth-child(3) .wave-button > svg{
-  animation-delay: -25s;
 }
 
 .wave-button svg {

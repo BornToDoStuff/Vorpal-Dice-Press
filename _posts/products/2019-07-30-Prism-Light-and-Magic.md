@@ -53,7 +53,7 @@ product_links:
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 
-<p><img src="https://i.imgur.com/k0qze0i.png" style="width: 550px;"></p>
+<p><img src="https://i.imgur.com/k0qze0i.png"></p>
 <p></p>
 <p></p>
 <h3><a href="https://www.dmsguild.com/product/285590/?affiliate_rem=1713687">Click Here to get the Fantasy Grounds version of the Prism class!</a></h3>
@@ -74,9 +74,18 @@ product_links:
 <p style="padding-left: 30px; padding-right: 30px;"><em><em>[...] I've seen the prism. I hate the idea of adding more and more classes to the game when the archetype system exists. But if a player asked me to use the prism, I'd say yes. I see no
       reason it should be a single archetype so it works as a full class. It is (to my eye) balanced as heck, it's thematic (which is important in D&amp;D, if your supplement can't add to the narrative then it falls flat to me), and it's well
       composed. Nothing about it feels rushed. It shows that it's a labor of love, time, and effort. It's good content.</em></em> - DMsGuild Author <a href="https://www.dmsguild.com/browse.php?author=Bryan%20Holmes">Bryan Holmes</a></p>
-<p style="padding-left: 30px; padding-right: 30px;"><em>Mechanically? It's pretty [bleep] awesome. Thematically? It's flavorful as hell, and what it does is very clear. </em>- ACOG_Muffin @ Discord of Many Things<br> <br><em> A unique concept
-    executed well. Prism introduces a new light-weight magic system with a lot of potential for expressive characters and new stories.</em> - Izzy @ Discord of Many Things<br> <br><em> It feels good, it reads well, I was jazzed about the
-    influence progression and and core mechanics for projections and barriers.</em> - twitter user @itsjoshnow</p>
+<br>
+<br>
+<p style="padding-left: 30px; padding-right: 30px;"><em>Mechanically? It's pretty [bleep] awesome. Thematically? It's flavorful as hell, and what it does is very clear. </em>- ACOG_Muffin @ Discord of Many Things
+  <br>
+  <br>
+  <em> A unique concept
+      executed well. Prism introduces a new light-weight magic system with a lot of potential for expressive characters and new stories.</em> - Izzy @ Discord of Many Things
+  <br>
+  <br>
+  <em> It feels good, it reads well, I was jazzed about the
+  influence progression and and core mechanics for projections and barriers.</em> - twitter user @itsjoshnow
+</p>
 <p></p>
 <hr>
 <center>
