@@ -12,7 +12,7 @@ layout: default
         {% for price in page.product_prices %}
           {% assign index = price[0] %}
           <button onclick="window.location.href = '{{ page.product_links[index] }}';" data-sale="{{ page.product_sales[index] }}">
-            {{ price[0] }} ${{ price[1] }}
+            {{ price[0] }} <span class="currency-usd">{{ price[1] }}</span>
             <div class="wave-button">
               {% include waves.html %}
             </div>
@@ -32,3 +32,13 @@ layout: default
     </section>
   </div>
 </div>
+<script type="text/javascript">
+    $('.currency-usd').each(function() {
+        var monetary_value = $(this).text();
+        var i = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        }).format(monetary_value);
+        $(this).text(i);
+    });
+</script>
