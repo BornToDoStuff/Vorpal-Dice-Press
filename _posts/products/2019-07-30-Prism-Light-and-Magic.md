@@ -37,18 +37,18 @@ product_print: false
 # price of the product at each location
 product_prices:
     DMsGuild: 4.95
-    DTRPG:
-    Itch.io:
+    DTRPG: 4.95
+    Itch.io: 0.00
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
-    DMsGuild:
+    DMsGuild: 3.50
     DTRPG:
     Itch.io:
 # direct link to the product by location
 product_links:
     DMsGuild: https://www.dmsguild.com/product/284319/Prism-Light--Magic?affiliate_id=1713687
-    DTRPG:
-    Itch.io:
+    DTRPG: https://google.com
+    Itch.io: https://google.com
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---

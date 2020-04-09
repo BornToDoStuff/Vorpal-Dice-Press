@@ -2,9 +2,37 @@
 layout: default
 ---
 <div class="width-wrapper">
-  <br />
-  <input type="hidden" value="product" />
-  <h1>{{ page.title }}</h1>
+  <div id="product_description">
+    <section>
+      <img id="product_image" src="{{ page.product_image }}" />
 
-  {{content}}
+      <br />
+      <br />
+      <div id="buy_buttons">
+        {% assign prices = page.product_prices %}
+        {% assign prices_sale = page.product_sales %}
+        {% assign links = page.product_links %}
+
+        {% for price in prices %}
+          {% assign index = price[0] %}
+          <button onclick="window.location.href = '{{ links[index][1] }}';" data-sale="{{prices_sale[index][1]}}">
+            {{ price[0] }} {{ price[1] }}
+            <div class="wave-button">
+              {% include waves.html %}
+            </div>
+          </button>
+        {% endfor %}
+
+      </div>
+    </section>
+    <section>
+      <h1 class="compact">{{ page.title }}</h1>
+      <p>{{ page.publisher_name }}</p>
+      <br />
+      <div class="rule"></div>
+      <br />
+
+      {{content}}
+    </section>
+  </div>
 </div>
