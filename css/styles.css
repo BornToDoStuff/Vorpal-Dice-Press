@@ -503,7 +503,7 @@ footer:hover > .site-logo {
 /***** PRODUCTS *****/
 /*****          *****/
 
-#product_image {
+#product_image > img {
   display: inline-block;
   max-width: 100%;
   box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.4);
@@ -589,11 +589,11 @@ footer:hover > .site-logo {
     top: 0px;
   }
 
-#product button:nth-child(2) .wave-button > svg{
-  animation-delay: -13s;
+#product button:nth-child(3n+2) .wave-button > svg{
+  animation-delay: -13s !important;
 }
-#product button:nth-child(3) .wave-button > svg{
-  animation-delay: -25s;
+#product button:nth-child(3n+3) .wave-button > svg{
+  animation-delay: -25s !important;
 }
 
 .tag {
