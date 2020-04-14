@@ -30,8 +30,14 @@ product_feature_end: 2020-05-01
 product_image: https://www.dmsguild.com/images/8957/284319.jpg
 publisher_type: Self
 publisher_name: Vorpal Dice Press
-product_authors: Steve Fidler
-product_artists:
+product_contributors:
+  Authors:
+    - Steve Fidler
+    - His cat
+  Artists:
+    - Anyone you want
+  Any Role Name:
+    - Test
 product_pagecount: 14
 product_print: false
 # price of the product at each location

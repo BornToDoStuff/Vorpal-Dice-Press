@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
+
 <div class="width-wrapper">
   <div id="product">
+    <section id="product_title">
+      <h1 class="compact">{{ page.title }}</h1>
+      <p class="subtle" style="font-weight: bold">{{ page.publisher_name }}</p>
+      <hr />
+    </section>
     <section>
       <img id="product_image" src="{{ page.product_image }}" />
 
-      <br />
-      <br />
-      <div id="buy_buttons">
         {% for price in page.product_prices %}
           {% assign index = price[0] %}
           <button onclick="window.location.href = '{{ page.product_links[index] }}';" data-sale="{{ page.product_sales[index] }}">
@@ -19,16 +22,12 @@ layout: default
           </button>
         {% endfor %}
 
-      </div>
     </section>
     <section id="product_description">
-      <h1 class="compact">{{ page.title }}</h1>
-      <p>{{ page.publisher_name }}</p>
-      <br />
-      <div class="rule"></div>
-      <br />
-
       {{content}}
+    </section>
+    <section>
+      This is where all the credit stuff goes
     </section>
   </div>
 </div>

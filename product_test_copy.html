@@ -39,17 +39,20 @@
     </nav>
 
     <main>
-      <section>
+      <section id="product">
+
+
         <div class="width-wrapper">
           <div id="product">
-            <section id="product_title">
-              <h1 class="compact">Prism: Light &amp; Magic</h1>
-              <p class="subtle" style="font-weight: bold">Vorpal Dice Press</p>
-              <hr />
-            </section>
             <section>
+              <div class="hide desktop">
+                <h1 class="compact">Prism: Light &amp; Magic</h1>
+                <p class="subtle" style="font-weight: bold">Vorpal Dice Press</p>
+                <hr />
+              </div>
+              <section id="product_details">
                 <img id="product_image" src="https://www.dmsguild.com/images/8957/284319.jpg">
-                  
+
                 <button onclick="window.location.href = 'https://www.dmsguild.com/product/284319/Prism-Light--Magic?affiliate_id=1713687';" data-sale="3.5">
                   DMsGuild <span class="currency-usd">$4.95</span>
                   <div class="wave-button">
@@ -128,8 +131,15 @@
 
                   </div>
                 </button>
+              </section>
+              <hr />
             </section>
             <section id="product_description">
+              <div class="hide mobile tablet">
+                <h1 class="compact">Prism: Light &amp; Magic</h1>
+                <p class="subtle" style="font-weight: bold">Vorpal Dice Press</p>
+                <hr />
+              </div>
 
               <p><img src="https://i.imgur.com/k0qze0i.png"></p>
               <p></p>
@@ -205,9 +215,6 @@
               </center>
 
             </section>
-            <section>
-              This is where all the credit stuff goes
-            </section>
           </div>
         </div>
       </section>
@@ -273,16 +280,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-  <script>
-    var productWrapper = $('#product');
 
-    $(window).resize(function() {
-      var product_description = $('#product_description');
-      var product_title = $('#product_title');
-
-      productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
-    });
-  </script>
 
 </body>
 </html>

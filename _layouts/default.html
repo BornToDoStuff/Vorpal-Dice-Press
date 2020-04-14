@@ -31,15 +31,27 @@
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  <script type="text/javascript">
-      $('.currency-usd').each(function() {
-          var monetary_value = $(this).text();
-          var i = new Intl.NumberFormat('en-US', {
-              style: 'currency',
-              currency: 'USD'
-          }).format(monetary_value);
-          $(this).text(i);
+  {% if page.category = products %}
+    <script type="text/javascript">
+        $('.currency-usd').each(function() {
+            var monetary_value = $(this).text();
+            var i = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            }).format(monetary_value);
+            $(this).text(i);
+        });
+    </script>
+    <script type="text/javascript">
+      var productWrapper = $('#product');
+
+      $(window).resize(function() {
+        var product_description = $('#product_description');
+        var product_title = $('#product_title');
+
+        productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
       });
-  </script>
+    </script>
+  {% endif %}
 </body>
 </html>
