@@ -512,7 +512,7 @@ footer:hover > .site-logo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
-  height: 5000px;
+  margin-top: 10px;
 }
 #product section {
   width:48%;
@@ -594,6 +594,14 @@ footer:hover > .site-logo {
 }
 #product button:nth-child(3) .wave-button > svg{
   animation-delay: -25s;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid #4f115f;
+  border-radius: 3px;
+  padding: 4px 6px;
+  margin: 4px 1px;
 }
 
 .wave-button {

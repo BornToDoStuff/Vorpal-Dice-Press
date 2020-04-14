@@ -29,7 +29,7 @@ layout: default
     </section>
     <section>
       {% for contributor_type in page.product_contributors %}
-        <p><span class="subtle" style="font-weight: bold">{{ contributor_type[0] }}:</span> {{ contributor_type[1] | array_to_sentence_string: ", and" }}</p>
+        <p><span class="subtle" style="font-weight: bold">{{ contributor_type[0] }}:</span> {{ contributor_type[1] | array_to_sentence_string }}</p>
       {% endfor %}
       <hr />
       <div>
