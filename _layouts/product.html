@@ -11,7 +11,8 @@ layout: default
     </section>
     <section>
       <img id="product_image" src="{{ page.product_image }}" />
-
+      <br />
+      <br />
         {% for price in page.product_prices %}
           {% assign index = price[0] %}
           <button onclick="window.location.href = '{{ page.product_links[index] }}';" data-sale="{{ page.product_sales[index] }}">
@@ -27,7 +28,15 @@ layout: default
       {{content}}
     </section>
     <section>
-      This is where all the credit stuff goes
+      {% for contributor_type in page.product_contributors %}
+      <p class="subtle" style="font-weight: bold">{{ contributor_type }}</p>
+      <ul>
+        {% for contributor in page.product_contributors[contributor_type] %}
+        <li>{{ contributor }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+
     </section>
   </div>
 </div>

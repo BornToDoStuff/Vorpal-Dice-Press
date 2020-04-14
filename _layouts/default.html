@@ -44,10 +44,13 @@
     </script>
     <script type="text/javascript">
       var productWrapper = $('#product');
+      var product_description = $('#product_description');
+      var product_title = $('#product_title');
+      productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
 
       $(window).resize(function() {
-        var product_description = $('#product_description');
-        var product_title = $('#product_title');
+        product_description = $('#product_description');
+        product_title = $('#product_title');
 
         productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
       });

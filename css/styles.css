@@ -499,158 +499,6 @@ footer:hover > .site-logo {
   background: repeating-linear-gradient(90deg,rgba(110,187,66,1),rgba(222,187,38,1) 16.5%,rgba(115,48,136,1) 33%,rgba(110,187,66,1) 49.5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/*****            *****/
-/***** ANIMATIONS *****/
-/*****            *****/
-
-@keyframes vorpalShinePercent {
-  0% {transform:translateX(0%);}
-	100% {transform:translateX(-50%);}
-}
-
-@keyframes wave {
-  0% {
-    transform: scale(1,1) translateX(-16%);
-  }
-  12.5% {
-    transform: scale(1,0.7) translateX(-24%);
-  }
-  25% {
-    transform: scale(1,0.9) translateX(-32%);
-  }
-  37.5% {
-    transform: scale(1,1.2) translateX(-24%);
-  }
-  50% {
-    transform: scale(1,1.1) translateX(-16%);
-  }
-  62.5% {
-    transform: scale(1,0.9) translateX(-8%);
-  }
-  75% {
-    transform: scale(1,0.8) translateX(-0vw);
-  }
-  87.5% {
-    transform: scale(1,1.1) translateX(-8%);
-  }
-  100% {
-    transform: scale(1,1) translateX(-16%);
-  }
-}
-
-@keyframes buttonPress {
-  0% {
-    border-bottom: 4px solid #4f115f;
-    border-left: 2px solid #4f115f;
-    padding-left: 6px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-    filter: brightness(1);
-  }
-	100% {
-    border-bottom: 2px solid #4f115f;
-    border-left: 1px solid #4f115f;
-    padding-left: 7px;
-    margin-top: 2px;
-    margin-bottom: 8px;
-    filter: brightness(1.15);
-  }
-}
-
-/*****         *****/
-/***** QUERIES *****/
-/*****         *****/
-
-/*@media (max-width: 600px and max-width: 600px) { */
-
-@media (min-width: 1025px) {
-  .hide.desktop {
-    display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  #reviews .review {
-    flex: 1 1 500px;
-  }
-  .review-image {
-    flex: 1 0 275px;
-    min-height: 150px;
-  }
-  .review-content{ flex: 1 1 275px; } /* this should have the same flex-basis as review-image */
-  .read-more div{ flex: 1 1 260px; } /* and this should be the same as image/content minus the margin */
-  #footer-content > .width-wrapper {
-    flex-direction: column-reverse;
-  }
-  #footer-content > .width-wrapper > div {
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 20px;
-  }
-  #footer-content > .width-wrapper > div:first-child { border: none; }
-  /* #footer-content > .width-wrapper > div:last-child {
-    flex-direction: row;
-  } */
-
-  /* #product section:nth-child(1) {
-    flex: 0 0 100% !important;
-  } */
-
-  .hide.tablet {
-    display: none;
-  }
-}
-
-
-@media (max-width: 768px) {
-  #features >.width-wrapper {
-    padding: 0px 40px;
-  }
-  .width-wrapper {
-    padding: 0px 25px;
-  }
-
-  .slick-slide {
-    max-width: 157px;
-  }
-
-  .hide.mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  #features > .width-wrapper {
-    padding: 0px 20px;
-  }
-  .width-wrapper {
-    padding: 0px 5px;
-  }
-
-  .slick-slide {
-    max-width: 130px;
-  }
-  .slick-prev {
-      left: -15px;
-  }
-  .slick-next {
-      right: -15px;
-  }
-  .slick-prev, .slick-next {
-    flex: 0 0 40px;
-    width: 40px;
-  }
-  .slick-arrow ~ .slick-list {
-    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
-    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
-    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
-  }
-
-  .hide.mobile {
-    display: none;
-  }
-}
-
 /*****          *****/
 /***** PRODUCTS *****/
 /*****          *****/
@@ -785,4 +633,175 @@ footer:hover > .site-logo {
 }
 .wave-button > svg:nth-child(4) {
   animation: wave 41s ease-in-out 0s infinite reverse;
+}
+
+
+
+/*****            *****/
+/***** ANIMATIONS *****/
+/*****            *****/
+
+@keyframes vorpalShinePercent {
+  0% {transform:translateX(0%);}
+	100% {transform:translateX(-50%);}
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1,1) translateX(-16%);
+  }
+  12.5% {
+    transform: scale(1,0.7) translateX(-24%);
+  }
+  25% {
+    transform: scale(1,0.9) translateX(-32%);
+  }
+  37.5% {
+    transform: scale(1,1.2) translateX(-24%);
+  }
+  50% {
+    transform: scale(1,1.1) translateX(-16%);
+  }
+  62.5% {
+    transform: scale(1,0.9) translateX(-8%);
+  }
+  75% {
+    transform: scale(1,0.8) translateX(-0vw);
+  }
+  87.5% {
+    transform: scale(1,1.1) translateX(-8%);
+  }
+  100% {
+    transform: scale(1,1) translateX(-16%);
+  }
+}
+
+@keyframes buttonPress {
+  0% {
+    border-bottom: 4px solid #4f115f;
+    border-left: 2px solid #4f115f;
+    padding-left: 6px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    filter: brightness(1);
+  }
+	100% {
+    border-bottom: 2px solid #4f115f;
+    border-left: 1px solid #4f115f;
+    padding-left: 7px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    filter: brightness(1.15);
+  }
+}
+
+/*****         *****/
+/***** QUERIES *****/
+/*****         *****/
+
+/*@media (max-width: 600px and max-width: 600px) { */
+
+@media (min-width: 1025px) {
+  .hide.desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #reviews .review {
+    flex: 1 1 500px;
+  }
+  .review-image {
+    flex: 1 0 275px;
+    min-height: 150px;
+  }
+  .review-content{ flex: 1 1 275px; } /* this should have the same flex-basis as review-image */
+  .read-more div{ flex: 1 1 260px; } /* and this should be the same as image/content minus the margin */
+  #footer-content > .width-wrapper {
+    flex-direction: column-reverse;
+  }
+  #footer-content > .width-wrapper > div {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+  }
+  #footer-content > .width-wrapper > div:first-child { border: none; }
+
+  #product section:nth-child(2n+1) {
+    order: 1;
+    width: 75%;
+    width: calc(100% - 275px);
+  }
+  #product section:nth-child(2n) {
+    order: 2;
+    width: 20%;
+    width: 235px;
+  }
+
+  .hide.tablet {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #features >.width-wrapper {
+    padding: 0px 40px;
+  }
+  .width-wrapper {
+    padding: 0px 25px;
+  }
+
+  .slick-slide {
+    max-width: 157px;
+  }
+
+  .hide.mobile {
+    display: none;
+  }
+
+  #product {
+    flex-wrap: wrap;
+    height: initial !important;
+  }
+  #product section:nth-child(2n+1) {
+    order: initial;
+    width: 100%;
+  }
+  #product section:nth-child(2n) {
+    order: initial;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  #features > .width-wrapper {
+    padding: 0px 20px;
+  }
+  .width-wrapper {
+    padding: 0px 5px;
+  }
+
+  .slick-slide {
+    max-width: 130px;
+  }
+  .slick-prev {
+      left: -15px;
+  }
+  .slick-next {
+      right: -15px;
+  }
+  .slick-prev, .slick-next {
+    flex: 0 0 40px;
+    width: 40px;
+  }
+  .slick-arrow ~ .slick-list {
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
+  }
+
+  .hide.mobile {
+    display: none;
+  }
 }
