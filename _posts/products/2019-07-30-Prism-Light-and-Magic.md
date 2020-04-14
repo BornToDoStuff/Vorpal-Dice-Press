@@ -33,6 +33,7 @@ publisher_name: Vorpal Dice Press
 product_contributors:
   Authors:
     - Steve Fidler
+    - His inner dialog
     - His cat
   Artists:
     - Anyone you want

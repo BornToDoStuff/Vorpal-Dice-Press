@@ -22,17 +22,21 @@ layout: default
             </div>
           </button>
         {% endfor %}
-
+        <hr />
     </section>
     <section id="product_description">
       {{content}}
     </section>
     <section>
       {% for contributor_type in page.product_contributors %}
-      <span class="subtle" style="font-weight: bold">{{ contributor_type[0] }}:</span> {{ contributor_type[1] | array_to_sentence_string }}
-      <br />
+        <p><span class="subtle" style="font-weight: bold">{{ contributor_type[0] }}:</span> {{ contributor_type[1] | array_to_sentence_string: ", and" }}</p>
       {% endfor %}
-
+      <hr />
+      <div>
+        {% for tag in page.tags %}
+          <div class="tag">{{tag}}</div>
+        {% endfor %}
+      </div>
     </section>
   </div>
 </div>
