@@ -25,14 +25,13 @@
     <main>
       {{ content }}
     </main>
-    {{page.category}}
     {% include footer.html %}
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  {% if page.category == products %}
+  {% if page.category == "products" %}
     <script type="text/javascript">
         $('.currency-usd').each(function() {
             var monetary_value = $(this).text();
