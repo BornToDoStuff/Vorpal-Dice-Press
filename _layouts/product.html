@@ -9,8 +9,8 @@ layout: default
       <p class="subtle" style="font-weight: bold">{{ page.publisher_name }}</p>
       <hr />
     </section>
-    <section>
-      <img id="product_image" src="{{ page.product_image }}" />
+    <section id="product_image">
+      <img src="{{ page.product_image }}" />
       <br />
       <br />
         {% for price in page.product_prices %}
