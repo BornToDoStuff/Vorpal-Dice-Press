@@ -29,9 +29,9 @@ layout: default
     </section>
     <section>
       {% for contributor_type in page.product_contributors %}
-      <p class="subtle" style="font-weight: bold">{{ contributor_type }}</p>
+      <p class="subtle" style="font-weight: bold">{{ contributor_type[0] }}</p>
       <ul>
-        {% for contributor in page.product_contributors[contributor_type] %}
+        {% for contributor in contributor_type[1] %}
         <li>{{ contributor }}</li>
         {% endfor %}
       </ul>
