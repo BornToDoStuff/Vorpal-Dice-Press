@@ -590,10 +590,10 @@ footer:hover > .site-logo {
   }
 
 #product button:nth-child(3n+2) .wave-button > svg{
-  animation-delay: -13s !important;
+  animation-delay: -13s;
 }
 #product button:nth-child(3n+3) .wave-button > svg{
-  animation-delay: -25s !important;
+  animation-delay: -25s;
 }
 
 .tag {
