@@ -645,6 +645,21 @@ footer:hover > .site-logo {
 
 
 
+#products_all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 0 0 300px;
+}
+.product img {
+  max-width: 300px;
+}
+
+
+
 /*****            *****/
 /***** ANIMATIONS *****/
 /*****            *****/

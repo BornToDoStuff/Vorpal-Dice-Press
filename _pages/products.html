@@ -4,11 +4,13 @@ public: true
 order: 1
 ---
 <div class="width-wrapper">
-  <h1>{{ page.title }}</h1>
-
-  {% for post in site.categories.products %}
-      <div data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
+  <input type="search" placeholder="This will be the search when it works"  />
+  <section id="products_all">
+    {% for post in site.categories.products %}
+      <div class="product" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
         <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.title }}" /></a>
+        <p>{{ post.tagline }}</p>
       </div>
-  {% endfor %}
+    {% endfor %}
+  </section>
 </div>
