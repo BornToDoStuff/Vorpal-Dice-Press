@@ -4,7 +4,9 @@ public: true
 order: 1
 ---
 <div class="width-wrapper">
-  <input type="search" placeholder="This will be the search when it works"  />
+  <section>
+    <input type="search" placeholder="This will be the search when it works"  />
+  </section>
   <section id="products_all">
     {% for post in site.categories.products %}
       <div class="product" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
