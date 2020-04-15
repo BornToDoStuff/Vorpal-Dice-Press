@@ -19,7 +19,7 @@
 
         {% if build_date >= feature_start_minus_30 and build_date <= feature_end %}
           <div data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
-            <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.title }}" /></a>
+            <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.tagline }}" /></a>
           </div>
         {% endif %}
       {% endfor %}

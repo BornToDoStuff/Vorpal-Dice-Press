@@ -580,7 +580,7 @@ footer:hover > .site-logo {
     transition: top 0.8s ease 0.18s;
   }
   #product button:hover,#product button:active {
-    animation: buttonPress 0.2s ease 0.05s 1 normal both
+    -webkit-animation: buttonPress 0.2s ease 0.05s 1 normal both; /* this looks like poop on some browsers so restrict it to webkit for now*/
   }
   #product button:hover .wave-button {
     bottom: 100%;

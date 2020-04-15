@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="width-wrapper">
-  <div id="product">
+  <section id="product">
     <section id="product_title">
       <h1 class="compact">{{ page.title }}</h1>
       <p class="subtle" style="font-weight: bold">{{ page.publisher_name }}</p>
@@ -38,5 +38,41 @@ layout: default
         {% endfor %}
       </div>
     </section>
-  </div>
+  </section>
+  <section id="related_products">
+    <div class="width-wrapper">
+      <div class="slider">
+        {% assign maxRelated = 10 %}
+        {% assign minCommonTags =  2 %}
+        {% assign maxRelatedCounter = 0 %}
+
+        {% for post in site.posts %}
+          {% if post.url != page.url %}
+
+            {% assign sameTagCount = 0 %}
+            {% assign commonTags = '' %}
+
+            {% for tag in post.tags %}
+                {% if page.tags contains tag %}
+                  {% assign sameTagCount = sameTagCount | plus: 1 %}
+                  {% assign commonTags = commonTags | push: tag %}
+                {% endif %}
+            {% endfor %}
+
+
+            {% if sameTagCount >= minCommonTags %}
+              <div>
+                <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.tagline }}" /></a>
+              </div>
+              {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+              {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </div>
