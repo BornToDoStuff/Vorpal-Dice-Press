@@ -50,7 +50,7 @@ layout: default
       <h2>Related Products</h2>
       <div class="slider">
         {% assign maxRelated = 10 %}
-        {% assign minCommonTags =  2 %}
+        {% assign minCommonTags =  3 %}
         {% assign maxRelatedCounter = 0 %}
 
         {% for post in site.posts %}
@@ -69,7 +69,7 @@ layout: default
 
             {% if sameTagCount >= minCommonTags %}
               <div>
-                <a href="{{ post.url }}" data-tags="{{ commonTags }}"><img src="{{ post.product_image }}" alt="{{ post.tagline }}" /></a>
+                <a href="{{ post.url }}" data-tags="{{ commonTags | split: ',' }}"><img src="{{ post.product_image }}" alt="{{ post.tagline }}" /></a>
               </div>
               {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
               {% if maxRelatedCounter >= maxRelated %}
