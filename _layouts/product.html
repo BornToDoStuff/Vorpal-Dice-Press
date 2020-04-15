@@ -57,7 +57,7 @@ layout: default
           {% if post.url != page.url %}
 
             {% assign sameTagCount = 0 %}
-            {% assign commonTags = '' %}
+            {% assign commonTags = "" | split: ',' %}
 
             {% for tag in post.tags %}
                 {% if page.tags contains tag %}
