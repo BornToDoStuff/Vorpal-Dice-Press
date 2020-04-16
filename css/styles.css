@@ -660,7 +660,7 @@ footer:hover > .site-logo {
 }
 
 .product {
-  flex: 0 0 25%;
+  flex: 0 0 23%;
   margin: 1%;
   background: white;
   box-shadow: 1px 2px 8px -2px rgba(35,4,43,.4);
@@ -803,8 +803,8 @@ input[type="search"]:focus {
     width: 235px;
   }
 
-  .hide.tablet {
-    display: none;
+  .product {
+    flex: 0 0 31%;
   }
 }
 
@@ -837,6 +837,10 @@ input[type="search"]:focus {
     order: initial;
     width: 100%;
   }
+
+  .product {
+    flex: 0 0 48%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -866,7 +870,8 @@ input[type="search"]:focus {
     mask-image: linear-gradient(90deg, rgba(0,0,0,0) 5px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) calc(100% - 25px), rgba(0,0,0,0) calc(100% - 5px));
   }
 
-  .hide.mobile {
-    display: none;
+  .product {
+    flex: 0 0 100%;
+    margin: 10px 0px;
   }
 }
