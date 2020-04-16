@@ -571,6 +571,7 @@ footer:hover > .site-logo {
   border-top: 0px;
   border-right: 0px;
   cursor: pointer;
+  transition: all 0.1s ease 0s;
 }
   #product button:before {
     display: block;
@@ -582,10 +583,24 @@ footer:hover > .site-logo {
     left: 0px;
     right: 0px;
     z-index: -10;
-    transition: top 0.8s ease 0.18s;
   }
+  #product button:before, .wave-button {
+    transition: bottom 0.5s ease 0.05s, top 0.5s ease 0.05s;
+  }
+  #product button:hover:before, #product button:active:before, #product button:hover .wave-button, #product button:active .wave-button {
+    transition: bottom 0.8s ease 0.18s, top 0.3s ease 0.05s;
+  }
+
   #product button:hover,#product button:active {
-    -webkit-animation: buttonPress 0.2s ease 0.05s 1 normal both; /* this looks like poop on some browsers so restrict it to webkit for now*/
+    /* animation: buttonPress 0.2s ease 0.05s 1 normal both paused; */
+    transition: all 0.2s ease 0.05s;
+
+    border-bottom: 2px solid #4f115f;
+    border-left: 1px solid #4f115f;
+    padding-left: 7px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    filter: brightness(1.15);
   }
   #product button:hover .wave-button {
     bottom: 100%;
@@ -617,7 +632,6 @@ footer:hover > .site-logo {
   left: 0px;
   z-index: -1;
   transform: rotate(180deg);
-  transition: bottom 0.8s ease 0.18s;
 }
 
 .wave-button svg {
