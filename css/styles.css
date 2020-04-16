@@ -652,7 +652,7 @@ footer:hover > .site-logo {
 
 
 
-#products_all {
+#products_all > .width_wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
