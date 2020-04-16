@@ -556,8 +556,9 @@ footer:hover > .site-logo {
 
 #product button {
   width: 100%;
-  line-height: 3em;
-  margin-bottom: 8px;
+  height: 3em;
+  margin-bottom: 12px;
+  margin-left:2px;
   background: transparent;
   /* background: #7f3f7c; */
   color: white;
@@ -566,12 +567,30 @@ footer:hover > .site-logo {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  border: 4px solid #4f115f;
-  border-left-width: 2px;
-  border-top: 0px;
-  border-right: 0px;
   cursor: pointer;
-  transition: all 0.1s ease 0s;
+  transition: all 0.2s ease 0.05s;
+  padding:0px 8px;
+}
+#product button:hover:after, #product button:active::after {
+    bottom: -2px;
+    left: -1px;
+}
+#product button:after {
+    display: block;
+    content: "";
+    /* background: red; */
+    border: 4px solid #4f115f;
+    border-left-width: 2px;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    transition: all 0.2s ease 0.05s;
 }
   #product button:before {
     display: block;
@@ -595,11 +614,9 @@ footer:hover > .site-logo {
     /* animation: buttonPress 0.2s ease 0.05s 1 normal both paused; */
     transition: all 0.2s ease 0.05s;
 
-    border-bottom: 2px solid #4f115f;
-    border-left: 1px solid #4f115f;
-    padding-left: 7px;
+    padding-left: 9px;
     margin-top: 2px;
-    margin-bottom: 8px;
+    height: calc(3em - 2px);
     filter: brightness(1.15);
   }
   #product button:hover .wave-button {
