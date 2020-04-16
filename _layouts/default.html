@@ -33,6 +33,7 @@
 
   {% if page.category == "products" %}
     <script type="text/javascript">
+      $(document).ready(function() {
         $('.currency-usd').each(function() {
             var monetary_value = $(this).text();
             var i = new Intl.NumberFormat('en-US', {
@@ -41,19 +42,20 @@
             }).format(monetary_value);
             $(this).text(i);
         });
-    </script>
-    <script type="text/javascript">
-      var productWrapper = $('#product');
-      var product_description = $('#product_description');
-      var product_title = $('#product_title');
-      productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
 
-      $(window).resize(function() {
-        product_description = $('#product_description');
-        product_title = $('#product_title');
 
+        var productWrapper = $('#product');
+        var product_description = $('#product_description');
+        var product_title = $('#product_title');
         productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
-      });
+
+        $(window).resize(function() {
+          product_description = $('#product_description');
+          product_title = $('#product_title');
+
+          productWrapper.height(product_description.outerHeight(true) + product_title.outerHeight(true) + 25);
+        });
+    });
     </script>
   {% endif %}
 </body>
