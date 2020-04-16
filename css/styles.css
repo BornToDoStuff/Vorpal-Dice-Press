@@ -656,11 +656,12 @@ footer:hover > .site-logo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0px -1%;
 }
 
 .product {
-  flex: 0 0 300px;
-  margin: 10px;
+  flex: 0 0 25%;
+  margin: 1%;
   background: white;
   box-shadow: 1px 2px 8px -2px rgba(35,4,43,.4);
 }
@@ -670,18 +671,33 @@ footer:hover > .site-logo {
 .product .description {
   padding: 10px;
 }
+.description a {
+  text-decoration: none
+}
 
 
+input[type="search"]:focus {
+  outline : none;
+}
 #search_field {
-  width: 90%;
   width: calc(100% - 150px);
   font-size: 1.2em;
   padding: 5px;
+  margin: 0px;
+  border: 1px solid rgba(116, 50, 134, 0.33);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 #search_button {
   width: 150px;
   font-size: 1.2em;
   padding: 5px;
+  margin-left: -5px;
+  background: #743286;
+  border: 1px solid #743286;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: white;
 }
 
 
