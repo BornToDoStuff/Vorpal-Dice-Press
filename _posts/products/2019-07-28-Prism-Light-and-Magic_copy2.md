@@ -27,7 +27,7 @@ product_license: Community Content Agreement
 product_feature_start: 2020-03-01
 product_feature_end: 2020-05-01
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/284319.jpg
+product_image: /img/products/296935.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
