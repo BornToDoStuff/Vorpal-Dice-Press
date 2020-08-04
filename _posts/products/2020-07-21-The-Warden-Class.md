@@ -59,7 +59,7 @@ product_links:
 <div>
   <p style="text-align: center;"><img src="https://www.drivethrurpg.com/images/13388/_product_images/317044/Title.png" alt="Title.png" /></p>
   <br />
-  <p style="text-align: left; font-size: 1.5em; line-height: 1.7em;">Wield the elements as a Warden, a brand new class for 5th Edition.<br /><br /> The Warden brings to 5th Edition a powerful mix of martial and magical prowess, influenced by nature
+  <p>Wield the elements as a Warden, a brand new class for 5th Edition.<br /><br /> The Warden brings to 5th Edition a powerful mix of martial and magical prowess, influenced by nature
     and the world around them. <br /><br /> Use <b>Natural Power</b>, a frequently recharging pool of dice to add elemental damage and effects to you attacks. <br /><br /> Choose your <b>Discipline</b>: the Guardian, the Fanatic, the Sage, or the
     Dragon Guard. Each will determine your role in combat and shape how your character interacts with the world around them. <br /><br /> Cast brand new <b>elemental spells</b> which recharge on Short Rest to bolster your fighting prowess or subdue
     foes from a distance. <br /><br /> Upon reaching 3rd level, you access your <b>Prime Element</b>, one of five paths to choose from: Erupting Earth, Flaming Bravery, Stoic Chill, Unrelenting Storm, or Putrid Corrosion. Learn new cantrips based on
