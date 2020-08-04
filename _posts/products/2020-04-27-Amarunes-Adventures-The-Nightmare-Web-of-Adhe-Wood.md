@@ -65,7 +65,7 @@ product_links:
 ---
 
 <p><img src="https://i.imgur.com/ukMdOmh.png" width="600" height="169" alt="Amarune's Adventures" style="vertical-align: baseline;" /></p>
-<div style="width: 600px;">
+<div>
 <div>
 <h3>Amarune's Adventures is a series of short 3-6 hour adventures that explore the various Locations detailed in the best selling&nbsp;<a href="https://www.dmsguild.com/browse.php?keywords=amarune%27s+almanac">Amarune's Almanac</a> series.</h3>
 <p></p>

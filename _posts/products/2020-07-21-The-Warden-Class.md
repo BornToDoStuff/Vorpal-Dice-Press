@@ -56,7 +56,7 @@ product_links:
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 
-<div style="width: 600px; margin: auto;">
+<div>
   <p style="text-align: center;"><img src="https://www.drivethrurpg.com/images/13388/_product_images/317044/Title.png" alt="Title.png" /></p>
   <br />
   <p style="text-align: left; font-size: 1.5em; line-height: 1.7em;">Wield the elements as a Warden, a brand new class for 5th Edition.<br /><br /> The Warden brings to 5th Edition a powerful mix of martial and magical prowess, influenced by nature
