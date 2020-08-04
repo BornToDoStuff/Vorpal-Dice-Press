@@ -64,8 +64,8 @@ product_links:
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 
-<p><img src="https://i.imgur.com/ukMdOmh.png" width="600" height="169" alt="Amarune's Adventures" style="vertical-align: baseline;" /></p>
 <div>
+<p><img src="https://i.imgur.com/ukMdOmh.png" alt="Amarune's Adventures" style="vertical-align: baseline;" /></p>
 <div>
 <h3>Amarune's Adventures is a series of short 3-6 hour adventures that explore the various Locations detailed in the best selling&nbsp;<a href="https://www.dmsguild.com/browse.php?keywords=amarune%27s+almanac">Amarune's Almanac</a> series.</h3>
 <p></p>
@@ -75,7 +75,7 @@ product_links:
 For 4-5 adventurers between 10th and 15th level, adaptable to lower tier play
 <p><span style="font-size: 14px;">Located in The Vast north of the Sea of Fallen Stars, Adhe Wood is a small but deadly place. Legends swirl of a mysterious temple in Adhe Wood where statues of snakes hold massive emeralds. But the citizens of Sevenecho, the town nearest to Adhe Wood, seem to know nothing of this legend and refuse to speak of it. Travelers into Adhe Wood rarely return, devoured by the mutated spiders that lurk in the trees.</span></p>
 <h3>Written by Steve Pankotai</h3>
-<br /><img src="https://i.imgur.com/6cnE9cg.png" style="width: 600px;" alt="6cnE9cg.png" /><br /><img src="https://i.imgur.com/iGFwGAp.png" style="width: 600px;" alt="iGFwGAp.png" /><br /><img src="https://i.imgur.com/JKZUezT.png" style="width: 600px;" alt="JKZUezT.png" /><br />
+<br /><img src="https://i.imgur.com/6cnE9cg.png" style=" alt="6cnE9cg.png" /><br /><img src="https://i.imgur.com/iGFwGAp.png" alt="iGFwGAp.png" /><br /><img src="https://i.imgur.com/JKZUezT.png" alt="JKZUezT.png" /><br />
 <div>
 <h4><span style="background-color: transparent; font-family: Arial; font-size: 12pt; font-weight: bold; white-space: pre-wrap;"><br /></span></h4>
 <h4><span style="background-color: transparent; font-family: Arial; font-size: 12pt; font-weight: bold; white-space: pre-wrap;">A <span style="color: #f00;">25% discount code</span> for Forests of the Realms is included within the PDF of this product!</span></h4>
