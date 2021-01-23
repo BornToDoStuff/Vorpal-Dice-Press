@@ -1,20 +1,19 @@
 ---
-title: "Amarune's Adventures: The Nightmare Web of Adhe Wood"
-tagline: An forbidding forest adventure for 4-5 adventurers of 10th-15th level, adaptable to lower tier play.
-product_id: 311333
+title: "Amarune's Adventures: Vagrant in Wonderland"
+tagline: An unusual and exciting adventure for 5 adventurers around 7th level
+product_id: 314313
 last_modified_at:
 bundle: false
 bundle_products:
 product_type: Adventure
 tags:
   - Forgotten Realms
-  - Forest
-  - Spiders
+  - Underdark
+  - Mystery
+  - Alice
   - Fantasy
   - Amarune
-  - Tier 1
   - Tier 2
-  - Tier 3
 product_medal: 
 product_audience:
   - Player
@@ -25,19 +24,21 @@ product_license: Community Content Agreement
 product_feature_start: 
 product_feature_end: 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/311333.png
+product_image: https://www.dmsguild.com/images/8957/314313.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
   Authors:
-    - Steve Pankotai
+    - Sven Truckenbrodt
     - Amarune's Almanac Team
   Artists:
     - Nathanaël Roux
-    - grandfailure
+    - Shiah "Cinder" Irgangladen
+    - Alexandra Petruk
+    - Bruno Balixa
   Editor:
     - Ryan Langr
-product_pagecount: 17
+product_pagecount: 23
 product_print: false
 # price of the product at each location
 product_prices:
@@ -47,11 +48,11 @@ product_sales:
     DMsGuild: 4.95
 # direct link to the product by location
 product_links:
-    DMsGuild: https://www.dmsguild.com/browse.php?discount=981cc166d9&affiliate_id=1713687
+    DMsGuild: https://www.dmsguild.com/browse.php?discount=98772bd0d0&affiliate_id=1713687
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 <center>Amarune's Adventures is a series of short 3-6 hour adventures that explore the various locations detailed in the best selling <a href="#amarune#">Amarune's Almanac</a> series.</center>
-## The Nightmare Web of Adhe Wood
-#### Content Warning: Spiders
-Located in The Vast north of the Sea of Fallen Stars, Adhe Wood is a small but deadly place. Legends swirl of a mysterious temple in Adhe Wood where statues of snakes hold massive emeralds. But the citizens of Sevenecho, the town nearest to Adhe Wood, seem to know nothing of this legend and refuse to speak of it. Travelers into Adhe Wood rarely return, devoured by the mutated spiders that lurk in the trees.
+## Vagrant in Wonderland
+
+Vagrant in Wonderland is a whimsical Alice-esque journey into the depths of Araumycos, the Great Fungus. The characters encounter Vagrant, an intrepid myconid scout living within Araumycos who is looking for outside help for a great crisis that has befallen their colony – vast parts of Araumycos are dying and they do not know why or how to stop it. When the party accepts Vagrant’s plea for help, they are led underground through a secret passage. There’s one catch: Vagrant uses the shrinking pygmywort mushroom to get them all inside – but they have no matching bigwig mushrooms left to restore them to their actual size again! The party soon discovers that the mystery of the dying colony and a fresh source for bigwig mushrooms may be closely linked…

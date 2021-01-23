@@ -1,7 +1,7 @@
 ---
-title: "Amarune's Adventures: The Nightmare Web of Adhe Wood"
-tagline: An forbidding forest adventure for 4-5 adventurers of 10th-15th level, adaptable to lower tier play.
-product_id: 311333
+title: "Amarune's Adventures: The Start and End of Uluu Thalongh"
+tagline: An jungle adventure for 4-6 adventurers between 12th and 14th level
+product_id: 310181
 last_modified_at:
 bundle: false
 bundle_products:
@@ -9,11 +9,9 @@ product_type: Adventure
 tags:
   - Forgotten Realms
   - Forest
-  - Spiders
+  - Jungle
   - Fantasy
   - Amarune
-  - Tier 1
-  - Tier 2
   - Tier 3
 product_medal: 
 product_audience:
@@ -25,19 +23,23 @@ product_license: Community Content Agreement
 product_feature_start: 
 product_feature_end: 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/311333.png
+product_image: https://www.dmsguild.com/images/8957/310181.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
   Authors:
-    - Steve Pankotai
+    - Matthew Whitby
     - Amarune's Almanac Team
   Artists:
     - Nathanaël Roux
-    - grandfailure
+    - Raph Howald
+    - Jack Holliday
+    - Bruno Balixa
+    - Daniel Comerci
+    - Dusty Haynes
   Editor:
     - Ryan Langr
-product_pagecount: 17
+product_pagecount: 20
 product_print: false
 # price of the product at each location
 product_prices:
@@ -47,11 +49,13 @@ product_sales:
     DMsGuild: 4.95
 # direct link to the product by location
 product_links:
-    DMsGuild: https://www.dmsguild.com/browse.php?discount=981cc166d9&affiliate_id=1713687
+    DMsGuild: https://www.dmsguild.com/browse.php?discount=985c92ff82&affiliate_id=1713687
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 <center>Amarune's Adventures is a series of short 3-6 hour adventures that explore the various locations detailed in the best selling <a href="#amarune#">Amarune's Almanac</a> series.</center>
-## The Nightmare Web of Adhe Wood
-#### Content Warning: Spiders
-Located in The Vast north of the Sea of Fallen Stars, Adhe Wood is a small but deadly place. Legends swirl of a mysterious temple in Adhe Wood where statues of snakes hold massive emeralds. But the citizens of Sevenecho, the town nearest to Adhe Wood, seem to know nothing of this legend and refuse to speak of it. Travelers into Adhe Wood rarely return, devoured by the mutated spiders that lurk in the trees.
+## The Start & End of Uluu Thalongh
+
+Welcome to The Start & End of Uluu Thalongh. This adventure promises to uncover the heart of an ancient mystery, one that has been tormenting the people of Chult for countless eras. Characters will explore deep jungles in search of truth, and fighting off the possessed fauna that tries to claim them at every opportunity. Will the adventurers discover the truth behind Uluu Thalongh, or simply get consumed in the process?
+
+<a href="https://twitter.com/TheEdVerse/status/1252285470169595904"><img src="https://i.imgur.com/IHsqCWr.png" /></a>

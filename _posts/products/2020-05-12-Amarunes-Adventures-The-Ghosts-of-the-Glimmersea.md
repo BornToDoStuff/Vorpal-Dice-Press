@@ -1,20 +1,17 @@
 ---
-title: "Amarune's Adventures: The Nightmare Web of Adhe Wood"
-tagline: An forbidding forest adventure for 4-5 adventurers of 10th-15th level, adaptable to lower tier play.
-product_id: 311333
+title: "Amarune's Adventures: The Ghosts of the Glimmersea"
+tagline: An Underdark adventure for 4 adventuerers between 5th and 10th level.
+product_id: 313420
 last_modified_at:
 bundle: false
 bundle_products:
 product_type: Adventure
 tags:
   - Forgotten Realms
-  - Forest
-  - Spiders
+  - Underdark
   - Fantasy
   - Amarune
-  - Tier 1
   - Tier 2
-  - Tier 3
 product_medal: 
 product_audience:
   - Player
@@ -25,19 +22,22 @@ product_license: Community Content Agreement
 product_feature_start: 
 product_feature_end: 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/311333.png
+product_image: https://www.dmsguild.com/images/8957/313420.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
   Authors:
-    - Steve Pankotai
+    - Beatriz T Dias
     - Amarune's Almanac Team
   Artists:
+    - Shiah "Cinder" Irgangladen
     - Nathanaël Roux
-    - grandfailure
+    - Nimgyu
+    - Bruno Balixa
+    - Dusty Haynes
   Editor:
     - Ryan Langr
-product_pagecount: 17
+product_pagecount: 12
 product_print: false
 # price of the product at each location
 product_prices:
@@ -47,11 +47,12 @@ product_sales:
     DMsGuild: 4.95
 # direct link to the product by location
 product_links:
-    DMsGuild: https://www.dmsguild.com/browse.php?discount=981cc166d9&affiliate_id=1713687
+    DMsGuild: https://www.dmsguild.com/browse.php?discount=9809ddb77a&affiliate_id=1713687
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
 <center>Amarune's Adventures is a series of short 3-6 hour adventures that explore the various locations detailed in the best selling <a href="#amarune#">Amarune's Almanac</a> series.</center>
-## The Nightmare Web of Adhe Wood
-#### Content Warning: Spiders
-Located in The Vast north of the Sea of Fallen Stars, Adhe Wood is a small but deadly place. Legends swirl of a mysterious temple in Adhe Wood where statues of snakes hold massive emeralds. But the citizens of Sevenecho, the town nearest to Adhe Wood, seem to know nothing of this legend and refuse to speak of it. Travelers into Adhe Wood rarely return, devoured by the mutated spiders that lurk in the trees.
+## The Ghosts of the Glimmersea
+An expedition was lost in the Glimmersea. The famous explorers, the Loxers, abruptly stopped communicating, sparking concern in those familiar with them. Maer, the merchant who originally hired the expedition, has grown worried and decided to hire a group of adventurers to check on the Loxers.
+
+This quest will be lonely and dangerous, the Glimmersea is known for that. Can the hired adventurers find out what happened to the Loxers? Can they avoid the same fate befalling them in this adventure for four 5th- to 10th- level characters?
