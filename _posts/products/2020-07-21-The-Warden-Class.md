@@ -45,6 +45,7 @@ product_print: true
 product_prices:
     DTRPG: 4.95
     DTRPG Softcover: 7.95
+    Review Test:
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
     DTRPG:
@@ -52,6 +53,7 @@ product_sales:
 product_links:
     DTRPG: https://www.drivethrurpg.com/product/317044/The-Warden-Class-5e?affiliate_id=1713687
     DTRPG Softcover: https://www.drivethrurpg.com/product/317044/The-Warden-Class-5e?affiliate_id=1713687
+    Review Test: https://vorpal.borntodostuff.com/review/Not-Front-Page/
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
