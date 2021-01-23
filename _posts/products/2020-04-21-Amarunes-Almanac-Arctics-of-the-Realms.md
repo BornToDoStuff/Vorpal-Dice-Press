@@ -13,8 +13,9 @@ tags:
   - Spells
   - Items
   - Flora
-  - Amarune
   - Monsters
+  - Fantasy
+  - Amarune
 product_medal: Electrum
 product_audience:
   - Player
@@ -53,10 +54,10 @@ product_pagecount: 50
 product_print: false
 # price of the product at each location
 product_prices:
-    DMsGuild: 4.95
+    DMsGuild: 9.95
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
-    DMsGuild: 4.95
+
 # direct link to the product by location
 product_links:
     DMsGuild: https://www.dmsguild.com/browse.php?discount=989958cb4c&affiliate_id=1713687
@@ -66,7 +67,7 @@ product_links:
 > Ah, yes. The “howling frozen nothingness in which living things just disappear forever into all the white emptiness.” At last.
 > - Ed Greenwood (excerpt from Foreword)
 
-Amarune's Almanac Volume 4 is the fourth in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
+The fourth in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
 
 **Arctics of the Realms** finds life and excitement in the desolate wastelands of Faerûn. In our travels, we've found new and old flora, fauna, and history to bring to you about the polar regions of the Realms. Arctics of the Realms does this through both narrative prose, written from the perspective of Amarune Whitewave (the great, great granddaughter of Elminster Aumar), and through occasional notes from her husband, editor, and traveling companion Arclath Delcastle.
 

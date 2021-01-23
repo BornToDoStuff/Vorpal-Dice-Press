@@ -1,14 +1,14 @@
 ---
-title: "Amarune's Almanac: The Underdark"
-tagline: A survival guide for the dark depths of Forgotten Realms
-product_id: 299636
+title: "Amarune's Almanac: Forests of the Realms"
+tagline: A survival guide for the lust forest regions of Forgotten Realms
+product_id: 296459
 last_modified_at:
 bundle: false
 bundle_products:
 product_type: Supplement
 tags:
   - Forgotten Realms
-  - Underdark
+  - Forests
   - Subclasses
   - Spells
   - Items
@@ -26,7 +26,7 @@ product_license: Community Content Agreement
 product_feature_start: 
 product_feature_end: 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/299636.png
+product_image: https://www.dmsguild.com/images/8957/296459.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
@@ -45,11 +45,10 @@ product_contributors:
     - Dante Ezio Cifaldi
     - Bob Greyvenstein
     - Grim Press
-    - Bruno Balixa
-    - GeunBrush
+    - Fil Kearney
   Editor:
     - Ryan Langr
-product_pagecount: 67
+product_pagecount: 50
 product_print: false
 # price of the product at each location
 product_prices:
@@ -59,22 +58,22 @@ product_sales:
 
 # direct link to the product by location
 product_links:
-    DMsGuild: https://www.dmsguild.com/browse.php?discount=99448df5a5&affiliate_id=1713687
+    DMsGuild: https://www.dmsguild.com/browse.php?discount=9907a608ae&affiliate_id=1713687
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
-> [..] this tome is accurate and insightful, so I recommend it highly..
+> I love books like this.
 > - Ed Greenwood (excerpt from Foreword)
 
-The second in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
+The first in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
 
-**The Underdark** gives an overview of Faerûn's "Realm Below"; and its flora, fauna, and some history. It does this through both narrative prose, written from the perspective of Amarune Whitewave (the great, great granddaughter of Elminster Aumar), and through occasional notes from her husband, editor, and traveling companion Arclath Delcastle.
+**Forests of the Realms** gives an overview of Faerûn's various forests and their flora, fauna, and some history. It does this through both narrative prose, written from the perspective of Amarune Whitewave (the great, great granddaughter of Elminster Aumar), and through occasional notes from her husband, editor, and traveling companion Arclath Delcastle.
 
-### Contained with this 67-page tome, you'll get:
+### Contained with this 50-page tome, you'll get:
 
 #### Subclasses
-- the Circle of the Dark druid which seeks to expand on the land (underdark) druid by channeling Faerzress.
-- and the Sharnbound, a conclave of Rangers who are tasked by the Sharn, and granted a limited form of their transformation, to act as agents of their will.
+- the Circle of the Grove druid which seeks to expand on the land (forest) druid
+- and the Sylvan Sentinel, a conclave of Rangers who are blessed by the fey to guard their realms.
 
 #### Variant rules
 Expansions to the Druid and Ranger classes to allow them more access to the new spells contained within this book!
@@ -82,30 +81,30 @@ Expansions to the Druid and Ranger classes to allow them more access to the new 
 #### Spells!
 10 brand new spells: each using a new spellcasting component, Environment, as they each rely on the boons of the world around them.
 
-+1 bonus spell, druidic practice, which is the Druid version of the ceremony spell for Clerics.
+*+1 bonus spell, druidic practice, which is the Druid version of the ceremony spell for Clerics.*
 
 #### Items!
-11 magic items: imbued with the power of the Underdark and its depths.
+10 magic items: imbued with the power of the forest and their denizens.
 
 #### Creatures!
-20 monsters: new creatures for Wild Shaping, mounts, and companions! Including the Phaerimm, Sharn, and Deep Dragons!
+16 monsters: new creatures for Wild Shaping, mounts, and companions!
 
 #### Flora!
-20 flora: the bounty of the Underdark. Mushrooms, lichen, moss, and even a few trees that you can collect and use to create all manner of items, as well as improve some spells.
+20 flora: the bounty of the forests. Roots, trees, and flowers that you can collect and use to create all manner of items, as well as improve some spells.
 
 #### Downtime Activities!
 A gathering expedition specifically designed to find and collect the flora described in this book.
 
 #### Location Stories
 Straight from the journal of Amarune Whitewave herself, stories of their expeditions into five notable Faerûn deserts:
-- Araumycos
-- The Burgeoning Rift
-- Firelands
-- Glimmersea
-- Sharnwall
+- Adhe Wood
+- The Jungles of Chult
+- High Forest
+- Tangled Trees
+- Yuirwood
 
 #### Cartography!
-Updated for 5th Edition, this book contains a two-page map of the Underdark covering the Northdark all the way to Deep Raurin. As with any map of the evershifting Underdark, it's more of a guideline of where things are roughly located, than a navigatable map.
+A map of Faerûn: Updated for 5th Edition, this book contains a two-page map of Faerûn covering the Sword Coast all the way to the Plains of Purple Dust
 
 *Also included is a separate high-resolution PDF of the map in both colored and Printer Friendly, available to print on 8.5"x11" or 11"x17"*
 

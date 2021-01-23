@@ -45,7 +45,7 @@ product_prices:
     DMsGuild: 4.95
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
-    DMsGuild: 4.95
+
 # direct link to the product by location
 product_links:
     DMsGuild: https://www.dmsguild.com/browse.php?discount=9813437f92&affiliate_id=1713687

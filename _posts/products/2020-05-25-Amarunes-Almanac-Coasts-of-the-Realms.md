@@ -1,14 +1,14 @@
 ---
-title: "Amarune's Almanac: The Underdark"
-tagline: A survival guide for the dark depths of Forgotten Realms
-product_id: 299636
+title: "Amarune's Almanac: Coasts of the Realms"
+tagline: A survival guide for the sandy beaches of Forgotten Realms
+product_id: 315001
 last_modified_at:
 bundle: false
 bundle_products:
 product_type: Supplement
 tags:
   - Forgotten Realms
-  - Underdark
+  - Coasts
   - Subclasses
   - Spells
   - Items
@@ -16,7 +16,7 @@ tags:
   - Monsters
   - Fantasy
   - Amarune
-product_medal: Gold
+product_medal: Silver
 product_audience:
   - Player
   - Dungeon Master
@@ -26,7 +26,7 @@ product_license: Community Content Agreement
 product_feature_start: 
 product_feature_end: 
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
-product_image: https://www.dmsguild.com/images/8957/299636.png
+product_image: https://www.dmsguild.com/images/8957/315001.png
 publisher_type: Self
 publisher_name: Vorpal Dice Press
 product_contributors:
@@ -34,8 +34,10 @@ product_contributors:
     - Steve Fidler
     - Ashley May
     - BornToDoStuff
-    - Jean-Luc Caron
+    - Bryan Holmes
+    - Ed Greenwood
     - Israel Moreira
+    - Jean-Luc Caron
     - Sean vas Terra
     - Trevor Armstrong
   Artists:
@@ -45,11 +47,10 @@ product_contributors:
     - Dante Ezio Cifaldi
     - Bob Greyvenstein
     - Grim Press
-    - Bruno Balixa
-    - GeunBrush
+    - Vagelio Kaliva
   Editor:
     - Ryan Langr
-product_pagecount: 67
+product_pagecount: 51
 product_print: false
 # price of the product at each location
 product_prices:
@@ -59,53 +60,53 @@ product_sales:
 
 # direct link to the product by location
 product_links:
-    DMsGuild: https://www.dmsguild.com/browse.php?discount=99448df5a5&affiliate_id=1713687
+    DMsGuild: https://www.dmsguild.com/browse.php?discount=98d2d3ff9d&affiliate_id=1713687
 
 # anything below this triple dash is considered content and can be markup or html. It should be fully HTML compatible as long as your tags are formatted correctly.
 ---
-> [..] this tome is accurate and insightful, so I recommend it highly..
+> So coasts are places where things happen, not just a haunt of seabirds, and endless crashing surf. Which is why this book exists; to look more closely at the 'thin ribbon of adventure' (to quote the famous bard Mintiper) that is the Coast. Enjoy!
 > - Ed Greenwood (excerpt from Foreword)
 
-The second in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
+The fifth in a multipart series exploring the eight biomes of Dungeons & Dragons within the Forgotten Realms campaign setting.
 
-**The Underdark** gives an overview of Faerûn's "Realm Below"; and its flora, fauna, and some history. It does this through both narrative prose, written from the perspective of Amarune Whitewave (the great, great granddaughter of Elminster Aumar), and through occasional notes from her husband, editor, and traveling companion Arclath Delcastle.
+**Coasts of the Realms** explores the diverse and abundant biome of the coast - the fringe between land, sky, and sea. In our travels, we've found new and old flora, fauna, and history to bring to you about the seashore regions of the Realms. Coasts of the Realms does this through both narrative prose, written from the perspective of Amarune Whitewave (the great, great granddaughter of Elminster Aumar), and through occasional notes from her husband, editor, and traveling companion Arclath Delcastle.
 
-### Contained with this 67-page tome, you'll get:
+### Contained with this 51-page tome, you'll get:
 
 #### Subclasses
-- the Circle of the Dark druid which seeks to expand on the land (underdark) druid by channeling Faerzress.
-- and the Sharnbound, a conclave of Rangers who are tasked by the Sharn, and granted a limited form of their transformation, to act as agents of their will.
+- the Circle of the Shore druid which seeks to expand on the land (coast) druid.
+- and the Wavestrider, a conclave of Rangers who can call to the sea to lend its aid against encroaching threats.
 
 #### Variant rules
 Expansions to the Druid and Ranger classes to allow them more access to the new spells contained within this book!
 
 #### Spells!
-10 brand new spells: each using a new spellcasting component, Environment, as they each rely on the boons of the world around them.
+11 brand new spells: each using a new spellcasting component, Environment, as they each rely on the boons of the world around them.
 
 +1 bonus spell, druidic practice, which is the Druid version of the ceremony spell for Clerics.
 
 #### Items!
-11 magic items: imbued with the power of the Underdark and its depths.
+10 magic items: drawn from ecologically diverse coasts and dredged by the tides of the sea.
 
 #### Creatures!
-20 monsters: new creatures for Wild Shaping, mounts, and companions! Including the Phaerimm, Sharn, and Deep Dragons!
+10 monsters: new creatures for Wild Shaping, mounts, and companions!
 
 #### Flora!
-20 flora: the bounty of the Underdark. Mushrooms, lichen, moss, and even a few trees that you can collect and use to create all manner of items, as well as improve some spells.
+20 flora: the bounty of the sea. Roots, lichens, and hearty plants that you can collect and use to create all manner of items, as well as improve some spells.
 
 #### Downtime Activities!
 A gathering expedition specifically designed to find and collect the flora described in this book.
 
 #### Location Stories
-Straight from the journal of Amarune Whitewave herself, stories of their expeditions into five notable Faerûn deserts:
-- Araumycos
-- The Burgeoning Rift
-- Firelands
-- Glimmersea
-- Sharnwall
+Straight from the journal of Amarune Whitewave herself, stories of their expeditions into five notable Faerûn shores:
+- the Easting Coast
+- Lapaliiya
+- Red Rocks
+- Ruathym
+- Themasulter
 
 #### Cartography!
-Updated for 5th Edition, this book contains a two-page map of the Underdark covering the Northdark all the way to Deep Raurin. As with any map of the evershifting Underdark, it's more of a guideline of where things are roughly located, than a navigatable map.
+A map of Faerûn: Updated for 5th Edition, this book contains a two-page map of Faerûn covering the Sword Coast all the way to the Plains of Purple Dust
 
 *Also included is a separate high-resolution PDF of the map in both colored and Printer Friendly, available to print on 8.5"x11" or 11"x17"*
 
