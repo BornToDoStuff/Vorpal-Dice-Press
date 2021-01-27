@@ -1,6 +1,6 @@
 ---
 title: "Prism: Trio of Light"
-tagline: ""Three brand new subclasses for the unique magic-wielding class: the Prism!""
+tagline: "Three brand new subclasses for the unique magic-wielding class: the Prism!"
 product_id: 305488
 last_modified_at:
 bundle: false

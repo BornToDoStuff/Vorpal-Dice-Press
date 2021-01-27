@@ -1,6 +1,6 @@
 ---
 title: "Showdown in Spellhold: A Player Primer Adventure"
-tagline: Spellhold is strictly off-limits to all, but strange lights have been spotted from the mainland. So the Council of Five, rulers of Amn, have allowed access to a very select few—you!
+tagline: "Spellhold is strictly off-limits to all, but strange lights have been spotted from the mainland. So the Council of Five, rulers of Amn, have allowed access to a very select few—you!"
 product_id: 343776
 last_modified_at:
 bundle: false

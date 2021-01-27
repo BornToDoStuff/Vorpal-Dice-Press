@@ -1,6 +1,6 @@
 ---
 title: "Release the Krakin!"
-tagline: A pact-born seafaring race for Dungeons & Dragons Fifth Edition
+tagline: "A pact-born seafaring race for Dungeons & Dragons Fifth Edition"
 product_id: 276138
 last_modified_at:
 bundle: false
