@@ -552,6 +552,11 @@ footer:hover > .site-logo {
 #product_description img {
   max-width:100% !important;
 }
+#product_description p {
+  margin: inherit;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
 
 
 #product button {
