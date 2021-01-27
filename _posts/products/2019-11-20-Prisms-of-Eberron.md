@@ -1,6 +1,6 @@
 ---
 title: "Prisms of Eberron"
-tagline: Five new Eberron subclasses for the unique magic-wielding class: the Prism!
+tagline: "Five new Eberron subclasses for the unique magic-wielding class: the Prism!"
 product_id: 295474
 last_modified_at:
 bundle: false
