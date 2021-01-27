@@ -35,6 +35,8 @@ product_contributors:
     - Nathanaël Roux
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 29
 product_print: false
 # price of the product at each location

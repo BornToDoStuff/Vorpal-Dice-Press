@@ -50,6 +50,8 @@ product_contributors:
     - Dean Spencer
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 50
 product_print: false
 # price of the product at each location

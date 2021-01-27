@@ -49,6 +49,8 @@ product_contributors:
     - GeunBrush
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 67
 product_print: false
 # price of the product at each location

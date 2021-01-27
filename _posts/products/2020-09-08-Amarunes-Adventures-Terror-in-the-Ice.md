@@ -40,6 +40,8 @@ product_contributors:
     - Tithi Luadthong
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 44
 product_print: false
 # price of the product at each location

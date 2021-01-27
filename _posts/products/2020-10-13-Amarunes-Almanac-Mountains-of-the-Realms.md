@@ -55,6 +55,8 @@ product_contributors:
     - Shomitro Kumar Ghosh
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 53
 product_print: false
 # price of the product at each location

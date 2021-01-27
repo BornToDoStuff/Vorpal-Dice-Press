@@ -55,6 +55,8 @@ product_contributors:
     - grandfailure
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 59
 product_print: false
 # price of the product at each location

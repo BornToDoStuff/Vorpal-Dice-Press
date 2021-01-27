@@ -48,6 +48,8 @@ product_contributors:
     - Fil Kearney
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 50
 product_print: false
 # price of the product at each location

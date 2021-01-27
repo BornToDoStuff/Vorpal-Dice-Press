@@ -50,6 +50,8 @@ product_contributors:
     - Vagelio Kaliva
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 51
 product_print: false
 # price of the product at each location

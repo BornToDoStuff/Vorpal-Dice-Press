@@ -52,6 +52,8 @@ product_contributors:
     - DMG Vision
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 56
 product_print: false
 # price of the product at each location

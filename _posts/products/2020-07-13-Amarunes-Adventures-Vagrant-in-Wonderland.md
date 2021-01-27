@@ -38,6 +38,8 @@ product_contributors:
     - Bruno Balixa
   Editor:
     - Ryan Langr
+  Graphic Design:
+    - Nathanaël Roux
 product_pagecount: 23
 product_print: false
 # price of the product at each location
