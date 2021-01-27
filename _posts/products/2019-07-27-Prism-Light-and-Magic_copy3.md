@@ -1,6 +1,6 @@
 ---
 title: "Prism: Light & Magic COPY"
-tagline: The Prism is a brand new class for D&D 5th Edition focused on the manipulation of light, energy, and emotions.
+tagline: "The Prism is a brand new class for D&D 5th Edition focused on the manipulation of light, energy, and emotions."
 product_id: 284319
 last_modified_at:
 bundle: false

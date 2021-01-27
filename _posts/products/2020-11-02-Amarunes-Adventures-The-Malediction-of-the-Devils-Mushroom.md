@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Malediction of the Devil's Mushroom"
-tagline: An Anauroch and Underdark adventure for 4-6 adventurers of 4th-6th level.
+tagline: "An Anauroch and Underdark adventure for 4-6 adventurers of 4th-6th level."
 product_id: 334371
 last_modified_at:
 bundle: false

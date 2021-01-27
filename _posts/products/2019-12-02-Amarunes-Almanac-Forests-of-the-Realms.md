@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Forests of the Realms"
-tagline: A survival guide for the lust forest regions of Forgotten Realms
+tagline: "A survival guide for the lust forest regions of Forgotten Realms"
 product_id: 296459
 last_modified_at:
 bundle: false

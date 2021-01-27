@@ -1,6 +1,6 @@
 ---
 title: "Faiths of the Forgotten Realms 2"
-tagline: Within you will find 100 archetypes spread across all the classes, 105 spells for the faithful, 13 Holy Texts and 22 Magic Items.
+tagline: "Within you will find 100 archetypes spread across all the classes, 105 spells for the faithful, 13 Holy Texts and 22 Magic Items."
 product_id: 293446
 last_modified_at:
 bundle: false

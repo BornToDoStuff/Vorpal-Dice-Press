@@ -1,6 +1,6 @@
 ---
 title: "Mythic Eberron"
-tagline: Challenge your party with MYTHIC creatures from the Eberron campaign setting.
+tagline: "Challenge your party with MYTHIC creatures from the Eberron campaign setting."
 product_id: 329253
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Blood War Bestiary"
-tagline: The Lower Planes teem with twisted creatures just waiting to be set loose.
+tagline: "The Lower Planes teem with twisted creatures just waiting to be set loose."
 product_id: 289596
 last_modified_at:
 bundle: false

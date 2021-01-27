@@ -1,6 +1,6 @@
 ---
 title: "The Warden Class"
-tagline: The Warden class is a brand new class for Dungeons and Dragons 5th Edition, combining elemental magic and martial prowess!
+tagline: "The Warden class is a brand new class for Dungeons and Dragons 5th Edition, combining elemental magic and martial prowess!"
 product_id: 317044
 last_modified_at:
 bundle: false

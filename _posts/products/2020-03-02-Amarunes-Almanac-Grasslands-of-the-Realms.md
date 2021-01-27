@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Grasslands of the Realms"
-tagline: A survival guide for the wide open regions of Forgotten Realms
+tagline: "A survival guide for the wide open regions of Forgotten Realms"
 product_id: 305043
 last_modified_at:
 bundle: false

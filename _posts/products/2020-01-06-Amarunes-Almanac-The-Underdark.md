@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: The Underdark"
-tagline: A survival guide for the dark depths of Forgotten Realms
+tagline: "A survival guide for the dark depths of Forgotten Realms"
 product_id: 299636
 last_modified_at:
 bundle: false

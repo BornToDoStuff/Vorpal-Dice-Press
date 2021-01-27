@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Nightmare Web of Adhe Wood"
-tagline: An forbidding forest adventure for 4-5 adventurers of 10th-15th level, adaptable to lower tier play.
+tagline: "An forbidding forest adventure for 4-5 adventurers of 10th-15th level, adaptable to lower tier play."
 product_id: 311333
 last_modified_at:
 bundle: false

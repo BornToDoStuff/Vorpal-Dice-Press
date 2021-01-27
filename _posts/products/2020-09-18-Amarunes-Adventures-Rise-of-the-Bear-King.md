@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: Rise of the Bear King"
-tagline: An Icewind Dale adventure for 4-6 characters of 4th-6th level.
+tagline: "An Icewind Dale adventure for 4-6 characters of 4th-6th level."
 product_id: 328754
 last_modified_at:
 bundle: false

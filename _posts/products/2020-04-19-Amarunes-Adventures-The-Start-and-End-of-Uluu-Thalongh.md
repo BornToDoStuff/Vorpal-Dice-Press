@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Start and End of Uluu Thalongh"
-tagline: An jungle adventure for 4-6 adventurers between 12th and 14th level
+tagline: "An jungle adventure for 4-6 adventurers between 12th and 14th level"
 product_id: 310181
 last_modified_at:
 bundle: false

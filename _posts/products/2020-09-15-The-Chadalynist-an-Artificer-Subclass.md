@@ -1,6 +1,6 @@
 ---
 title: "The Chardalynist: An Artificer Subclass"
-tagline: Infuse the dead with the evil power of the Crystal Shard and create undead vestiges of your foes.
+tagline: "Infuse the dead with the evil power of the Crystal Shard and create undead vestiges of your foes."
 product_id: 328477
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Arctics of the Realms"
-tagline: A survival guide for the frigid regions of Forgotten Realms
+tagline: "A survival guide for the frigid regions of Forgotten Realms"
 product_id: 310184
 last_modified_at:
 bundle: false

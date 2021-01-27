@@ -1,6 +1,6 @@
 ---
 title: "Player Primer: Amn"
-tagline: While Amn is one of the wealthiest regions of the Forgotten Realms, it is also one of the most corrupt. Here, coin rules over all.
+tagline: "While Amn is one of the wealthiest regions of the Forgotten Realms, it is also one of the most corrupt. Here, coin rules over all."
 product_id: 343769
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Mountains of the Realms"
-tagline: A survival guide for the taller-than-the-horizon regions of Forgotten Realms
+tagline: "A survival guide for the taller-than-the-horizon regions of Forgotten Realms"
 product_id: 331997
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "The Compendium of Written Works: Faerûn"
-tagline: Do your players' characters like to read books? Is finding a library to do monster research something that occurs frequently in your games? Is there a character in your world who just wants to gobble up all the written knowledge that they possibly can? Do you just like books? If so, then this supplement is for you!
+tagline: "Do your players' characters like to read books? Is finding a library to do monster research something that occurs frequently in your games? Is there a character in your world who just wants to gobble up all the written knowledge that they possibly can? Do you just like books? If so, then this supplement is for you!"
 product_id: 307527
 last_modified_at:
 bundle: false

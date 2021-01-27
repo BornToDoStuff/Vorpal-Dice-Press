@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: Terror in the Ice"
-tagline: An Icewind Dale adventure for 4-6 characters of 5th-10th level.
+tagline: "An Icewind Dale adventure for 4-6 characters of 5th-10th level."
 product_id: 326586
 last_modified_at:
 bundle: false

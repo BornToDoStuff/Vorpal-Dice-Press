@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Shardcaster of Yuirwood"
-tagline: An fast-paced forest adventure for 4-5 adventurers of 8th to 10th level
+tagline: "An fast-paced forest adventure for 4-5 adventurers of 8th to 10th level"
 product_id: 318859
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "The K'rofa - a Porcine Race"
-tagline: Above the skies, far beyond the clouds, ride the k’rofa upon their skyships. They are aeronauts and closer to the heaven’s than any terrestrial race.
+tagline: "Above the skies, far beyond the clouds, ride the k’rofa upon their skyships. They are aeronauts and closer to the heaven’s than any terrestrial race."
 product_id: 311614
 last_modified_at:
 bundle: false

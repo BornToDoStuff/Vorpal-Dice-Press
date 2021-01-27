@@ -1,6 +1,6 @@
 ---
 title: "Grazilaxx's Guide to Aquatic Ancestries"
-tagline: Grazilaxx's Guide to Aquatic Ancestries converts some of the most popular water-based races into the ground-breaking, best selling system Grazilaxx's Guide to Ancestry.
+tagline: "Grazilaxx's Guide to Aquatic Ancestries converts some of the most popular water-based races into the ground-breaking, best selling system Grazilaxx's Guide to Ancestry."
 product_id: 299764
 last_modified_at:
 bundle: false

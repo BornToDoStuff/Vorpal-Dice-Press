@@ -1,6 +1,6 @@
 ---
 title: "The Kelpie's Shadow: A Player Primer Adventure"
-tagline: "A myth is taking its toll on Barret's Quay: ancient artifacts of protection have been stolen, and haunting creatures of myth have begun to menace the villagers."
+tagline: ""A myth is taking its toll on Barret's Quay: ancient artifacts of protection have been stolen, and haunting creatures of myth have begun to menace the villagers.""
 product_id: 337330
 last_modified_at:
 bundle: false

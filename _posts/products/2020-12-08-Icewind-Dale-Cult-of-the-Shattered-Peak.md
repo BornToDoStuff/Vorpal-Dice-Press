@@ -1,6 +1,6 @@
 ---
 title: "Icewind Dale: Cult of the Shattered Peak"
-tagline: Bring the intrigue of the lost Netherese empire to the forefront with this all-inclusive supplement about those trying to keep it lost: the Cult of the Shattered Peak.
+tagline: "Bring the intrigue of the lost Netherese empire to the forefront with this all-inclusive supplement about those trying to keep it lost: the Cult of the Shattered Peak."
 product_id: 338277
 last_modified_at:
 bundle: false

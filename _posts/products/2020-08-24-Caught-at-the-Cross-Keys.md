@@ -1,6 +1,6 @@
 ---
 title: "Caught at the Cross Keys"
-tagline: This adventure gives players the option to be the heroes and save the day or play another group of bandits looking to capitalise on the work of others!
+tagline: "This adventure gives players the option to be the heroes and save the day or play another group of bandits looking to capitalise on the work of others!"
 product_id: 325591
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: Vagrant in Wonderland"
-tagline: An unusual and exciting adventure for 5 adventurers around 7th level
+tagline: "An unusual and exciting adventure for 5 adventurers around 7th level"
 product_id: 314313
 last_modified_at:
 bundle: false

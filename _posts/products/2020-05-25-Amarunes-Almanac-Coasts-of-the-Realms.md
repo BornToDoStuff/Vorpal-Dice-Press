@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Coasts of the Realms"
-tagline: A survival guide for the sandy beaches of Forgotten Realms
+tagline: "A survival guide for the sandy beaches of Forgotten Realms"
 product_id: 315001
 last_modified_at:
 bundle: false

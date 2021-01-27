@@ -1,6 +1,6 @@
 ---
 title: "Cursed Classes: Even Cursier"
-tagline: 8 cursed classes, 20 new subclasses, MUCH CURSES.
+tagline: "8 cursed classes, 20 new subclasses, MUCH CURSES."
 product_id: 318257
 last_modified_at:
 bundle: false

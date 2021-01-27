@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Vanishing of Arcanist Hildebane"
-tagline: An exploratory wilderness adventure for 4-6 adventurers of 1st to 5th level
+tagline: "An exploratory wilderness adventure for 4-6 adventurers of 1st to 5th level"
 product_id: 320343
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Morg: Rimeblessed Vampire"
-tagline: What happens when your character unknowingly angers a vampiric hill giant? There's only one way to find out!
+tagline: "What happens when your character unknowingly angers a vampiric hill giant? There's only one way to find out!"
 product_id: 331171
 last_modified_at:
 bundle: false

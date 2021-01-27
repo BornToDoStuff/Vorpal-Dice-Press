@@ -1,6 +1,6 @@
 ---
 title: "The Consort"
-tagline: The Consort is a half caster tank/damage dealer that receives their power from their innate magical bond with their chosen Fae Sovereign.
+tagline: "The Consort is a half caster tank/damage dealer that receives their power from their innate magical bond with their chosen Fae Sovereign."
 product_id: 300313
 last_modified_at:
 bundle: false

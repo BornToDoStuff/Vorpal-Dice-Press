@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Deserts of the Realms"
-tagline: A survival guide for the arid dust-filled regions of Forgotten Realms
+tagline: "A survival guide for the arid dust-filled regions of Forgotten Realms"
 product_id: 340767
 last_modified_at:
 bundle: false

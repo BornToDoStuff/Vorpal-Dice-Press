@@ -1,6 +1,6 @@
 ---
 title: "Mythic Encounters"
-tagline: Challenge your party with 36 MYTHIC creatures!
+tagline: "Challenge your party with 36 MYTHIC creatures!"
 product_id: 315637
 last_modified_at:
 bundle: false

@@ -1,6 +1,6 @@
 ---
 title: "Player Primer: Moonshae Isles"
-tagline: Across the Sea of Swords, the mysterious and myth-shrouded Moonshae Isles lie.
+tagline: "Across the Sea of Swords, the mysterious and myth-shrouded Moonshae Isles lie."
 product_id: 337329
 last_modified_at:
 bundle: false

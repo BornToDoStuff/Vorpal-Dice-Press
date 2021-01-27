@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Almanac: Swamps of the Realms"
-tagline: A survival guide for the dank dirges of Forgotten Realms
+tagline: "A survival guide for the dank dirges of Forgotten Realms"
 product_id: 321936
 last_modified_at:
 bundle: false

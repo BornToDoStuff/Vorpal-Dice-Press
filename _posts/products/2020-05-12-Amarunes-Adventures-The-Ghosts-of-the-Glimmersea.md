@@ -1,6 +1,6 @@
 ---
 title: "Amarune's Adventures: The Ghosts of the Glimmersea"
-tagline: An Underdark adventure for 4 adventuerers between 5th and 10th level.
+tagline: "An Underdark adventure for 4 adventuerers between 5th and 10th level."
 product_id: 313420
 last_modified_at:
 bundle: false

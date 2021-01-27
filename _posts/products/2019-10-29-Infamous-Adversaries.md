@@ -1,6 +1,6 @@
 ---
 title: "Infamous Adversaries"
-tagline: A collection of 40 original takes on classic D&D monsters, each designed to be dropped into your ongoing campaign as a side quest or as the focus of a one-shot game.
+tagline: "A collection of 40 original takes on classic D&D monsters, each designed to be dropped into your ongoing campaign as a side quest or as the focus of a one-shot game."
 product_id: 293143
 last_modified_at:
 bundle: false
