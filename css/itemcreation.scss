@@ -99,6 +99,10 @@ magic-spell {
 	left: 0px;
 }
 
+#editor-container p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+}
+
 section[class="curse"], div[class="curse"] {
 	background-color: lightgray;
 	padding-top: 10px;
