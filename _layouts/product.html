@@ -22,7 +22,7 @@ layout: default
               <span class="currency-usd" style="text-decoration:line-through">{{ price[1] }}</span>
               <span class="currency-usd" style="color:#ff2b38">{{ page.product_sales[index] }}</span>
             {% else %}
-              {% if displayprice <= 0 %}
+              {% if displayprice == 0 %}
                 <span class="currency-usd">Free</span>
               {% else %}
                 <span class="currency-usd">{{ displayprice }}</span>
