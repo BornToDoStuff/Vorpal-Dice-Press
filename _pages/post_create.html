@@ -1,0 +1,418 @@
+---
+layout: null
+title: Create New Product
+permalink: /product/create/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/post_create/custom-bootstrap.js"></script>
+	<script src="{{ site.baseurl }}/post_create/jquery.hotkeys.js"></script>
+	<script src="{{ site.baseurl }}/post_create/jquery-ui.min.js"></script>
+	<script src="{{ site.baseurl }}/post_create/quill.min.js"></script>
+	<script src="{{ site.baseurl }}/post_create/turndown.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/itemcreation.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1 class="col-xs-off">Create New Product</h1>
+		</div>
+		<div class="form-horizontal">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="post-title" class="control-label col-sm-3">Title</label>
+						<div class="col-sm-9">
+							<input id="post-title" type="text" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-product_id" class="control-label col-sm-3">ID</label>
+						<div class="col-sm-2">
+							<input id="post-product_id" type="text" class="form-control" />
+						</div>
+						<label for="post-product_type" class="control-label col-sm-2">Type</label>
+						<div class="col-sm-5">
+							<input id="post-product_type" type="text" list="list-type" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-tagline" class="control-label col-sm-3">Tagline</label>
+						<div class="col-sm-9">
+							<input id="post-tagline" type="text" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-product_image" class="control-label col-sm-3">Image</label>
+						<div class="col-sm-9">
+							<input id="post-product_image" type="text" list="list-rarity" class="form-control" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="post-product_medal" class="control-label col-sm-3">Medal</label>
+						<div class="col-sm-9">
+							<input id="post-product_medal" type="text" list="list-medals" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-product_audience" class="control-label col-sm-3">Audience</label>
+						<div class="col-sm-9">
+							<input id="post-product_audience" type="text" list="list-audience" class="form-control" placeholder="comma separate for multiple" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-product_license" class="control-label col-sm-3">License</label>
+						<div class="col-sm-9">
+							<!--<input id="post-product_license" type="text" list="list-license" class="form-control" placeholder="Damage type if any" />-->
+							<input id="post-product_license" type="text" list="list-license" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="post-bundle" class="control-label col-sm-3">Bundle</label>
+						<div class="input-group col-sm-9">
+							<span class=" input-group-addon">
+								<input id="post-bundle" type="checkbox" value="true" />
+							</span>
+							<input id="post-bundle_products" type="text" class="form-control" placeholder="comma separated product IDs" disabled />
+						</div>
+					</div>
+				</div>
+				<hr class="col-sm-12 visible-xs" />
+				<div id="editor-container" class="col-sm-6">
+					<div id="editor-toolbar" class="btn-toolbar">
+						<!-- Add buttons as you would before -->
+						<div class="btn-group btn-group-sm">
+							<button class="ql-clean btn btn-default"><i class="fa fa-trash"></i></button>
+							<button class="ql-bold btn btn-default"><i class="fa fa-bold"></i></button>
+							<button class="ql-italic btn btn-default"><i class="fa fa-italic"></i></button>
+						</div>
+						<div class="btn-group btn-group-sm">
+							<!--<button class="ql-blockquote btn btn-default" type="button"><i class="fa fa-quote-right"></i></button>-->
+							<button class="ql-list btn btn-default" value="bullet" type="button"><i class="fa fa-list-ul"></i></button>
+							<button class="ql-header btn btn-default" value="3"><i class="fa fa-header"></i><sup>1</sup></button>
+							<button class="ql-header btn btn-default" value="4"><i class="fa fa-header"></i><sup>2</sup></button>
+						</div>
+
+						<div class="btn-group btn-group-sm">
+							<button class="ql-spell btn btn-default"><i class="fa fa-magic"></i></button>
+							<!--<button class="man-curse btn btn-default" value="curse"><i class="fa fa-exclamation-triangle"></i></button>-->
+						</div>
+						<div class="btn-group btn-group-sm pull-right">
+							<button id="editor-expand" class="btn btn-default"><i class="fa fa-arrows-alt"></i></button>
+						</div>
+					</div>
+					<div id="post-description">
+						<p>Item description</p>
+					</div>
+					<!--<br />
+					<button id="description-html">Get HTML</button>-->
+				</div>
+			</div>
+			<div class="row">
+				<hr class="col-sm-12 clearfix" />
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div id="post-classes" class="panel panel-default">
+						<div class="panel-heading">
+							<label class="control-label">Classes</label>
+							<label class="pull-right">
+								<input id="class-all" type="checkbox"> All
+							</label>
+						</div>
+						<div class="panel-body">
+							<!--Select all classes suggested for the item and sort them in order of importance-->
+							<label class="control-label">Melee Fighter</label>
+							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
+								<label class="btn">
+									<input type="checkbox" value="Barbarian"> Barbarian
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Fighter"> Fighter
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Monk"> Monk
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Rogue"> Rogue
+								</label>
+							</div>
+							<label class="control-label">Full Caster</label>
+							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
+								<label class="btn">
+									<input type="checkbox" value="Bard"> Bard
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Cleric"> Cleric
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Druid"> Druid
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Sorcerer"> Sorcerer
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Wizard"> Wizard
+								</label>
+							</div>
+							<label class="control-label">Half Caster</label>
+							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
+								<label class="btn">
+									<input type="checkbox" value="Paladin"> Paladin
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Ranger"> Ranger
+								</label>
+								<label class="btn">
+									<input type="checkbox" value="Warlock"> Warlock
+								</label>
+							</div>
+						</div>
+						<ul class="list-group">
+							<li id="class-Barbarian" class="list-group-item"> Barbarian <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Bard" class="list-group-item"> Bard <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Cleric" class="list-group-item"> Cleric <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Druid" class="list-group-item"> Druid <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Fighter" class="list-group-item"> Fighter <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Monk" class="list-group-item"> Monk <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Paladin" class="list-group-item"> Paladin <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Ranger" class="list-group-item"> Ranger <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Rogue" class="list-group-item"> Rogue <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Sorcerer" class="list-group-item"> Sorcerer <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Warlock" class="list-group-item"> Warlock <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+							<li id="class-Wizard" class="list-group-item"> Wizard <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="col-sm-12 visible-xs" />
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<label class="control-label">Other Info</label>
+						</div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label class="control-label col-sm-3">Source</label>
+								<div class="col-sm-9">
+									<input id="post-source" type="text" class="form-control" placeholder="Where I got the idea from" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3">Co-Creator</label>
+								<div class="col-sm-9">
+									<input id="post-cocreator" type="text" class="form-control" placeholder="Who made it with me" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3">Updated</label>
+								<div class="col-sm-9">
+									<input id="post-updated" type="text" class="form-control" placeholder="last date updated - yyyy/mm/dd" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3">Tags</label>
+								<div class="col-sm-9">
+									<input id="post-tags" type="text" class="form-control" placeholder="additonal keywords" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn-primary" style="min-width:100px;" onclick="outputMarkdown()">Output</button>
+			<hr />
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+						<div class="col-xs-12">
+							<textarea rows="10" id="mdOutput" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<datalist id="list-type">
+		<option>Adventure</option>
+		<option>Class</option>
+		<option>Supplement</option>
+	</datalist>
+	<datalist id="list-rarity">
+		<option>Mediocre</option>
+		<option>Common</option>
+		<option>Uncommon</option>
+		<option>Rare</option>
+		<option>Very Rare</option>
+		<option>Legendary</option>
+		<option>Artifact</option>
+	</datalist>
+	<datalist id="list-classes">
+		<option>All</option>
+		<option>Barbarian</option>
+		<option>Bard</option>
+		<option>Cleric</option>
+		<option>Druid</option>
+		<option>Fighter</option>
+		<option>Monk</option>
+		<option>Paladin</option>
+		<option>Ranger</option>
+		<option>Rogue</option>
+		<option>Sorcerer</option>
+		<option>Warlock</option>
+		<option>Wizard</option>
+	</datalist>
+	<datalist id="list-medals">
+		<option>Copper</option>
+		<option>Silver</option>
+		<option>Electrum</option>
+		<option>Gold</option>
+		<option>Platinum</option>
+		<option>Mithral</option>
+		<option>Adamantine</option>
+	</datalist>
+	<datalist id="list-audience">
+		<option>Player</option>
+		<option>Dungeon Master</option>
+	</datalist>
+	<datalist id="list-license">
+		<option>Community Content Agreement</option>
+	</datalist>
+
+	<script>
+		//------------- QUILL ---------------
+		var editor = new Quill('#post-description', {
+			modules: {
+				toolbar: '#editor-toolbar'
+			},
+			formats: ["bold", "italic", "blockquote", "list", "header", "spell", "curse"] //make sure to include any custom elements here, so they are allowed in the editor. This is the whitelist of what things are allowed
+		});
+		$(editor.root).addClass("form-control");//quill creates an element within the container you give it, and this element needs to be styled to match the page.
+
+		var timer;
+		editor.on('text-change', function (delta, oldDelta, source) {
+			clearTimeout(timer);
+			timer = setTimeout(outputMarkdown, 1500);
+		});
+
+		var outputMarkdown = function () {
+			$("#mdOutput").val(
+				parseJekyllItem(new MagicItem())
+			)
+		}
+
+		var large = false; //bool to determine if the editor is currently fullscreened
+		$("#editor-expand").on("click", function () { //button for expanding the quill editor
+			if (large) {
+				large = false;
+				$("html").css("overflow", "scroll");
+			}
+			else {
+				large = true;
+				$("html").css("overflow", "hidden");
+				window.scrollTo(0, 0);
+			}
+
+			$("#editor-container").toggleClass("large");
+			$("#editor-container .ql-editor").toggleClass("large");
+		});
+		//------------- END QUILL ---------------
+
+		$("#post-bundle").on("change", function () {
+			if (this.checked)
+				$("#post-bundle-description").prop("disabled", false);
+			else
+				$("#post-bundle-description").prop("disabled", true);
+		});
+
+		$("#post-classes ul").sortable();
+		$("#class-all").on("change", function () {
+			//$("#post-classes").toggleClass("panel-success");
+		});
+		$("#post-classes .panel-body input[type='checkbox']").on("change", function () {
+			var item_class = "#class-" + $(this).val();
+			//$(item_class).parent().toggleClass("nodisplay");
+			$(item_class).toggleClass("post-class");
+			//$(item_class).prop("checked", function (index, value) { return !value });
+		});
+	</script>
+	<script>
+		const bullet = "  - ";
+		var turndownService = new TurndownService();
+		turndownService.keep(["magic-spell", "section"])
+
+		function MagicItem() {
+			this.ID = document.getElementById("post-product_id").value;
+			this.Name = document.getElementById("post-title").value;
+			this.Type = document.getElementById("post-product_type").value;
+			this.Subtypes = Array.from(document.getElementById("post-tagline").value.split(","), x => x.trim());
+			this.Rarity = document.getElementById("post-product_image").value;
+			this.Attunement = document.getElementById("post-bundle").checked;
+			this.Requirement = document.getElementById("post-bundle-description").value;
+			this.Curse = document.getElementById("post-curse").checked;
+			var classes = document.getElementById("post-classes").getElementsByClassName("post-class");
+			if (document.getElementById("class-all").checked) {
+				classes = ["All"];
+			}
+			else {
+				classes = Array.from(classes, x => x.innerText);
+			}
+			this.Classes = classes;
+			this.School = document.getElementById("post-product_medal").value
+			this.Roles = Array.from(document.getElementById("post-product_audience").value.split(","), x => x.trim());
+			this.Damage = Array.from(document.getElementById("post-product_license").value.split(","), x => x.trim());
+			this.Tags = Array.from(document.getElementById("post-tags").value.split(","), x => x.trim());
+			this.Source = document.getElementById("post-source").value;
+			this.CoCreator = document.getElementById("post-cocreator").value;
+			this.Updated = document.getElementById("post-updated").value;
+			this.Description = HTMLPostProcessing(document.getElementById("post-description").getElementsByClassName("ql-editor")[0].innerHTML);
+		}
+
+		function parseJekyllItem(item) {
+			item.Description = turndownService.turndown(item.Description);
+
+			return `---
+title: ${item.Name}
+item_id: ${item.ID}
+category: ${item.Type}
+item_subtypes: ${item.Subtypes[0] == "" ? "" : item.Subtypes.map((str, i) => `
+${bullet + str}`).join("")}
+item_rarity: ${item.Rarity}
+item_attunement: ${item.Attunement}
+item_requirement: ${item.Requirement}
+item_curse: ${item.Curse}
+item_classes: ${item.Classes.map((str, i) => `
+${bullet + str}`).join("")}
+item_school: ${item.School}
+item_role: ${item.Roles[0] == "" ? "" : item.Roles.map((str, i) => `
+${bullet + str}`).join("")}
+item_damage: ${item.Damage[0] == "" ? "" : item.Damage.map((str, i) => `
+${bullet + str}`).join("")}
+tags:${item.Tags[0] == "" ? "" : item.Tags.map((str, i) => `
+${bullet + str}`).join("")}
+item_idea: ${item.Source}
+item_co_creator: ${item.CoCreator}
+item_updated: ${item.Updated}
+last_modified_at: ${item.Updated}
+---
+
+${item.Description}
+`
+		}
+
+		function HTMLPostProcessing(html) {
+			//if there are too many paragraph tags, add a linebreak. If there are too many linebreaks, add a paragraph tags.
+			return html
+				.replace(/<\/p><p>/g, "<br>")
+				.replace(/(<br>){2,}/g, "</p><p>");
+		}
+	</script>
+</body>
+</html>
