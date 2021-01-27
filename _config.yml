@@ -36,7 +36,6 @@ defaults:
   - scope:
       path: _pages
     values:
-      layout: default
       permalink: /:title/
       title: Page Title
       public: false
