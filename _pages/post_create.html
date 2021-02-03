@@ -510,8 +510,8 @@ permalink: /products/create/
 			post.Description = turndownService.turndown(post.Description);
 
 			return `---
-title: ${post.Title}
-tagline: ${post.Tagline}
+title: "${post.Title}"
+tagline: "${post.Tagline}"
 product_id: ${post.ID}
 last_modified_at: ${post.Updated}
 bundle: ${post.Bundle}
@@ -519,7 +519,7 @@ bundle_products:${post.BundleProducts[0] == "" ? "" : post.BundleProducts.map((s
 ${bullet + str}`).join("")}
 product_type: ${post.Type}
 tags:${post.Tags[0] == "" ? "" : post.Tags.map((str, i) => `
-${bullet + str}`).join("")}
+"${bullet + str}"`).join("")}
 product_medal: ${post.Medal}
 product_audience: ${post.Audience}
 product_license: ${post.License}
