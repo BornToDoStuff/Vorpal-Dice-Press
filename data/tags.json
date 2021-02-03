@@ -1,7 +1,7 @@
 ---
 ---
 {
-  "tags": [{%- for tag in site.tags | sort - %}{
+  "tags": [{%- for tag in site.tags - %}{
     "name": {{ tag[0] | jsonify }},
     "count": {{ tag[1] | size }}
     } {% unless forloop.last %}, {% endunless %} {%-endfor - %}]

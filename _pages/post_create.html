@@ -156,31 +156,38 @@ permalink: /products/create/
 								</div>
 								<label for="post-product_print" class="control-label col-sm-2">Printed</label>
 								<div class="col-sm-5">
-									<div class="checkbox" style="padding-left: 12px;">
+									<div class="checkbox">
 										<label>
 											<input id="post-product_print" type="checkbox" value="true">
-											True
 										</label>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="panel-body" id="product_contributors">
-							<label class="control-label">Authors</label>
-							<div class="col-sm-12">
-								<input id="post-product_contributors_authors" type="text" class="form-control" />
+							<div class="form-group">
+								<label class="control-label">Authors</label>
+								<div class="col-sm-12">
+									<input id="post-product_contributors_authors" type="text" class="form-control" />
+								</div>
 							</div>
-							<label class="control-label">Artists</label>
-							<div class="col-sm-12">
-								<input id="post-product_contributors_artists" type="text" class="form-control" />
+							<div class="form-group">
+								<label class="control-label">Artists</label>
+								<div class="col-sm-12">
+									<input id="post-product_contributors_artists" type="text" class="form-control" />
+								</div>
 							</div>
-							<label class="control-label">Editor</label>
-							<div class="col-sm-12">
-								<input id="post-product_contributors_editor" type="text" class="form-control" />
+							<div class="form-group">
+								<label class="control-label">Editor</label>
+								<div class="col-sm-12">
+									<input id="post-product_contributors_editor" type="text" class="form-control" />
+								</div>
 							</div>
-							<label class="control-label">Graphic Design</label>
-							<div class="col-sm-12">
-								<input id="post-product_contributors_graphic" type="text" class="form-control" />
+							<div class="form-group">
+								<label class="control-label">Graphic Design</label>
+								<div class="col-sm-12">
+									<input id="post-product_contributors_graphic" type="text" class="form-control" />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -348,6 +355,8 @@ permalink: /products/create/
 		}
 
 		function formatDate(date) {
+			if (!date.includes(":")) { date += "00:00:00 GMT"; }
+			
 	    var d = new Date(date),
 	        month = '' + (d.getMonth() + 1),
 	        day = '' + d.getDate(),
@@ -381,7 +390,7 @@ permalink: /products/create/
 			this.Updated = document.getElementById("last_modified_at").value;
 
 			this.Bundle = document.getElementById("post-bundle").checked;
-			this.BundleProducts = Array.from(document.getElementById("post-pundle_products").value.split(","), x => x.trim());
+			this.BundleProducts = Array.from(document.getElementById("post-bundle_products").value.split(","), x => x.trim());
 
 			this.Type = document.getElementById("post-product_type").value;
 			this.Tags = Array.from(document.getElementById("post-tags").value.split(","), x => x.trim());
