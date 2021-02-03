@@ -415,7 +415,7 @@ permalink: /products/create/
 		}
 
 		function parseJekyllPost(post) {
-			item.Description = turndownService.turndown(item.Description);
+			post.Description = turndownService.turndown(post.Description);
 
 			return `---
 title: ${post.Title}
