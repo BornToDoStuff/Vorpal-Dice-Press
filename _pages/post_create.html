@@ -240,12 +240,11 @@ permalink: /products/create/
 
 							<div>
 								<div class="col-sm-3">
-									<input id="product_location1" type="text" class="form-control" placeholder="Location"/>
+									<input id="product_location1" type="text" class="form-control" placeholder="Location" default="DMsGuild"/>
 								</div>
 								<div class="col-sm-9">
-									<div class="form-group">
-										<input id="product_link1" type="text" class="form-control" placeholder="Link" />
-									</div>
+									<input id="product_link1" type="text" class="form-control" placeholder="Link" />
+
 									<div class="form-horizontal">
 										<div class="form-group">
 											<div class="col-sm-6">
@@ -260,19 +259,18 @@ permalink: /products/create/
 							</div>
 							<div>
 								<div class="col-sm-3">
-									<input id="product_location1" type="text" class="form-control" placeholder="Location"/>
+									<input id="product_location2" type="text" class="form-control" placeholder="Location"/>
 								</div>
 								<div class="col-sm-9">
-									<div class="form-group">
-										<input id="product_link1" type="text" class="form-control" placeholder="Link" />
-									</div>
+									<input id="product_link2" type="text" class="form-control" placeholder="Link" />
+
 									<div class="form-horizontal">
 										<div class="form-group">
 											<div class="col-sm-6">
-												<input id="product_price1" type="number" class="form-control" placeholder="Price" min="0.00" step="0.01" />
+												<input id="product_price2" type="number" class="form-control" placeholder="Price" min="0.00" step="0.01" />
 											</div>
 											<div class="col-sm-6">
-												<input id="product_sale1" type="number" class="form-control" placeholder="Sale price" min="0.00" step="0.01" />
+												<input id="product_sale2" type="number" class="form-control" placeholder="Sale price" min="0.00" step="0.01" />
 											</div>
 										</div>
 									</div>
@@ -280,19 +278,18 @@ permalink: /products/create/
 							</div>
 							<div>
 								<div class="col-sm-3">
-									<input id="product_location1" type="text" class="form-control" placeholder="Location"/>
+									<input id="product_location3" type="text" class="form-control" placeholder="Location"/>
 								</div>
 								<div class="col-sm-9">
-									<div class="form-group">
-										<input id="product_link1" type="text" class="form-control" placeholder="Link" />
-									</div>
+									<input id="product_link3" type="text" class="form-control" placeholder="Link" />
+
 									<div class="form-horizontal">
 										<div class="form-group">
 											<div class="col-sm-6">
-												<input id="product_price1" type="number" class="form-control" placeholder="Price" min="0.00" step="0.01" />
+												<input id="product_price3" type="number" class="form-control" placeholder="Price" min="0.00" step="0.01" />
 											</div>
 											<div class="col-sm-6">
-												<input id="product_sale1" type="number" class="form-control" placeholder="Sale price" min="0.00" step="0.01" />
+												<input id="product_sale3" type="number" class="form-control" placeholder="Sale price" min="0.00" step="0.01" />
 											</div>
 										</div>
 									</div>
@@ -478,6 +475,34 @@ permalink: /products/create/
 			this.Pages = document.getElementById("post-product_pagecount").value;
 			this.Print = document.getElementById("post-product_print").checked;
 
+			var locations = [];
+			var links = [];
+			var prices = [];
+			var sales = [];
+			if (document.getElementById("product_location1").value != "") {
+				locations.push(document.getElementById("product_location1").value);
+				links.push(document.getElementById("product_link1").value);
+				prices.push(document.getElementById("product_price1").value);
+				sales.push(document.getElementById("product_sale1").value);
+			}
+			if (document.getElementById("product_location2").value != "") {
+				locations.push(document.getElementById("product_location2").value);
+				links.push(document.getElementById("product_link2").value);
+				prices.push(document.getElementById("product_price2").value);
+				sales.push(document.getElementById("product_sale2").value);
+			}
+			if (document.getElementById("product_location3").value != "") {
+				locations.push(document.getElementById("product_location3").value);
+				links.push(document.getElementById("product_link3").value);
+				prices.push(document.getElementById("product_price3").value);
+				sales.push(document.getElementById("product_sale3").value);
+			}
+
+			this.Locations = locations;
+			this.Links = links;
+			this.Prices = prices;
+			this.Sales = sales;
+
 			this.Description = HTMLPostProcessing(document.getElementById("post-description").getElementsByClassName("ql-editor")[0].innerHTML);
 		}
 
@@ -516,6 +541,13 @@ product_contributors:${ post.Authors[0] == "" ? "" : `
 	${bullet + str}`).join("")}` }
 product_pagecount: ${post.Pages}
 product_print: ${post.Print}
+
+product_prices:${ post.Locations[0] == "" ? "" : `${post.Prices.map((str, i) => `
+	${post.Locations[i]}:${post.Prices[i]}`).join("")}` }
+product_sales:${ post.Locations[0] == "" ? "" : `${post.Sales.map((str, i) => `
+	${post.Locations[i]}:${post.Sales[i]}`).join("")}` }
+product_links:${ post.Locations[0] == "" ? "" : `${post.Links.map((str, i) => `
+	${post.Locations[i]}:${post.Links[i]}`).join("")}` }
 
 ---
 
