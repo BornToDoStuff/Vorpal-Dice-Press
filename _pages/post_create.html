@@ -134,7 +134,7 @@ permalink: /products/create/
 							<div class="form-group">
 								<label for="post-publisher_type" class="control-label col-sm-3">Type</label>
 								<div class="col-sm-9">
-									<input id="post-product_license" type="text" list="list-publisher_type" class="form-control" />
+									<input id="post-publisher_type" type="text" list="list-publisher_type" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
@@ -166,26 +166,26 @@ permalink: /products/create/
 						</div>
 						<div class="panel-body" id="product_contributors">
 							<div class="form-group">
-								<label class="control-label">Authors</label>
-								<div class="col-sm-12">
+								<label for="post-product_contributors_authors" class="control-label col-sm-3">Authors</label>
+								<div class="col-sm-9">
 									<input id="post-product_contributors_authors" type="text" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label">Artists</label>
-								<div class="col-sm-12">
+								<label for="post-product_contributors_artists" class="control-label col-sm-3">Artists</label>
+								<div class="col-sm-9">
 									<input id="post-product_contributors_artists" type="text" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label">Editor</label>
-								<div class="col-sm-12">
+								<label for="post-product_contributors_editor" class="control-label col-sm-3">Editor</label>
+								<div class="col-sm-9">
 									<input id="post-product_contributors_editor" type="text" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label">Graphic Design</label>
-								<div class="col-sm-12">
+								<label for="post-product_contributors_graphic" class="control-label col-sm-3">Graphic Design</label>
+								<div class="col-sm-9">
 									<input id="post-product_contributors_graphic" type="text" class="form-control" />
 								</div>
 							</div>
@@ -355,8 +355,8 @@ permalink: /products/create/
 		}
 
 		function formatDate(date) {
-			if (!date.includes(":")) { date += "00:00:00 GMT"; }
-			
+			if (!date.includes(":")) { date += " 00:00:00 GMT"; }
+
 	    var d = new Date(date),
 	        month = '' + (d.getMonth() + 1),
 	        day = '' + d.getDate(),
