@@ -51,7 +51,7 @@ permalink: /products/create/
 					<div class="form-group">
 						<label for="post-product_image" class="control-label col-sm-3">Image</label>
 						<div class="col-sm-9">
-							<input id="post-product_image" type="text" list="list-rarity" class="form-control" />
+							<input id="post-product_image" type="text" class="form-control" />
 						</div>
 					</div>
 
@@ -123,106 +123,107 @@ permalink: /products/create/
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<div id="post-classes" class="panel panel-default">
+					<div id="post-publishing" class="panel panel-default">
 						<div class="panel-heading">
-							<label class="control-label">Classes</label>
-							<label class="pull-right">
+							<label class="control-label">Publishing Information</label>
+							<!-- <label class="pull-right">
 								<input id="class-all" type="checkbox"> All
-							</label>
+							</label> -->
 						</div>
 						<div class="panel-body">
-							<!--Select all classes suggested for the item and sort them in order of importance-->
-							<label class="control-label">Melee Fighter</label>
-							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
-								<label class="btn">
-									<input type="checkbox" value="Barbarian"> Barbarian
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Fighter"> Fighter
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Monk"> Monk
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Rogue"> Rogue
-								</label>
+							<div class="form-group">
+								<label for="post-publisher_type" class="control-label col-sm-3">Type</label>
+								<div class="col-sm-9">
+									<input id="post-product_license" type="text" list="list-publisher_type" class="form-control" />
+								</div>
 							</div>
-							<label class="control-label">Full Caster</label>
-							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
-								<label class="btn">
-									<input type="checkbox" value="Bard"> Bard
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Cleric"> Cleric
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Druid"> Druid
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Sorcerer"> Sorcerer
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Wizard"> Wizard
-								</label>
+							<div class="form-group">
+								<label for="post-publisher_name" class="control-label col-sm-3">Name</label>
+								<div class="col-sm-9">
+									<input id="post-product_license" type="text" default="Vorpal Dice Press" class="form-control" />
+								</div>
 							</div>
-							<label class="control-label">Half Caster</label>
-							<div class="btn-group btn-group-sm btn-group-justified" data-toggle="buttons">
-								<label class="btn">
-									<input type="checkbox" value="Paladin"> Paladin
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Ranger"> Ranger
-								</label>
-								<label class="btn">
-									<input type="checkbox" value="Warlock"> Warlock
-								</label>
+							<div class="form-group">
+								<label for="post-publisher_type" class="control-label col-sm-3">Type</label>
+								<div class="col-sm-9">
+									<input id="post-product_license" type="text" list="list-publisher_type" class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="post-product_pagecount" class="control-label col-sm-3">Pages</label>
+								<div class="col-sm-2">
+									<input id="post-product_pagecount" type="text" class="form-control" />
+								</div>
+								<label for="post-product_print" class="control-label col-sm-2">Printed</label>
+								<div class="col-sm-5">
+									<div class="checkbox" style="padding-left: 12px;">
+										<label>
+											<input id="post-product_print" type="checkbox" value="true">
+											True
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
-						<ul class="list-group">
-							<li id="class-Barbarian" class="list-group-item"> Barbarian <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Bard" class="list-group-item"> Bard <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Cleric" class="list-group-item"> Cleric <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Druid" class="list-group-item"> Druid <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Fighter" class="list-group-item"> Fighter <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Monk" class="list-group-item"> Monk <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Paladin" class="list-group-item"> Paladin <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Ranger" class="list-group-item"> Ranger <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Rogue" class="list-group-item"> Rogue <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Sorcerer" class="list-group-item"> Sorcerer <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Warlock" class="list-group-item"> Warlock <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-							<li id="class-Wizard" class="list-group-item"> Wizard <i class="fa fa-sort text-muted fa-fw pull-right"></i></li>
-						</ul>
+						<div class="panel-body" id="product_contributors">
+							<label class="control-label">Authors</label>
+							<div class="col-sm-12">
+								<input id="post-product_contributors_authors" type="text" class="form-control" />
+							</div>
+							<label class="control-label">Artists</label>
+							<div class="col-sm-12">
+								<input id="post-product_contributors_artists" type="text" class="form-control" />
+							</div>
+							<label class="control-label">Editor</label>
+							<div class="col-sm-12">
+								<input id="post-product_contributors_editor" type="text" class="form-control" />
+							</div>
+							<label class="control-label">Graphic Design</label>
+							<div class="col-sm-12">
+								<input id="post-product_contributors_graphic" type="text" class="form-control" />
+							</div>
+						</div>
 					</div>
 				</div>
+
 				<hr class="col-sm-12 visible-xs" />
+
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<label class="control-label">Other Info</label>
+							<label class="control-label">Product Details</label>
 						</div>
 						<div class="panel-body">
+
 							<div class="form-group">
-								<label class="control-label col-sm-3">Source</label>
+								<label for="post-released" class="control-label col-sm-3">Released</label>
 								<div class="col-sm-9">
-									<input id="post-source" type="text" class="form-control" placeholder="Where I got the idea from" />
+									<input id="post-released" type="date" class="form-control" />
 								</div>
 							</div>
+
 							<div class="form-group">
-								<label class="control-label col-sm-3">Co-Creator</label>
+								<label for="last_modified_at" class="control-label col-sm-3">Last Updated</label>
 								<div class="col-sm-9">
-									<input id="post-cocreator" type="text" class="form-control" placeholder="Who made it with me" />
+									<input id="last_modified_at" type="date" class="form-control" />
 								</div>
 							</div>
+
 							<div class="form-group">
-								<label class="control-label col-sm-3">Updated</label>
-								<div class="col-sm-9">
-									<input id="post-updated" type="text" class="form-control" placeholder="last date updated - yyyy/mm/dd" />
+								<label for="post-product_feature_end" class="control-label col-sm-3">Feature Start</label>
+								<div class="col-sm-3">
+									<input id="post-product_feature_end" type="date" class="form-control" />
+								</div>
+								<label for="post-product_feature_start" class="control-label col-sm-3">Feature End</label>
+								<div class="col-sm-3">
+									<input id="post-product_feature_start" type="date" class="form-control">
 								</div>
 							</div>
+
 							<div class="form-group">
 								<label class="control-label col-sm-3">Tags</label>
 								<div class="col-sm-9">
-									<input id="post-tags" type="text" class="form-control" placeholder="additonal keywords" />
+									<input id="post-tags" type="text" class="form-control" />
 								</div>
 							</div>
 						</div>
@@ -232,6 +233,11 @@ permalink: /products/create/
 
 			<button class="btn btn-primary" style="min-width:100px;" onclick="outputMarkdown()">Output</button>
 			<hr />
+			<div class="form-group">
+				<div class="col-xs-12">
+					<input id="post-title-output" type="text" class="form-control" />
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="form-group">
@@ -258,21 +264,6 @@ permalink: /products/create/
 		<option>Legendary</option>
 		<option>Artifact</option>
 	</datalist>
-	<datalist id="list-classes">
-		<option>All</option>
-		<option>Barbarian</option>
-		<option>Bard</option>
-		<option>Cleric</option>
-		<option>Druid</option>
-		<option>Fighter</option>
-		<option>Monk</option>
-		<option>Paladin</option>
-		<option>Ranger</option>
-		<option>Rogue</option>
-		<option>Sorcerer</option>
-		<option>Warlock</option>
-		<option>Wizard</option>
-	</datalist>
 	<datalist id="list-medals">
 		<option>Copper</option>
 		<option>Silver</option>
@@ -289,6 +280,11 @@ permalink: /products/create/
 	<datalist id="list-license">
 		<option>Community Content Agreement</option>
 	</datalist>
+	<datalist id="list-publisher_type">
+		<option>Self</option>
+		<option>Collaboration</option>
+		<option>Feature</option>
+	</datalist>
 
 	<script>
 		//------------- QUILL ---------------
@@ -296,7 +292,7 @@ permalink: /products/create/
 			modules: {
 				toolbar: '#editor-toolbar'
 			},
-			formats: ["bold", "italic", "blockquote", "list", "header", "spell", "curse"] //make sure to include any custom elements here, so they are allowed in the editor. This is the whitelist of what things are allowed
+			formats: ["bold", "italic", "blockquote", "list", "header"] //make sure to include any custom elements here, so they are allowed in the editor. This is the whitelist of what things are allowed
 		});
 		$(editor.root).addClass("form-control");//quill creates an element within the container you give it, and this element needs to be styled to match the page.
 
@@ -307,8 +303,15 @@ permalink: /products/create/
 		});
 
 		var outputMarkdown = function () {
+			$("#post-title-output").val(
+				formatDate(document.getElementById("post-released").value) +
+				"-" +
+				slugify(document.getElementById("post-title").value) +
+				".md"
+			);
+
 			$("#mdOutput").val(
-				parseJekyllItem(new MagicItem())
+				parseJekyllPost(new Product())
 			)
 		}
 
@@ -329,6 +332,35 @@ permalink: /products/create/
 		});
 		//------------- END QUILL ---------------
 
+		function slugify(string) {
+		  const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
+		  const b = 'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------'
+		  const p = new RegExp(a.split('').join('|'), 'g')
+
+		  return string.toString().toLowerCase()
+		    .replace(/\s+/g, '-') // Replace spaces with -
+		    .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+		    .replace(/&/g, '-and-') // Replace & with 'and'
+		    .replace(/[^\w\-]+/g, '') // Remove all non-word characters
+		    .replace(/\-\-+/g, '-') // Replace multiple - with single -
+		    .replace(/^-+/, '') // Trim - from start of text
+		    .replace(/-+$/, '') // Trim - from end of text
+		}
+
+		function formatDate(date) {
+	    var d = new Date(date),
+	        month = '' + (d.getMonth() + 1),
+	        day = '' + d.getDate(),
+	        year = d.getFullYear();
+
+	    if (month.length < 2)
+	        month = '0' + month;
+	    if (day.length < 2)
+	        day = '0' + day;
+
+	    return [year, month, day].join('-');
+		}
+
 		$("#post-bundle").on("change", function () {
 			if (this.checked)
 				$("#post-bundle_products").prop("disabled", false);
@@ -336,78 +368,88 @@ permalink: /products/create/
 				$("#post-bundle_products").prop("disabled", true);
 		});
 
-		$("#post-classes ul").sortable();
-		$("#class-all").on("change", function () {
-			//$("#post-classes").toggleClass("panel-success");
-		});
-		$("#post-classes .panel-body input[type='checkbox']").on("change", function () {
-			var item_class = "#class-" + $(this).val();
-			//$(item_class).parent().toggleClass("nodisplay");
-			$(item_class).toggleClass("post-class");
-			//$(item_class).prop("checked", function (index, value) { return !value });
-		});
 	</script>
+
 	<script>
 		const bullet = "  - ";
 		var turndownService = new TurndownService();
-		turndownService.keep(["magic-spell", "section"])
 
-		function MagicItem() {
+		function Product() {
+			this.Title = document.getElementById("post-title").value;
+			this.Tagline = document.getElementById("post-tagline").value;
 			this.ID = document.getElementById("post-product_id").value;
-			this.Name = document.getElementById("post-title").value;
+			this.Updated = document.getElementById("last_modified_at").value;
+
+			this.Bundle = document.getElementById("post-bundle").checked;
+			this.BundleProducts = Array.from(document.getElementById("post-pundle_products").value.split(","), x => x.trim());
+
 			this.Type = document.getElementById("post-product_type").value;
-			this.Subtypes = Array.from(document.getElementById("post-tagline").value.split(","), x => x.trim());
-			this.Rarity = document.getElementById("post-product_image").value;
-			this.Attunement = document.getElementById("post-bundle").checked;
-			this.Requirement = document.getElementById("post-bundle-description").value;
-			this.Curse = document.getElementById("post-curse").checked;
-			var classes = document.getElementById("post-classes").getElementsByClassName("post-class");
-			if (document.getElementById("class-all").checked) {
-				classes = ["All"];
-			}
-			else {
-				classes = Array.from(classes, x => x.innerText);
-			}
-			this.Classes = classes;
-			this.School = document.getElementById("post-product_medal").value
-			this.Roles = Array.from(document.getElementById("post-product_audience").value.split(","), x => x.trim());
-			this.Damage = Array.from(document.getElementById("post-product_license").value.split(","), x => x.trim());
 			this.Tags = Array.from(document.getElementById("post-tags").value.split(","), x => x.trim());
-			this.Source = document.getElementById("post-source").value;
-			this.CoCreator = document.getElementById("post-cocreator").value;
-			this.Updated = document.getElementById("post-updated").value;
+			this.Medal = document.getElementById("post-product_medal").value;
+			this.Audience = Array.from(document.getElementById("post-product_audience").value.split(","), x => x.trim());
+			this.License = Array.from(document.getElementById("post-product_license").value.split(","), x => x.trim());
+
+			this.FeatureStart = document.getElementById("post-product_feature_start").value;
+			this.FeatureEnd = document.getElementById("post-product_feature_end").value;
+
+			this.Image = document.getElementById("post-product_image").value;
+			this.PublisherType = document.getElementById("post-publisher_type").value;
+			this.Publisher = document.getElementById("post-publisher_name").value;
+			this.Authors = Array.from(document.getElementById("post-product_contributors_authors").value.split(","), x => x.trim());
+			this.Artists = Array.from(document.getElementById("post-product_contributors_artists").value.split(","), x => x.trim());
+			this.Editors = Array.from(document.getElementById("post-product_contributors_editor").value.split(","), x => x.trim());
+			this.Graphics = Array.from(document.getElementById("post-product_contributors_graphics").value.split(","), x => x.trim());
+
+			this.Pages = document.getElementById("post-product_pagecount").value;
+			this.Print = document.getElementById("post-product_print").checked;
+
 			this.Description = HTMLPostProcessing(document.getElementById("post-description").getElementsByClassName("ql-editor")[0].innerHTML);
 		}
 
-		function parseJekyllItem(item) {
+		function parseJekyllPost(post) {
 			item.Description = turndownService.turndown(item.Description);
 
 			return `---
-title: ${item.Name}
-item_id: ${item.ID}
-category: ${item.Type}
-item_subtypes: ${item.Subtypes[0] == "" ? "" : item.Subtypes.map((str, i) => `
+title: ${post.Title}
+tagline: ${post.Tagline}
+product_id: ${post.ID}
+last_modified_at: ${post.Updated}
+bundle: ${post.Bundle}
+bundle_products: ${post.BundleProducts.map((str, i) => `
 ${bullet + str}`).join("")}
-item_rarity: ${item.Rarity}
-item_attunement: ${item.Attunement}
-item_requirement: ${item.Requirement}
-item_curse: ${item.Curse}
-item_classes: ${item.Classes.map((str, i) => `
+product_type: ${post.Type}
+tags:${post.Tags[0] == "" ? "" : post.Tags.map((str, i) => `
 ${bullet + str}`).join("")}
-item_school: ${item.School}
-item_role: ${item.Roles[0] == "" ? "" : item.Roles.map((str, i) => `
-${bullet + str}`).join("")}
-item_damage: ${item.Damage[0] == "" ? "" : item.Damage.map((str, i) => `
-${bullet + str}`).join("")}
-tags:${item.Tags[0] == "" ? "" : item.Tags.map((str, i) => `
-${bullet + str}`).join("")}
-item_idea: ${item.Source}
-item_co_creator: ${item.CoCreator}
-item_updated: ${item.Updated}
-last_modified_at: ${item.Updated}
+product_medal:
+product_audience:
+product_license:
+
+product_feature_start:
+product_feature_end:
+
+product_image:
+publisher_type:
+publisher_name:
+product_contributors:
+${ post.Authors[0] == "" ? "" : `
+  Authors: ${post.Authors.map((str, i) => `
+	${bullet + str}`).join("")}` }
+${ post.Artists[0] == "" ? "" : `
+  Artists: ${post.Artists.map((str, i) => `
+	${bullet + str}`).join("")}` }
+${ post.Editors[0] == "" ? "" : `
+  Editor: ${post.Editors.map((str, i) => `
+	${bullet + str}`).join("")}` }
+${ post.Graphics[0] == "" ? "" : `
+  Graphic Design: ${post.Graphics.map((str, i) => `
+	${bullet + str}`).join("")}` }
+
+product_pagecount: ${post.Pages}
+product_print: ${post.Print}
+
 ---
 
-${item.Description}
+${post.Description}
 `
 		}
 
