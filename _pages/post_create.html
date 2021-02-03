@@ -163,6 +163,7 @@ permalink: /products/create/
 								</div>
 							</div>
 						</div>
+						<hr />
 						<div class="panel-body" id="product_contributors">
 							<div class="form-group">
 								<label for="post-product_contributors_authors" class="control-label col-sm-3">Authors</label>
@@ -225,11 +226,40 @@ permalink: /products/create/
 									<input id="post-product_feature_start" type="date" class="form-control">
 								</div>
 							</div>
-
 							<div class="form-group">
 								<label class="control-label col-sm-3">Tags</label>
 								<div class="col-sm-9">
 									<input id="post-tags" type="text" class="form-control" />
+								</div>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="panel-body">
+
+							<div class="form-group">
+								<input id="product_location1" type="text" class="form-control col-sm-3" />
+								<div class="col-sm-9">
+									<input id="product_link1" type="text" class="form-control" placeholder="link" />
+									<input id="product_price1" type="number" class="form-control col-sm-6" placeholder="price" min="0.00" step="0.01" />
+									<input id="product_sale1" type="number" class="form-control col-sm-6" placeholder="sale price" min="0.00" step="0.01" />
+								</div>
+							</div>
+							<div class="form-group">
+								<input id="product_location2" type="text" class="form-control col-sm-3" />
+								<div class="col-sm-9">
+									<input id="product_link2" type="text" class="form-control" placeholder="link" />
+									<input id="product_price2" type="number" class="form-control col-sm-6" placeholder="price" min="0.00" step="0.01" />
+									<input id="product_sale2" type="number" class="form-control col-sm-6" placeholder="sale price" min="0.00" step="0.01" />
+								</div>
+							</div>
+							<div class="form-group">
+								<input id="product_location3" type="text" class="form-control col-sm-3" />
+								<div class="col-sm-9">
+									<input id="product_link3" type="text" class="form-control" placeholder="link" />
+									<input id="product_price3" type="number" class="form-control col-sm-6" placeholder="price" min="0.00" step="0.01" />
+									<input id="product_sale3" type="number" class="form-control col-sm-6" placeholder="sale price" min="0.00" step="0.01" />
 								</div>
 							</div>
 						</div>
@@ -428,30 +458,25 @@ ${bullet + str}`).join("")}
 product_type: ${post.Type}
 tags:${post.Tags[0] == "" ? "" : post.Tags.map((str, i) => `
 ${bullet + str}`).join("")}
-product_medal:
-product_audience:
-product_license:
+product_medal: ${post.Medal}
+product_audience: ${post.Audience}
+product_license: ${post.License}
 
-product_feature_start:
-product_feature_end:
+product_feature_start: ${post.FeatureStart}
+product_feature_end: ${post.FeatureEnd}
 
-product_image:
-publisher_type:
-publisher_name:
-product_contributors:
-${ post.Authors[0] == "" ? "" : `
+product_image: ${post.Image}
+publisher_type: ${post.PublisherType}
+publisher_name: ${post.Publisher}
+product_contributors:${ post.Authors[0] == "" ? "" : `
   Authors: ${post.Authors.map((str, i) => `
-	${bullet + str}`).join("")}` }
-${ post.Artists[0] == "" ? "" : `
+	${bullet + str}`).join("")}` }${ post.Artists[0] == "" ? "" : `
   Artists: ${post.Artists.map((str, i) => `
-	${bullet + str}`).join("")}` }
-${ post.Editors[0] == "" ? "" : `
+	${bullet + str}`).join("")}` }${ post.Editors[0] == "" ? "" : `
   Editor: ${post.Editors.map((str, i) => `
-	${bullet + str}`).join("")}` }
-${ post.Graphics[0] == "" ? "" : `
+	${bullet + str}`).join("")}` }${ post.Graphics[0] == "" ? "" : `
   Graphic Design: ${post.Graphics.map((str, i) => `
 	${bullet + str}`).join("")}` }
-
 product_pagecount: ${post.Pages}
 product_print: ${post.Print}
 
