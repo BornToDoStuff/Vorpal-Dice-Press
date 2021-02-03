@@ -515,7 +515,7 @@ tagline: ${post.Tagline}
 product_id: ${post.ID}
 last_modified_at: ${post.Updated}
 bundle: ${post.Bundle}
-bundle_products: ${post.BundleProducts.map((str, i) => `
+bundle_products:${post.BundleProducts[0] == "" ? "" : post.BundleProducts.map((str, i) => `
 ${bullet + str}`).join("")}
 product_type: ${post.Type}
 tags:${post.Tags[0] == "" ? "" : post.Tags.map((str, i) => `
