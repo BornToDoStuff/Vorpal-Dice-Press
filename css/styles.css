@@ -243,11 +243,10 @@ main {
 .review {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 15px;
+  margin-top: 25px;
 }
 .review:nth-child(even) {
   background: rgba(128, 128, 128, 0.1);
-  margin-top: 25px;
   padding: 25px 0px;
   border: 2px solid rgba(35, 4, 43, 0.05);
   border-width: 2px 0px;
@@ -354,11 +353,10 @@ main {
 .blog {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 15px;
+  margin-top: 25px;
 }
 .blog:nth-child(even) {
   background: rgba(128, 128, 128, 0.1);
-  margin-top: 25px;
   padding: 25px 0px;
   border: 2px solid rgba(35, 4, 43, 0.05);
   border-width: 2px 0px;
