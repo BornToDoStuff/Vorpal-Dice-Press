@@ -4,22 +4,21 @@ public: true
 order: 2
 layout: default
 ---
-<div class="width-wrapper">
-  <h1>{{ page.title }}</h1>
 
-  {% for post in site.categories.reviews %}
-    {% if post.product_image_anchor == "center" %}
-      {% assign align = "center" %}
-    {% elsif post.product_image_anchor == "bottom" %}
-      {% assign align = "flex-end" %}
-    {% else %}
-      {% assign align = "flex-start" %}
-    {% endif %}
-    <div class="review">
+{% for post in site.categories.reviews %}
+  {% if post.product_image_anchor == "center" %}
+    {% assign align = "center" %}
+  {% elsif post.product_image_anchor == "bottom" %}
+    {% assign align = "flex-end" %}
+  {% else %}
+    {% assign align = "flex-start" %}
+  {% endif %}
+  <div class="review">
+    <div class="width-wrapper">
       <div class="review-wrapper">
         <div class="review-image"><a style="align-items:{{ align }}" href="{{ post.url }}"><img src="{{ post.review_image }}" /></a></div>
         <div class="review-content">
-          <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+          <a href="{{ post.url }}"><h2 class="compact">{{ post.title }}</h2></a>
           <p> {{ post.content }} </p>
         </div>
       </div>
@@ -28,5 +27,5 @@ layout: default
         <div><a href="{{ post.url }}">Read More...</a></div>
       </div>
     </div>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
