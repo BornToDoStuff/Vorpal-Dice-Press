@@ -26,6 +26,12 @@ h3 {
   color: #4f115f;
 }
 
+blockquote {
+  border-left: 4px solid lightgray;
+  margin-inline-start: 1.25em;
+  margin-inline-end: 1.25em;
+}
+
 h1.compact, h2.compact, h3.compact {
   margin-block-start: 0.44em;
   margin-block-end: 0.3em;
@@ -521,7 +527,7 @@ footer:hover > .site-logo {
 }
 #product section {
   width:48%;
-  margin-bottom: 2%;
+  margin-bottom: 0px;
  }
 #product section:nth-child(2n+1) {
   order: 1;
@@ -532,6 +538,7 @@ footer:hover > .site-logo {
   order: 2;
   width: 30%;
   width: 300px;
+  color: $darkGray;
 }
 
 #product:before {
@@ -808,12 +815,14 @@ input[type="search"]:focus {
 
 /*@media (max-width: 600px and max-width: 600px) { */
 
+/* fullsize screen and larger */
 @media (min-width: 1025px) {
   .hide.desktop {
     display: none;
   }
 }
 
+/* small screens and smaller */
 @media (max-width: 1024px) {
   #reviews .review {
     flex: 1 1 500px;
@@ -850,7 +859,7 @@ input[type="search"]:focus {
   }
 }
 
-
+/* tablet and phone */
 @media (max-width: 768px) {
   #features >.width-wrapper {
     padding: 0px 40px;
@@ -885,6 +894,7 @@ input[type="search"]:focus {
   }
 }
 
+/* phone */
 @media (max-width: 425px) {
   #features > .width-wrapper {
     padding: 0px 20px;
@@ -915,5 +925,17 @@ input[type="search"]:focus {
   .product {
     flex: 0 0 100%;
     margin: 10px 0px;
+  }
+
+  /* hide logo text and re-center image */
+
+  nav > .width-wrapper > div:first-child {
+    flex: 0 1 60px;
+  }
+  #logo a {
+    justify-content: center;
+  }
+  #logo span {
+    display: none;
   }
 }
