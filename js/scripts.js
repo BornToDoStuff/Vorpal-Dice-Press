@@ -38,11 +38,15 @@ $(document).ready(function(){
     ]
   });
 
-  document.getElementsByClassName('blog-content').forEach((ele) => {
+  let blogs = document.getElementsByClassName('blog');
+  let reviews = document.getElementsByClassName('review');
+
+
+  [...blogs].forEach((ele) => {
     if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
       ele.classList.add("show-more");
   });
-  document.getElementsByClassName('review-content').forEach((ele) => {
+  [...reviews].forEach((ele) => {
     if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
       ele.classList.add("show-more");
   });
