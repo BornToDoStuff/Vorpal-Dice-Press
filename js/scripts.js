@@ -43,11 +43,13 @@ $(document).ready(function(){
 
 
   [...blogs].forEach((ele) => {
-    if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
+    var content = ele.getElementsByClassName("blog-content")[0];
+    if ((content.scrollHeight > content.clientHeight) || (content.scrollWidth > content.clientWidth))
       ele.classList.add("show-more");
   });
   [...reviews].forEach((ele) => {
-    if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
+    var content = ele.getElementsByClassName("review-content")[0];
+    if ((content.scrollHeight > content.clientHeight) || (content.scrollWidth > content.clientWidth))
       ele.classList.add("show-more");
   });
 
