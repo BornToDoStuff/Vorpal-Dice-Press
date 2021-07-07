@@ -29,11 +29,6 @@ h3 {
   color: #4f115f;
 }
 
-blockquote {
-  border-left: 4px solid lightgray;
-  margin-inline-start: 1.25em;
-  margin-inline-end: 1.25em;
-}
 
 h1.compact, h2.compact, h3.compact {
   margin-block-start: 0.44em;
@@ -47,6 +42,16 @@ h1.compact, h2.compact, h3.compact {
 img.subtle {
   opacity: 1;
   filter: brightness(0.8) saturate(0.8);
+}
+
+blockquote {
+  border-left: 4px solid lightgray;
+  margin-inline-start: 1.25em;
+  margin-inline-end: 1.25em;
+}
+
+section {
+    margin-top: 25px;
 }
 
 hr {
@@ -64,10 +69,7 @@ hr {
 }
 #reviews a, #blogs a {
   text-decoration: none;
-}
-
-section {
-    margin: 25px 0px;
+  color: #743286;
 }
 
 #wip {
@@ -175,7 +177,7 @@ main {
 /*****           *****/
 
 .read-more {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
   position: absolute;
@@ -183,37 +185,47 @@ main {
   left: 15px;
   right: 15px;
   text-align: right;
-  color: #743286;
 }
   .read-more div {
     flex: 1 1 350px;
-    padding-top:2.5em;
+    height: 2em;
+    line-height: 2em;
   }
-    .read-more div:last-child {
-      background: linear-gradient(0deg, white 0%, white 1.75em, rgba(255, 255, 255, 0) 100%);
-    }
-    /* .read-more div:last-child:before {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-bottom: 75px solid rgb(116, 50, 134);
-      border-left: 75px solid transparent;
-    }
-    .read-more div:last-child:after {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      right: 12px;
-      bottom: 16px;
-      width: 70%;
-      max-width: 300px;
-      max-height: 100px;
-      height: 55%;
-      box-shadow: -3px 10px 8px 2px rgba(0, 0, 0, 0.3);
-      transform: skew(15deg) rotate(6deg);
-    } */
+  .read-more a {
+    display: block;
+  }
+
+.show-more + .read-more {
+  display: flex;
+}
+.blog-content.show-more , .review-content.show-more {
+  -webkit-mask-image: linear-gradient(180deg,#000 30px,#000 calc(100% - 5em),transparent calc(100% - 2em));
+  mask-image: linear-gradient(180deg,#000 30px,#000 calc(100% - 5em),transparent calc(100% - 2em));
+}
+
+  /* .read-more div:last-child:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 75px solid rgb(116, 50, 134);
+    border-left: 75px solid transparent;
+  }
+  .read-more div:last-child:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    right: 12px;
+    bottom: 16px;
+    width: 70%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 55%;
+    box-shadow: -3px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    transform: skew(15deg) rotate(6deg);
+  } */
+
 
 /*****          *****/
 /***** FEATURES *****/
@@ -232,6 +244,7 @@ main {
 }
 #reviews .review {
   margin: 15px;
+  padding: 0px;
   flex: 1 1 350px;
   background: white;
   border: 1px solid rgba(35, 4, 43, 0.3);
@@ -323,7 +336,6 @@ main {
 
 #blogs {
   background: rgba(128, 128, 128, 0.1);
-  margin-top: 25px;
   padding: 25px 0px;
   border: 2px solid rgba(35, 4, 43, 0.05);
   border-width: 2px 0px;
@@ -360,6 +372,15 @@ main {
   padding: 25px 0px;
   border: 2px solid rgba(35, 4, 43, 0.05);
   border-width: 2px 0px;
+}
+
+#blogs .blog-content.show-more {
+  -webkit-mask-image: linear-gradient(90deg ,#000 50%,transparent calc(50% + 1px)),
+      linear-gradient(180deg,#000 30px,#000 calc(100% - 5em),transparent calc(100% - 2em)
+    );
+  mask-image: linear-gradient(90deg ,#000 50%,transparent calc(50% + 1px)),
+      linear-gradient(180deg,#000 30px,#000 calc(100% - 5em),transparent calc(100% - 2em)
+    );
 }
 
 /* #blogs .blog:first-child { margin-left: 0px; }

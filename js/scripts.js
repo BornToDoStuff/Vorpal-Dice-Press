@@ -37,4 +37,14 @@ $(document).ready(function(){
       }
     ]
   });
+
+  document.getElementsByClassName('blog-content').forEach((ele) => {
+    if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
+      ele.classList.add("show-more");
+  });
+  document.getElementsByClassName('review-content').forEach((ele) => {
+    if ((ele.scrollHeight > ele.clientHeight) || (ele.scrollWidth > ele.clientWidth))
+      ele.classList.add("show-more");
+  });
+
 });
