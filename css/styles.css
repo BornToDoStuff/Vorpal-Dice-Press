@@ -14,6 +14,7 @@ body {
 p {
   margin: 0px;
   line-height: 1.2em;
+  margin-bottom: 0.5em;
 }
 h1, h2 {
     color: #4f115f;
@@ -181,13 +182,17 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   text-align: right;
+  height: 2em;
+  line-height: 2em;
+  margin-top: -2em;
+  position: relative;
 }
   .read-more div {
     flex: 1 1 350px;
-    height: 2em;
-    line-height: 2em;
-    margin-top: -2em;
     padding: 0em 1em;
+  }
+  .read-more div:first-child {
+    height: 0px;
   }
   .read-more a {
     display: block;
@@ -457,9 +462,9 @@ footer:hover > .site-logo {
   #footer-content > .width-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
     #footer-content > .width-wrapper > div {
-        flex: 1 1;
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
@@ -482,6 +487,9 @@ footer:hover > .site-logo {
     }
     #footer-content a * {
       margin: 3px;
+    }
+    #footer-content h3 {
+      color: white;
     }
 
 
