@@ -9,7 +9,7 @@ layout: default
       <hr />
     </section>
     <section id="product_image">
-      <img src="{{ page.product_image }}" />
+      <img src="{{ page.review_image }}" />
       <br />
       <br />
         {% for price in page.product_prices %}
@@ -40,8 +40,6 @@ layout: default
       {{content}}
     </section>
     <section id="product_details">
-      <p><span style="font-weight: bold">Date Published:</span> {{ page.date | date: '%B %d, %Y' }}</p>
-      <p><span style="font-weight: bold">Last Modified:</span> {{ page.last_modified_at | default: page.date | date: '%B %d, %Y'}}</p>
       {% for contributor_type in page.product_contributors %}
         <p><span style="font-weight: bold">{{ contributor_type[0] }}:</span> {{ contributor_type[1] | array_to_sentence_string }}</p>
       {% endfor %}
@@ -52,42 +50,5 @@ layout: default
         {% endfor %}
       </div>
     </section>
-  </section>
-  <section id="related_products">
-    <div>
-      <h2>Related Products</h2>
-      <div class="slider">
-        {% assign maxRelated = 10 %}
-        {% assign minCommonTags =  3 %}
-        {% assign maxRelatedCounter = 0 %}
-
-        {% for post in site.posts %}
-          {% if post.url != page.url %}
-
-            {% assign sameTagCount = 0 %}
-            {% assign commonTags = "" | split: ',' %}
-
-            {% for tag in post.tags %}
-                {% if page.tags contains tag %}
-                  {% assign sameTagCount = sameTagCount | plus: 1 %}
-                  {% assign commonTags = commonTags | push: tag %}
-                {% endif %}
-            {% endfor %}
-
-
-            {% if sameTagCount >= minCommonTags %}
-              <div>
-                <a href="{{ post.url }}" data-tags="{{ commonTags | split: ',' }}"><img src="{{ post.product_image }}" alt="{{ post.tagline }}" /></a>
-              </div>
-              {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-              {% if maxRelatedCounter >= maxRelated %}
-                {% break %}
-              {% endif %}
-            {% endif %}
-
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
   </section>
 </div>
