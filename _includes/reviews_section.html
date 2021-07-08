@@ -13,7 +13,9 @@
           <div class="review-image"><a style="align-items:{{ align }}" href="{{ post.url }}"><img src="{{ post.review_image }}" /></a></div>
           <div class="review-content">
             <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-            <p> {{ post.content }} </p>
+            <p class="subtle subtitle">{{ post.date | date: '%B %d, %Y' }}</p>
+
+            {{ post.content }}
           </div>
         </div>
         <div class="read-more">

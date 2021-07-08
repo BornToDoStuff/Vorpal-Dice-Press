@@ -10,9 +10,9 @@ layout: default
     <div class="width-wrapper">
       <div class="blog-content">
         <a href="{{ post.url }}"><h2 class="compact">{{ post.title }}</h2></a>
-        <p class="subtle" style="font-weight: bold">{{ post.date | date: '%B %d, %Y' }}</p>
+        <p class="subtle subtitle">{{ post.date | date: '%B %d, %Y' }}</p>
 
-        <p> {{ post.content }} </p>
+        {{ post.content }}
       </div>
       <div class="read-more">
         <div></div>
