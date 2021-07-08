@@ -31,7 +31,7 @@
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  {% if page.category == "products" %}
+  {% if page.category == "products" or page.category == "reviews" %}
     <script type="text/javascript">
       $('.currency-usd').each(function() {
           var monetary_value = $(this).text();
