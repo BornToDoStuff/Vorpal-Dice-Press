@@ -264,9 +264,10 @@ main {
   flex: 1 1 350px;
   background: white;
   border: 1px solid rgba(35, 4, 43, 0.3);
-  border-left: none;
-  border-right: none;
-  box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3);
+  border-left-color: white;
+  border-right-color: white;
+  box-shadow: 1px 2px 8px -2px rgb(35 4 43 / 30%);
+  border-radius: 6px;
 }
 
 .review {
@@ -298,6 +299,7 @@ main {
   font-size: 0px;
   margin-bottom: -15px;
   margin-top: 15px;
+  border-radius: 6px;
 }
   .review-image:after {
       content: '';
@@ -334,6 +336,13 @@ main {
     filter: none;
   }
 
+#review-image {
+  max-width: 50%;
+  max-height: 500px;
+  float: left;
+  margin: 0em 1.5em 1.5em 0em;
+}
+
 .review-content {
   flex: 1 1 350px;
   padding: 15px;
@@ -344,13 +353,6 @@ main {
 
 .review-content > a:first-child {
   text-decoration: none;
-}
-
-#review-image {
-  max-width: 50%;
-  max-height: 500px;
-  float: left;
-  margin: 0em 1.5em 1.5em 0em;
 }
 
 /*****       *****/
@@ -378,11 +380,12 @@ main {
   padding: 0px 15px 15px 15px;
   background: white;
   border: 1px solid rgba(35, 4, 43, 0.3);
-  border-left: none;
-  border-right: none;
+  border-left-color: white;
+  border-right-color: white;
   margin: 15px;
   font-size: 1.2em;
-  box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3)
+  box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3);
+  border-radius: 6px;
 }
 
 .blog {
