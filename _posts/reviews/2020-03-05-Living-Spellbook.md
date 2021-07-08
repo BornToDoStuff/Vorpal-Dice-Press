@@ -14,8 +14,7 @@ review_image: /img/products/296935.png
 # possible values: top, middle, bottom
 product_image_anchor: top
 publisher_name: Some Dude
-product_authors: Other People
-product_artists:
+product_contributors:
 product_pagecount: 999
 product_print: false
 # price of the product at each location
