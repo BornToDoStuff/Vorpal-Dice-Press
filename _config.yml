@@ -67,21 +67,21 @@ defaults:
       path: _drafts/blogs
     values:
       layout: blog
-      permalink: /drafts/blog/:title/
+      permalink: /:categories/:title/
       title: New Blog Draft
       categories: [drafts, blogs]
   - scope:
       path: _drafts/products
     values:
       layout: product
-      permalink: /drafts/product/:title/
+      permalink: /:categories/:title/
       title: New Product Draft
       categories: [drafts, products]
   - scope:
       path: _drafts/reviews
     values:
       layout: review
-      permalink: /drafts/review/:title/
+      permalink: /:categories/:title/
       title: New Review Draft
       categories: [drafts, reviews]
 
