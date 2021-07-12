@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-  {% if page.categories containes "drafts" %}
+  {% if page.categories contains "drafts" %}
   <title>{% if page.title %}{{ page.title }} – DRAFT</title>
   {% else %}
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
