@@ -6,6 +6,7 @@ layout: default
 ---
 
 {% for post in site.categories.blogs %}
+{% unless post.categories contains "drafts"}
   <div class="blog">
     <div class="width-wrapper">
       <div class="blog-content">
@@ -20,4 +21,5 @@ layout: default
       </div>
     </div>
   </div>
+{% endunless %}
 {% endfor %}

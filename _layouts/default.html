@@ -2,7 +2,12 @@
 
 <html lang="en">
 <head>
+
+  {% if page.categories containes "drafts" %}
+  <title>{% if page.title %}{{ page.title }} – DRAFT</title>
+  {% else %}
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+  {% endif %}
   {% include meta.html %}
   {% include analytics.html %}
 
@@ -31,7 +36,7 @@
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  {% if page.category == "products" or page.category == "reviews" %}
+  {% if page.categories contains "products" or page.categories contains "reviews" %}
     <script type="text/javascript">
       $('.currency-usd').each(function() {
           var monetary_value = $(this).text();

@@ -6,6 +6,8 @@ layout: default
 ---
 
 {% for post in site.categories.reviews %}
+{% unless post.categories contains "drafts"}
+
   {% if post.product_image_anchor == "center" %}
     {% assign align = "center" %}
   {% elsif post.product_image_anchor == "bottom" %}
@@ -20,7 +22,7 @@ layout: default
         <div class="review-content">
           <a href="{{ post.url }}"><h2 class="compact">{{ post.title }}</h2></a>
           <p class="subtle subtitle">{{ post.date | date: '%B %d, %Y' }}</p>
-          
+
           {{ post.content }}
         </div>
       </div>
@@ -30,4 +32,5 @@ layout: default
       </div>
     </div>
   </div>
+{% endunless %}
 {% endfor %}

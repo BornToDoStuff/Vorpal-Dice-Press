@@ -46,24 +46,44 @@ defaults:
     values:
       layout: blog
       permalink: /blog/:title/
-      title: Blog Post
-      category: blogs
+      title: New Blog Post
+      categories: blogs
   - scope:
       path: _posts/products
     values:
       layout: product
       permalink: /product/:title/
       title: New Product
-      category: products
+      categories: products
   - scope:
       path: _posts/reviews
     values:
       layout: review
       permalink: /review/:title/
       title: New Review
-      category: reviews
+      categories: reviews
       product_image_anchor: top
-
+  - scope:
+      path: _drafts/blogs
+    values:
+      layout: blog
+      permalink: /drafts/blog/:title/
+      title: New Blog Draft
+      categories: [drafts, blogs]
+  - scope:
+      path: _drafts/products
+    values:
+      layout: product
+      permalink: /drafts/product/:title/
+      title: New Product Draft
+      categories: [drafts, products]
+  - scope:
+      path: _drafts/reviews
+    values:
+      layout: review
+      permalink: /drafts/review/:title/
+      title: New Review Draft
+      categories: [drafts, reviews]
 
 excerpt_separator: "<!--excerpt-->"
 excerpt_length: 150
