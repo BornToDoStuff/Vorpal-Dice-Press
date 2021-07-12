@@ -47,21 +47,21 @@ defaults:
       layout: blog
       permalink: /blog/:title/
       title: New Blog Post
-      categories: blogs
+      categories: [blogs]
   - scope:
       path: _posts/products
     values:
       layout: product
       permalink: /product/:title/
       title: New Product
-      categories: products
+      categories: [products]
   - scope:
       path: _posts/reviews
     values:
       layout: review
       permalink: /review/:title/
       title: New Review
-      categories: reviews
+      categories: [reviews]
       product_image_anchor: top
   - scope:
       path: _drafts/blogs
