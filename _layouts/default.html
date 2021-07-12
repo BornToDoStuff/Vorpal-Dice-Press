@@ -36,37 +36,6 @@
   <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  {% if page.categories contains "products" or page.categories contains "reviews" %}
-    <script type="text/javascript">
-      $('.currency-usd').each(function() {
-          var monetary_value = $(this).text();
-          var i = new Intl.NumberFormat('en-US', {
-              style: 'currency',
-              currency: 'USD'
-          }).format(monetary_value);
-          $(this).text(i);
-      });
 
-      $(window).on("load", function() {
-        let productWrapper = $('#product');
-        let product_title = $('#product_title');
-        let product_image = $('#product_image');
-        let product_description = $('#product_description');
-        let product_details = $('#product_details');
-
-        var col1_height = product_details.outerHeight(true) + product_image.outerHeight(true);
-        var col2_height = product_description.outerHeight(true) + product_title.outerHeight(true);
-
-        productWrapper.height(Math.max(col1_height, col2_height) + 25);
-
-        $(window).resize(function() {
-          col1_height = product_details.outerHeight(true) + product_image.outerHeight(true);
-          col2_height = product_description.outerHeight(true) + product_title.outerHeight(true);
-
-          productWrapper.height(Math.max(col1_height, col2_height) + 25);
-        });
-    });
-    </script>
-  {% endif %}
 </body>
 </html>

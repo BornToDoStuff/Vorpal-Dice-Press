@@ -10,7 +10,6 @@ layout: default
 <section id="products_all">
   <div class="width-wrapper">
     {% for post in site.categories.products %}
-    {% unless post.categories contains "drafts"}
 
     <div class="product" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
       <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.title }}" /></a>
@@ -22,7 +21,6 @@ layout: default
       </div>
 
     </div>
-    {% endunless %}
     {% endfor %}
   </div>
 </section>

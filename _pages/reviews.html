@@ -6,7 +6,6 @@ layout: default
 ---
 
 {% for post in site.categories.reviews %}
-{% unless post.categories contains "drafts"}
 
   {% if post.product_image_anchor == "center" %}
     {% assign align = "center" %}
@@ -32,5 +31,4 @@ layout: default
       </div>
     </div>
   </div>
-{% endunless %}
 {% endfor %}
