@@ -64,21 +64,21 @@ defaults:
       categories: [reviews]
       product_image_anchor: top
   - scope:
-      path: _drafts/blogs
+      path: _posts/_drafts/blogs
     values:
       layout: blog
       permalink: /:categories/:title/
       title: New Blog Draft
       categories: [drafts, blogs]
   - scope:
-      path: _drafts/products
+      path: _posts/_drafts/products
     values:
       layout: product
       permalink: /:categories/:title/
       title: New Product Draft
       categories: [drafts, products]
   - scope:
-      path: _drafts/reviews
+      path: _posts/_drafts/reviews
     values:
       layout: review
       permalink: /:categories/:title/
