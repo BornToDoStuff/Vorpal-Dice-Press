@@ -208,10 +208,7 @@ function getIndex() {
         console.log(textStatus);
         console.log(errorThrown);
 
-        searchResults.html(errorMessage);
-        setTimeout(function() {
-          document.body.classList.remove('searching')
-        }, getRandom(300, 700));
+        stopSearch(errorMessage, "fast");
       })
       .always(function() {
         console.log("always log after trying to get index");
