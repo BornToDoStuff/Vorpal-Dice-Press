@@ -1,8 +1,8 @@
-var searchbox = $('#search_field');;
-var searchResults = $('#search_results');
-var searchform = $("#search_form");
+var searchbox = null;
+var searchResults = null;
+var searchform = null;
 var searchHeader = null;
-var errorMessage = "error";
+var errorMessage = null;
 
 var prod_cache = [];
 
@@ -18,6 +18,7 @@ function initSearch() {
   var searchParams = new URLSearchParams(window.location.search);
   if (searchParams.get("q") && searchParams.get("q") !== null) {
     $("body").addClass("searching");
+    searchbox.val(searchParams.get("q"));
     search();
   }
 
@@ -62,6 +63,7 @@ function search() {
   $('#main').hide();
   searchResults.show();
 
+  var searchParams = new URLSearchParams(window.location.search);
   searchbox.val(searchParams.get("q"));
   searchform.css("width", "100%");
   if ($(window).width() <= 768) { //minimize header if it is a tablet or smaller
