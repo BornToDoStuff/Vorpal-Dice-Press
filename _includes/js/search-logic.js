@@ -98,7 +98,7 @@ function search() {
     if (results.length) {
       search_ajax = $.get("/data/search-index.min.json", null, null, "text")
         .done(function(prod_data) {
-          prod_cache = JSON.parse(prod_data).items;
+          prod_cache = JSON.parse(prod_data).posts;
           stopSearch(results.map(productTemplate).join(''));
         })
         .fail(function(jqXHR, textStatus, errorThrown) {
@@ -196,7 +196,7 @@ function getIndex() {
           });
           this.field("searchtext");
 
-          JSON.parse(prod_data).items.forEach(function(doc) {
+          JSON.parse(prod_data).posts.forEach(function(doc) {
             this.add(doc);
           }, this);
         });
