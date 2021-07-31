@@ -66,9 +66,6 @@ function getRandom(min, max) {
 function search() {
   $('#main').hide();
   searchResults.show();
-
-  var searchParams = new URLSearchParams(window.location.search);
-  searchbox.val(searchParams.get("q"));
   searchform.css("width", "100%");
   if ($(window).width() <= 768) { //minimize header if it is a tablet or smaller
     searchHeader.css("transform", "translateX(-350px)");
@@ -145,10 +142,9 @@ function stopSearch(message, speed){
 }
 
 function unsearch() {
-  // $('#main').show();
-  // searchbox.val("");
-  // searchResults.empty();
-  // searchResults.hide();
+  searchbox.val("");
+  searchResults.empty();
+  searchResults.hide();
   $(".width-wrapper.border-top").addClass("hidden");
   $("#navbar hr").addClass('hidden');
   fixTippyTopMargin();
