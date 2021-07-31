@@ -1,8 +1,8 @@
-var searchbox = null;
-var searchResults = null;
-var searchform = null;
+var searchbox = $('#search_field');;
+var searchResults = $('#search_results');
+var searchform = $("#search_form");
 var searchHeader = null;
-var errorMessage = null;
+var errorMessage = "error";
 
 var prod_cache = [];
 
