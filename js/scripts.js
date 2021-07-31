@@ -2,7 +2,7 @@
 ---
 {% include /js/lunr.min.js %}
 
-{% include search-logic.js %}
+{% include /js/search-logic.js %}
 
 $(window).on("load", function() {
   $("body").removeClass("preload");
