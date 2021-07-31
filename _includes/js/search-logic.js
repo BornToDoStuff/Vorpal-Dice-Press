@@ -90,7 +90,7 @@ function search() {
     if (advanced) { //if its an advanced query search how the user wants
       var results = index.search(query);
     } else { //else use the default query
-      var results = index.search(`${query}^10 ${query}*^3 *${query}^3 ${query}~1`);
+      var results = index.search(`${query}^5 ${query}*^2 *${query}^2 ${query}~1`);
     }
     searchResults.empty();
 
@@ -107,7 +107,7 @@ function search() {
           console.log(textStatus);
           console.log(errorThrown);
 
-          stopSearch(errorMessage, "fast");
+          stopSearch(errorMessage + " 1", "fast");
         })
         .always(function() {
           stopSearch();
@@ -119,14 +119,14 @@ function search() {
   } catch (err) {
     console.log(err);
 
-    stopSearch(errorMessage, "fast");
+    stopSearch(errorMessage + " 2", "fast");
   }
 }
 
 function stopSearch(message, speed){
 
   if (message)
-    searchResults.html(errorMessage);
+    searchResults.html(message);
 
   if (speed) {
     if (speed == "fast"){
@@ -208,7 +208,7 @@ function getIndex() {
         console.log(textStatus);
         console.log(errorThrown);
 
-        stopSearch(errorMessage, "fast");
+        stopSearch(errorMessage + " 3", "fast");
       })
       .always(function() {
         console.log("always log after trying to get index");
