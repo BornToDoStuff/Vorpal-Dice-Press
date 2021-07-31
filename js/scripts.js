@@ -1,5 +1,9 @@
-$(window).on("load",function() {
+{% include search-logic.js %}
+
+$(window).on("load", function() {
   $("body").removeClass("preload");
+
+  initSearch();
 });
 
 $(document).ready(function(){
