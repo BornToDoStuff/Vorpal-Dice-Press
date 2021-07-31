@@ -1,5 +1,6 @@
 ---
 ---
+{% include /js/lunr.min.js %}
 
 {% include search-logic.js %}
 
