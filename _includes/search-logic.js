@@ -59,6 +59,10 @@ const productTemplate = function(result) {
   </div>`;
 }
 
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function search() {
   $('#main').hide();
   searchResults.show();
