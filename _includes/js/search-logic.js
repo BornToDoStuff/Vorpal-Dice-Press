@@ -30,6 +30,8 @@ function initSearch() {
     }
     else {
       search();
+      URLSearchParams.set("q", searchbox.val());
+      history.replaceState(null, document.title, document. document.URL + "?q=" + encodeURIComponent(searchbox.val()));
       e.preventDefault();
     }
   });
