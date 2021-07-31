@@ -8,11 +8,11 @@ var prod_cache = [];
 
 function initSearch() {
 
-  var searchbox = $('#search_field');
-  var searchResults = $('#search_results');
-  var searchform = $("#search_form");
-  var searchHeader = null;
-  var errorMessage = "error";
+  searchbox = $('#search_field');
+  searchResults = $('#search_results');
+  searchform = $("#search_form");
+  searchHeader = null;
+  errorMessage = "error";
 
 
   var searchParams = new URLSearchParams(window.location.search);
