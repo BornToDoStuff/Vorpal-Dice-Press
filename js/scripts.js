@@ -1,3 +1,6 @@
+---
+---
+
 {% include search-logic.js %}
 
 $(window).on("load", function() {
