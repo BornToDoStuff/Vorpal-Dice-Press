@@ -149,6 +149,9 @@ function getIndex() {
           this.field("tagline");
           this.field("categories");
           this.field("contributors", {
+            boost: 3
+          });
+          this.field("smushed_contributors", {
             boost: 2
           });
           this.field("tags", {
