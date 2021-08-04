@@ -67,6 +67,7 @@ function search() {
     if (advanced) { //if its an advanced query search how the user wants
       var results = index.search(query);
     } else { //else use the default query
+      query = query.trimEnd();
       var results = index.search(`${query}^5 ${query}*^2 *${query}^2 ${query}~1 -categories:draft`);
     }
     searchResults.empty();
