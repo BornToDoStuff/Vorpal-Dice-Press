@@ -35,22 +35,6 @@ function initSearch() {
       e.preventDefault();
     }
   });
-
-
-
-
-  // async function getDocument(endpoint, key) {
-  //   let data = sessionStorage.getItem(key); // First check if there's data in SessionStorage
-  //   if (data) {
-  //     return JSON.parse(data); // If there's something in the sessionStorage with our key, return it
-  //   }
-  //   data = await fetch(endpoint).then(r => r.json()); //If there's nothing in the storage, make the AJAX request
-  //   sessionStorage.setItem(key, JSON.stringify(data)); //Then save it into the storage to avoid more requests later on
-  //
-  //   return data;
-  // }
-
-
 }
 
 //const itemTemplate = ({ id, url, title, type, subtypes, rarity, attunement, requirement, content}) => `
@@ -66,12 +50,6 @@ function getRandom(min, max) {
 }
 
 function search() {
-  $('#main').hide();
-  searchResults.show();
-  searchform.css("width", "100%");
-  if ($(window).width() <= 768) { //minimize header if it is a tablet or smaller
-    searchHeader.css("transform", "translateX(-350px)");
-  }
 
   try {
     var query = searchbox.val();
@@ -147,23 +125,6 @@ function unsearch() {
   searchbox.val("");
   searchResults.empty();
   searchResults.hide();
-  $(".width-wrapper.border-top").addClass("hidden");
-  $("#navbar hr").addClass('hidden');
-  fixTippyTopMargin();
-
-  searchform.addClass("no-transition");
-  searchform.css("width", "0px");
-  searchform[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-  searchform.removeClass("no-transition");
-
-  if ($(window).width() <= 768) { //minimize header if it is a tablet or smaller
-    searchHeader.addClass("no-transition");
-    searchHeader.css("transform", "translateX(0px)");
-    searchHeader[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-    searchHeader.removeClass("no-transition");
-  }
-
-  // setupScroll($('section#main'), $('section#main').data('masonry'));
 }
 
 function getIndex() {
@@ -216,5 +177,4 @@ function getIndex() {
 
       return JSON.parse(JSON.stringify(rawIndex)); //I am not 100% sure what part of this line made it work and I dont care to figure it out
   }
-
 }
