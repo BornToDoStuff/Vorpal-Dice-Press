@@ -37,7 +37,7 @@ function initSearch() {
       search();
       var searchParams = new URLSearchParams(window.location.search)
       searchParams.set("q", searchbox.val());
-      history.replaceState(null, document.title, document. document.URL + "?" + searchParams.toString());
+      history.replaceState({}, document.title, `${location.pathname}?${searchParams.toString()}`);
       e.preventDefault();
     }
   });
@@ -93,7 +93,7 @@ function search() {
       search_ajax = $.get("/data/search-index.min.json", null, null, "text")
         .done(function(prod_data) {
           prod_cache = JSON.parse(prod_data).posts;
-          stopSearch(results.map(productTemplate).join(''));
+          stopSearch(results.map(productTemplate).join(''), "slow", true);
         })
         .fail(function(jqXHR, textStatus, errorThrown) {
           console.log("error during ajax call to retrieve search index for item cache. This is the data:");
@@ -117,14 +117,21 @@ function search() {
   }
 }
 
-function stopSearch(message, speed){
+function stopSearch(message, speed, results){
 
-  if (message)
-    searchResults.html(`
+  if (message) {
+    if (results) {
+      searchResults.html(message);
+    }
+    else {
+      searchResults.html(`
 <a href="#"><div class="result_item">
   <h3 class="compact">${message}</h3>
 </div></a>`
-    );
+      );
+    }
+  }
+
 
   if (speed) {
     if (speed == "fast"){
