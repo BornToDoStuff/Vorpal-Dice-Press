@@ -35,8 +35,9 @@ function initSearch() {
     }
     else {
       search();
-      URLSearchParams.set("q", searchbox.val());
-      history.replaceState(null, document.title, document. document.URL + "?q=" + encodeURIComponent(searchbox.val()));
+      var searchParams = new URLSearchParams(window.location.search)
+      searchParams.set("q", searchbox.val());
+      history.replaceState(null, document.title, document. document.URL + "?" + searchParams.toString());
       e.preventDefault();
     }
   });
@@ -48,7 +49,7 @@ const productTemplate = function(result) {
   return `
 <a href="${prod.url}"><div class="result_item">
   <h3 class="compact">${prod.title}</h3>
-  <span class="subtle">${prod.smushed_contributors}</span>
+  <span class="subtle">${prod.authors}</span>
 </div></a>`;
 }
 
