@@ -30,17 +30,17 @@ function initSearch() {
 
   //if its submitted, either clear or search
   searchform.submit(function(e) {
+    e.preventDefault();
+    e.stopPropagation(); //stop it from propogating to typical search things on a form submit
+
     if (searchbox.val() == "") {
       unsearch();
-      e.preventDefault();
     }
     else {
       search();
       var searchParams = new URLSearchParams(window.location.search)
       searchParams.set("q", searchbox.val());
       history.replaceState({}, document.title, `${location.pathname}?${searchParams.toString()}`);
-      e.preventDefault();
-      e.stopPropagation(); //stop it from propogating to typical search things on a form submit
     }
   });
 }
