@@ -157,6 +157,7 @@ function stopSearch(message, speed, results){
 function unsearch() {
   searchbox.val("");
   searchResults.empty();
+  lastSearch = "";
 }
 
 function getIndex() {
