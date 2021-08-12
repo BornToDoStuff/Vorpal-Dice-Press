@@ -815,16 +815,19 @@ footer:hover > .site-logo {
   width: 100%;
 }
 #search_results {
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
   box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3);
 }
+  #search_results a {
+    text-decoration: none;
+  }
+
 .result_item {
   padding: 10px 20px;
 }
   .result_item:hover {
     background: rgba(128, 128, 128, 0.1);
-  }
-  .result_item a {
-      text-decoration: none;
   }
 
 
@@ -1067,5 +1070,9 @@ input[type="search"]:focus {
     float: initial;
     margin: 0px;
     width: 100%;
+  }
+
+  #search_button {
+      width: 75px;
   }
 }

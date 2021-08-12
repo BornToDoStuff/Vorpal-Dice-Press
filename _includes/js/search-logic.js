@@ -12,7 +12,7 @@ function initSearch() {
   searchResults = $('#search_results');
   searchform = $("#search_form");
   searchHeader = null;
-  errorMessage = "error";
+  errorMessage = "An error has occurred while searching";
 
 
   var searchParams = new URLSearchParams(window.location.search);
@@ -48,7 +48,7 @@ const productTemplate = function(result) {
   return `
 <a href="${prod.url}"><div class="result_item">
   <h3 class="compact">${prod.title}</h3>
-  <span class="subtle">${prod.categories[0].slice(0, -1)}</span>
+  <span class="subtle">${prod.smushed_contributors}</span>
 </div></a>`;
 }
 
@@ -57,6 +57,14 @@ function getRandom(min, max) {
 }
 
 function search() {
+  $(document).on("click.search", function(e) {
+    unsearch();
+    $(document).off("click.search");
+    $('#search').off("click.search");
+  })
+  $('#search').on('click.search', function (e) {
+    e.stopPropagation();
+  });
 
   try {
     var query = searchbox.val();
@@ -92,7 +100,7 @@ function search() {
           console.log(textStatus);
           console.log(errorThrown);
 
-          stopSearch(errorMessage + " 1", "fast");
+          stopSearch(errorMessage + " (CODE: A1)", "fast");
         })
         .always(function() {
           stopSearch();
@@ -104,14 +112,18 @@ function search() {
   } catch (err) {
     console.log(err);
 
-    stopSearch(errorMessage + " 2", "fast");
+    stopSearch(errorMessage + " (CODE: A2)", "fast");
   }
 }
 
 function stopSearch(message, speed){
 
   if (message)
-    searchResults.html(message);
+    searchResults.html(`
+<a href="#"><div class="result_item">
+  <h3 class="compact">${message}</h3>
+</div></a>`
+    );
 
   if (speed) {
     if (speed == "fast"){
@@ -177,7 +189,7 @@ function getIndex() {
         console.log(textStatus);
         console.log(errorThrown);
 
-        stopSearch(errorMessage + " 3", "fast");
+        stopSearch(errorMessage + " (CODE: B1)", "fast");
       })
       .always(function() {
         console.log("always log after trying to get index");
