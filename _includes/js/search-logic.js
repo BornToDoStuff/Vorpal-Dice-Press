@@ -40,9 +40,13 @@ function initSearch() {
 //const itemTemplate = ({ id, url, title, type, subtypes, rarity, attunement, requirement, content}) => `
 const productTemplate = function(result) {
   var prod = prod_cache[result.ref];
-  return `<div>
-  <a href="${prod.url}">${prod.title}</a>
-  </div>`;
+  return `
+<div class="result_item">
+  <a href="${prod.url}" class="compact">
+    <h3>${prod.title}</h3>
+    <span>${prod.categories[0]}</span>
+  </a>
+</div>`;
 }
 
 function getRandom(min, max) {

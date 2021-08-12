@@ -804,6 +804,11 @@ footer:hover > .site-logo {
   text-decoration: none
 }
 
+#search_container {
+  background: white;
+  border-radius: 3px;
+}
+
 
 input[type="search"]:focus {
   outline : none;
