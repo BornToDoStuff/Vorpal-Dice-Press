@@ -23,6 +23,11 @@ function initSearch() {
   }
 
 
+  document.getElementById("searchbox").addEventListener("search", function(e) {
+    unsearch();
+    e.preventDefault();
+  });
+
   searchform.submit(function(e) {
     if (searchbox.val() == "") {
       unsearch();
@@ -41,12 +46,10 @@ function initSearch() {
 const productTemplate = function(result) {
   var prod = prod_cache[result.ref];
   return `
-<div class="result_item">
-  <a href="${prod.url}">
-    <h3 class="compact">${prod.title}</h3>
-    <span class="subtle">${prod.categories[0].slice(0, -1)}</span>
-  </a>
-</div>`;
+<a href="${prod.url}"><div class="result_item">
+  <h3 class="compact">${prod.title}</h3>
+  <span class="subtle">${prod.categories[0].slice(0, -1)}</span>
+</div></a>`;
 }
 
 function getRandom(min, max) {
@@ -129,7 +132,6 @@ function stopSearch(message, speed){
 function unsearch() {
   searchbox.val("");
   searchResults.empty();
-  searchResults.hide();
 }
 
 function getIndex() {
