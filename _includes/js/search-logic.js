@@ -3,7 +3,7 @@ var searchResults = null;
 var searchform = null;
 var searchHeader = null;
 var errorMessage = null;
-
+var lastSearch = "";
 var prod_cache = [];
 
 function initSearch() {
@@ -22,16 +22,10 @@ function initSearch() {
     search();
   }
 
-  //only unsearch when its a search but not a form submission
-  document.getElementById("search_field").addEventListener("search", function(e) {
-    unsearch();
-    e.preventDefault();
-  });
-
-  //if its submitted, either clear or search
-  searchform.submit(function(e) {
-    e.preventDefault();
-    e.stopPropagation(); //stop it from propogating to typical search things on a form submit
+  const searchHandler = function() {
+    //dont repeat if it already searched for this term
+    if (lastSearch == searchbox.val()) { return; }
+    else { lastSearch = searchbox.val(); }
 
     if (searchbox.val() == "") {
       unsearch();
@@ -42,6 +36,15 @@ function initSearch() {
       searchParams.set("q", searchbox.val());
       history.replaceState({}, document.title, `${location.pathname}?${searchParams.toString()}`);
     }
+  }
+
+  document.getElementById("search_field").addEventListener("search", function(e) {
+    searchHandler();
+  });
+  searchform.submit(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    searchHandler();
   });
 }
 
