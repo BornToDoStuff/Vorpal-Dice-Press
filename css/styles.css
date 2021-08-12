@@ -807,7 +807,22 @@ footer:hover > .site-logo {
 #search_container {
   background: white;
   border-radius: 3px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
 }
+#search_results {
+    box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 30%);
+}
+.result_item {
+  padding: 10px 20px;
+}
+  .result_item:hover {
+    background: rgba(128, 128, 128, 0.1);
+  }
+  .result_item a {
+      text-decoration: none;
+  }
 
 
 input[type="search"]:focus {

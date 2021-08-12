@@ -42,9 +42,9 @@ const productTemplate = function(result) {
   var prod = prod_cache[result.ref];
   return `
 <div class="result_item">
-  <a href="${prod.url}" class="compact">
-    <h3>${prod.title}</h3>
-    <span>${prod.categories[0]}</span>
+  <a href="${prod.url}">
+    <h3 class="compact">${prod.title}</h3>
+    <span class="subtle">${prod.categories[0].slice(0, -1)}</span>
   </a>
 </div>`;
 }
