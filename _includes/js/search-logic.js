@@ -23,7 +23,7 @@ function initSearch() {
   }
 
 
-  document.getElementById("searchbox").addEventListener("search", function(e) {
+  document.getElementById("search_field").addEventListener("search", function(e) {
     unsearch();
     e.preventDefault();
   });
