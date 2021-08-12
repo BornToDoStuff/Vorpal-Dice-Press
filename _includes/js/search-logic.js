@@ -22,12 +22,13 @@ function initSearch() {
     search();
   }
 
-
+  //only unsearch when its a search but not a form submission
   document.getElementById("search_field").addEventListener("search", function(e) {
     unsearch();
     e.preventDefault();
   });
 
+  //if its submitted, either clear or search
   searchform.submit(function(e) {
     if (searchbox.val() == "") {
       unsearch();
@@ -39,6 +40,7 @@ function initSearch() {
       searchParams.set("q", searchbox.val());
       history.replaceState({}, document.title, `${location.pathname}?${searchParams.toString()}`);
       e.preventDefault();
+      e.stopPropagation(); //stop it from propogating to typical search things on a form submit
     }
   });
 }

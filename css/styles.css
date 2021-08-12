@@ -816,11 +816,12 @@ footer:hover > .site-logo {
 }
 #search_results {
   max-height: calc(100vh - 150px);
-  overflow-y: scroll;
+  overflow-y: auto;
   box-shadow: 1px 2px 8px -2px rgba(35, 4, 43, 0.3);
 }
   #search_results a {
     text-decoration: none;
+    cursor: pointer;
   }
 
 .result_item {
