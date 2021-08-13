@@ -5,7 +5,7 @@
     <div class="slider">
       {% for post in site.categories.products %}
         {% assign feature_start = post.product_feature_start | convert: "date" %}
-        {% assign feature_age = post.product_feature_start | date: "%s" | divided_by: 86400 %}
+        {% assign feature_age = feature_start | date: "%s" | divided_by: 86400 %}
         {% assign feature_start_minus_30 = feature_start | date: "%s" | minus: 2592000 | date: "%Y-%m-%d" %}
         {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
 
