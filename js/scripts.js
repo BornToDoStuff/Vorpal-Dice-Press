@@ -13,10 +13,11 @@ $(window).on("load", function() {
 $(document).ready(function(){
   let slider = $(".slider");
 
-  slider.find(".feature-item").sort(function(a,b){
+  var sortedSlides = slider.find(".feature-item").sort(function(a,b){
     return +a.dataset.age - +b.dataset.age;
-  })
-  .appendTo(slider);
+  });
+  //append a maximum of 10 elements to the featured slider, with newest features taking precedence
+  sortedSlides.slice(0, Math.min(10, sortedSlides.length)).appendTo(slider);
 
 
   slider.slick({
