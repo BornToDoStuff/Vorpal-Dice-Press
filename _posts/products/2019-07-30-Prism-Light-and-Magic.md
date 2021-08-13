@@ -19,8 +19,8 @@ product_audience:
 product_license: Community Content Agreement
 
 # beginning and end of the product feature. This will only work if the site is updated within several weeks of when the feature is supposed to happen. Making a new post counts as updating.
-product_feature_start: 
-product_feature_end: 
+product_feature_start: 2021-08-11
+product_feature_end: 2050-12-31
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
 product_image: https://www.dmsguild.com/images/8957/284319.jpg
 publisher_type: Self
@@ -44,8 +44,8 @@ product_print: false
 # price of the product at each location
 product_prices:
     DMsGuild: 4.95
-    Sidekick Addon: Free
-    Character Sheet: Free
+    Sidekick Addon: 0
+    Character Sheet: 0
 # if the product is on sale, this is the final price of the on-sale product for each location that it is on sale. The sales % will be calculated and displayed based on the difference between product_prices and product_sales
 product_sales:
 

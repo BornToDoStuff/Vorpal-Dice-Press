@@ -6,10 +6,11 @@
       {% for post in site.categories.products %}
         {% assign feature_start = post.product_feature_start | convert: "date" | date: "%Y-%m-%d" %}
         {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
-        {% assign feature_days = feature_start | date: "%s" | divided_by: 86400 %}
+        {% assign build_days = build_date | date: "%s" | divided_by: 86400 %}
+        {% assign feature_start_days = feature_start | date: "%s" | divided_by: 86400 %}
 
         {% if build_date >= feature_start and build_date <= feature_end %}
-          <div class="feature-item" data-age="{{ feature_days }}" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
+          <div class="feature-item" data-age="{{ feature_start_days | minus: build_days }}" data-build-days="{{ build_days }}" data-start-days="{{ feature_start_days }}" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
             <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.title }}. {{ post.tagline }}" /></a>
           </div>
         {% endif %}
