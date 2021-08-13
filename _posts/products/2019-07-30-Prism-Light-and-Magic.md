@@ -1,6 +1,6 @@
 ---
 title: "Prism: Light & Magic"
-tagline: A unique magic-wielding class for Dungeons & Dragons Fifth Edition!
+tagline: "A unique magic-wielding class for Dungeons & Dragons Fifth Edition!"
 product_id: 284319
 last_modified_at:
 bundle: false
