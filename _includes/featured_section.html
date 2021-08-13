@@ -4,8 +4,8 @@
   <div class="width-wrapper">
     <div class="slider">
       {% for post in site.categories.products %}
-        {% assign feature_start = post.product_feature_start | convert: "date" %}
-        {% assign feature_end = post.product_feature_end | convert: "date" %}
+        {% assign feature_start = post.product_feature_start | convert: "date" | date: "%Y-%m-%d" %}
+        {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
 
         {% if build_date >= feature_start and build_date <= feature_end %}
           <div class="feature-item" data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
