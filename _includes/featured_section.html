@@ -3,22 +3,14 @@
 <section id="features">
   <div class="width-wrapper">
     <div class="slider">
-      <div><a href="#"><img src="/img/products/293658.png" /></a></div>
-      <div><a href="#"><img src="/img/products/296403.png" /></a></div>
-      <div><a href="#"><img src="/img/products/296621.png" /></a></div>
-      <div><a href="#"><img src="/img/products/296935.png" /></a></div>
-      <div><a href="#"><img src="/img/products/300725.png" /></a></div>
-      <div><a href="#"><img src="/img/products/293658.png" /></a></div>
-      <div><a href="#"><img src="/img/products/296621.png" /></a></div>
-      <div><a href="#"><img src="/img/products/296935.png" /></a></div>
-
       {% for post in site.categories.products %}
         {% assign feature_start = post.product_feature_start | convert: "date" %}
+        {% assign feature_age = feature_start | date: "%s" | divided_by: 86400 %}
         {% assign feature_start_minus_30 = feature_start | date: "%s" | minus: 2592000 | date: "%Y-%m-%d" %}
         {% assign feature_end = post.product_feature_end | convert: "date" | date: "%Y-%m-%d" %}
 
-        {% if build_date >= feature_start_minus_30 and build_date <= feature_end %}
-          <div data-start="{{ feature_start }}" data-feature-end="{{ feature_end }}">
+        {% if build_date >= feature_start and build_date <= feature_end %}
+          <div class="feature-item" data-start="{{ feature_start }}" data-end="{{ feature_end }}" data-age="{{ feature_age }}">
             <a href="{{ post.url }}"><img src="{{ post.product_image }}" alt="{{ post.title }}. {{ post.tagline }}" /></a>
           </div>
         {% endif %}
