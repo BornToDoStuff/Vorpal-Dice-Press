@@ -24,8 +24,8 @@ product_audience:
 product_license: Open Game License
 
 # beginning and end of the product feature. This will only work if the site is updated within several weeks of when the feature is supposed to happen. Making a new post counts as updating.
-product_feature_start: 2020-08-05
-product_feature_end: 2020-08-31
+product_feature_start: 2021-08-14
+product_feature_end: 2050-12-31
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
 product_image: https://www.drivethrurpg.com/images/13388/317044.png
 publisher_type: Self

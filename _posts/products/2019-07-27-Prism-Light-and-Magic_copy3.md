@@ -25,7 +25,7 @@ product_license: Community Content Agreement
 
 # beginning and end of the product feature. This will only work if the site is updated within several weeks of when the feature is supposed to happen. Making a new post counts as updating.
 product_feature_start: 2020-03-01
-product_feature_end: 2020-05-01
+product_feature_end: 2020-08-01
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
 product_image: /img/products/300725.png
 publisher_type: Self

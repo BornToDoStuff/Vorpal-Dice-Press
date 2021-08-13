@@ -24,8 +24,8 @@ product_audience:
 product_license: Community Content Agreement
 
 # beginning and end of the product feature. This will only work if the site is updated within several weeks of when the feature is supposed to happen. Making a new post counts as updating.
-product_feature_start: 
-product_feature_end: 
+product_feature_start:
+product_feature_end:
 # this can also be a link to an image you upload to the site. If it is, it must start with a "/" or be a full link
 product_image: https://www.dmsguild.com/images/8957/276138.jpg
 publisher_type: Self
